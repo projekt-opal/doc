@@ -1,6 +1,5 @@
 package org.dice_research.opal.doc;
 
-import java.io.IOException;
 import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
@@ -20,28 +19,39 @@ public class Main {
 	/**
 	 * Main entry point.
 	 * 
-	 * @throws IOException
 	 */
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) {
 		StringBuilder stringBuilder = new StringBuilder();
 
 		// Get all repositories
+
 		GitHubRepositories gitHubRepositories = new GitHubRepositories();
 		List<Repository> allRepositories = gitHubRepositories.getRepositories(USER);
 
 		// Add main repositories
+
+		stringBuilder.append(System.lineSeparator());
+		stringBuilder.append("## Repositories");
+		stringBuilder.append(System.lineSeparator());
+		stringBuilder.append(System.lineSeparator());
+		stringBuilder.append("### Main repositories");
+		stringBuilder.append(System.lineSeparator());
+		stringBuilder.append(System.lineSeparator());
 		List<Repository> mainRepositories = gitHubRepositories.filterMainRepositories(allRepositories, OPAL_TOPIC);
 		mainRepositories.sort(new Comparator<Repository>() {
 			@Override
 			public int compare(Repository o1, Repository o2) {
-				return o1.getName().compareTo(o2.getName());
+				return o1.getName().compareToIgnoreCase(o2.getName());
 			}
 		});
 		gitHubRepositories.addMarkdownRepositoryTable(stringBuilder, mainRepositories);
 
-		stringBuilder.append(System.lineSeparator());
-
 		// Add other repositories
+
+		stringBuilder.append(System.lineSeparator());
+		stringBuilder.append("### Additional repositories");
+		stringBuilder.append(System.lineSeparator());
+		stringBuilder.append(System.lineSeparator());
 		List<Repository> minorRepositories = new LinkedList<Repository>(allRepositories);
 		minorRepositories.removeAll(mainRepositories);
 		gitHubRepositories.addMarkdownRepositoryTable(stringBuilder, minorRepositories);

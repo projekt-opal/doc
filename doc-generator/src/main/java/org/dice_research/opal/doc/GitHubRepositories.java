@@ -45,11 +45,8 @@ public class GitHubRepositories {
 
 	/**
 	 * Prints table of repositories in markdown.
-	 * 
-	 * @return
 	 */
-	public GitHubRepositories addMarkdownRepositoryTable(StringBuilder stringBuilder, List<Repository> repositories)
-			throws IOException {
+	public GitHubRepositories addMarkdownRepositoryTable(StringBuilder stringBuilder, List<Repository> repositories) {
 		stringBuilder.append("| Repository | Description |");
 		stringBuilder.append(System.lineSeparator());
 		stringBuilder.append("| ---------- | ----------- |");
@@ -70,10 +67,12 @@ public class GitHubRepositories {
 	/**
 	 * Gets topics.
 	 * 
+	 * Uses token to avoid rate limits.
+	 * 
 	 * GET /repos/:owner/:repo/topics
 	 * 
-	 * @throws IOException
 	 * @see https://developer.github.com/v3/repos/#get-all-repository-topics
+	 * @see https://developer.github.com/v3/rate_limit/
 	 */
 	public List<String> getTopics(Repository repository) {
 		String url = GITHUB_API_URL + "/repos/" + repository.getOwner().getLogin() + "/" + repository.getName()
@@ -83,13 +82,6 @@ public class GitHubRepositories {
 		// https://www.codejava.net/java-se/networking/java-urlconnection-and-httpurlconnection-examples
 		String json;
 		try {
-			// TODO
-			// https://developer.github.com/v3/rate_limit/
-			try {
-				Thread.sleep(500);
-			} catch (InterruptedException e) {
-				throw new RuntimeException(e);
-			}
 			System.out.println(url + " " + this.getClass().getName());
 			URL urlObj = new URL(url);
 			URLConnection urlCon = urlObj.openConnection();
@@ -122,9 +114,13 @@ public class GitHubRepositories {
 	/**
 	 * Returns list of repositories.
 	 */
-	public List<Repository> getRepositories(String user) throws IOException {
+	public List<Repository> getRepositories(String user) {
 		RepositoryService service = new RepositoryService();
-		return service.getRepositories(user);
+		try {
+			return service.getRepositories(user);
+		} catch (IOException e) {
+			throw new RuntimeException(e);
+		}
 	}
 
 }

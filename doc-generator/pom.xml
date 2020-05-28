@@ -4,11 +4,19 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.dice-research.opal</groupId>
 	<artifactId>doc-generator</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
 	<name>OPAL documentation generator</name>
+
+	<version>0.0.1-SNAPSHOT</version>
+
+	<properties>
+		<java.version>1.8</java.version>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
 
 	<dependencies>
 
+		<!-- GitHub API -->
 		<!-- https://search.maven.org/search?q=a:org.eclipse.egit.github.core -->
 		<dependency>
 			<groupId>org.eclipse.mylyn.github</groupId>
@@ -16,11 +24,20 @@
 			<version>2.1.5</version>
 		</dependency>
 
+		<!-- JSON parsing -->
 		<!-- https://mvnrepository.com/artifact/org.json/json -->
 		<dependency>
 			<groupId>org.json</groupId>
 			<artifactId>json</artifactId>
 			<version>20200518</version>
+		</dependency>
+
+		<!-- File access -->
+		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.6</version>
 		</dependency>
 
 	</dependencies>
