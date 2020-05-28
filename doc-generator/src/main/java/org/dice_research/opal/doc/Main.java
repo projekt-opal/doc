@@ -34,7 +34,7 @@ public class Main {
 		stringBuilder.append("## Repositories");
 		stringBuilder.append(System.lineSeparator());
 		stringBuilder.append(System.lineSeparator());
-		stringBuilder.append("### Main repositories");
+		stringBuilder.append("### Main OPAL repositories");
 		stringBuilder.append(System.lineSeparator());
 		stringBuilder.append(System.lineSeparator());
 		List<Repository> mainRepositories = gitHubRepositories.filterMainRepositories(allRepositories, OPAL_TOPIC);
@@ -49,7 +49,7 @@ public class Main {
 		// Add other repositories
 
 		stringBuilder.append(System.lineSeparator());
-		stringBuilder.append("### Additional repositories");
+		stringBuilder.append("### Additional OPAL repositories");
 		stringBuilder.append(System.lineSeparator());
 		stringBuilder.append(System.lineSeparator());
 		List<Repository> minorRepositories = new LinkedList<Repository>(allRepositories);
