@@ -2,7 +2,7 @@
 
 ## Repositories
 
-### Main repositories
+### Main OPAL repositories
 
 | Repository | Description |
 | ---------- | ----------- |
@@ -34,7 +34,14 @@
 | [web-service](https://github.com/projekt-opal/web-service) | Data provider for user interface |
 | [web-ui](https://github.com/projekt-opal/web-ui) | OPAL Web User Interface (D7.3) |
 
-### Additional repositories
+### Related DICE repositories
+
+| Repository | Description |
+| ---------- | ----------- |
+| [LIMES](https://github.com/dice-group/LIMES) | Link Discovery Framework for Metric Spaces (D5.*) |
+| [Squirrel](https://github.com/dice-group/Squirrel) | Squirrel searches and collects Linked Data (D2.*) |
+
+### Additional OPAL repositories
 
 | Repository | Description |
 | ---------- | ----------- |
