@@ -63,11 +63,11 @@
 ## Notes
 
 - Documentation of the software components can be found in the respective repositories.
-- The **code** can be referred with https://github.com/projekt-opal/doc#repositories.
+- **Code** repositories can be referred with https://github.com/projekt-opal/doc#repositories.
+- **Data** is stored at https://hobbitdata.informatik.uni-leipzig.de/OPAL/.
 - **Deliverables** are listed at the OPAL website, see http://projekt-opal.de/en/results/deliverables/.
-- Scientific **publications** are listed at the DICE website, see https://dice-research.org/OPAL.
-- Generated **data** is stored at https://hobbitdata.informatik.uni-leipzig.de/OPAL/.
-- The **demo** is linked at the DICE website, see https://dice-research.org/OPAL-Demo.
+- **Demo** is linked at the DICE website, see https://dice-research.org/OPAL-Demo.
+- **Publications** are listed at the DICE website, see https://dice-research.org/OPAL.
 - Some documentation notes are in the wiki at https://github.com/projekt-opal/documentation/wiki.
 
 
