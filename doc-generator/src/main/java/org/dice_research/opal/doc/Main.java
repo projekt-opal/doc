@@ -28,6 +28,17 @@ public class Main {
 		GitHubRepositories gitHubRepositories = new GitHubRepositories();
 		List<Repository> allRepositories = gitHubRepositories.getRepositories(USER);
 
+		// Only print fetched repositories
+		if (Boolean.FALSE) {
+			System.err.println("Info: Only fetching repositories " + Main.class.getName());
+			for (Repository repository : allRepositories) {
+				stringBuilder.append(repository.getName());
+				stringBuilder.append(System.lineSeparator());
+			}
+			System.out.println(stringBuilder.toString());
+			return;
+		}
+
 		// Add main repositories
 
 		stringBuilder.append(System.lineSeparator());
