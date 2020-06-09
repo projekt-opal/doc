@@ -9,7 +9,7 @@
 | [AGDISTIS](https://github.com/projekt-opal/AGDISTIS) | AGDISTIS - Agnostic Named Entity Disambiguation (D4.4) |
 | [catfish](https://github.com/projekt-opal/catfish) | DCAT data cleaning |
 | [civet](https://github.com/projekt-opal/civet) | DCAT metadata quality assurance |
-| [classification](https://github.com/projekt-opal/classification) | Classification of DCAT themes using decision trees and TF-IDF |
+| [classification](https://github.com/projekt-opal/classification) | Classification of DCAT themes using decision trees and TF-IDF (D3.4) |
 | [common](https://github.com/projekt-opal/common) | Common utilities for OPAL components |
 | [converter](https://github.com/projekt-opal/converter) | Spring cloud designed converter (D3.5) |
 | [converter-configuration](https://github.com/projekt-opal/converter-configuration) | Configuration for converter |
