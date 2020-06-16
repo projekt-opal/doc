@@ -16,16 +16,46 @@ import org.htmlcleaner.TagNode;
 public class DeliverablesParser {
 
 	public static final String DELIVERBLES_URL = "http://projekt-opal.de/en/results/deliverables/";
+	public static final String GOOGLE_DRIVE_URL = "https://drive.google.com/";
+	public static final String GITHUB_URL = "https://github.com/";
 
 	/**
 	 * Main entry point.
 	 */
 	public static void main(String[] args) {
-		List<Deliverable> deliverables = new DeliverablesParser().parse();
-		// TODO extract links
+		DeliverablesParser deliverablesParser = new DeliverablesParser();
+		List<Deliverable> deliverables = deliverablesParser.parse();
 		for (Deliverable deliverable : deliverables) {
 			System.out.println(deliverable);
 		}
+		System.out.println();
+		for (Deliverable deliverable : deliverables) {
+			System.out.println(deliverablesParser.getNonGithubDocs(deliverable));
+		}
+		System.out.println();
+		for (Deliverable deliverable : deliverables) {
+			System.out.println(deliverablesParser.getGoogleDriveDocs(deliverable));
+		}
+	}
+
+	List<String> getGoogleDriveDocs(Deliverable deliverable) {
+		List<String> googleDriveUrls = new LinkedList<>();
+		for (String url : deliverable.linkUrls) {
+			if (url.startsWith(GOOGLE_DRIVE_URL)) {
+				googleDriveUrls.add(url);
+			}
+		}
+		return googleDriveUrls;
+	}
+
+	List<String> getNonGithubDocs(Deliverable deliverable) {
+		List<String> urls = new LinkedList<>();
+		for (String url : deliverable.linkUrls) {
+			if (!url.startsWith(GITHUB_URL)) {
+				urls.add(url);
+			}
+		}
+		return urls;
 	}
 
 	/**
@@ -49,6 +79,11 @@ public class DeliverablesParser {
 				Deliverable deliverable = new Deliverable();
 				deliverable.id = tdTagNodes.get(0).getText().toString().trim();
 				deliverable.title = tdTagNodes.get(1).getText().toString().trim();
+				TagNode[] aTagNodes = tdTagNodes.get(1).getElementsByName("a", true);
+				for (TagNode aTagNode : aTagNodes) {
+					deliverable.linkTitles.add(aTagNode.getText().toString().trim());
+					deliverable.linkUrls.add(aTagNode.getAttributeByName("href"));
+				}
 				deliverable.due = tdTagNodes.get(2).getText().toString().trim();
 				deliverable.milestone = tdTagNodes.get(3).getText().toString().trim();
 				deliverables.add(deliverable);

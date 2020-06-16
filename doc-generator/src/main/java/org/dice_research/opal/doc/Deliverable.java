@@ -1,5 +1,8 @@
 package org.dice_research.opal.doc;
 
+import java.util.LinkedList;
+import java.util.List;
+
 /**
  * Deliverable parsed by {@link DeliverablesParser}.
  *
@@ -11,9 +14,12 @@ public class Deliverable {
 	String title;
 	String due;
 	String milestone;
+	List<String> linkTitles = new LinkedList<>();
+	List<String> linkUrls = new LinkedList<>();
 
 	@Override
 	public String toString() {
-		return id + " " + title;
+		return id + " " + title + " " + due + " " + milestone + " " + linkUrls + " " + linkTitles;
 	}
+
 }
