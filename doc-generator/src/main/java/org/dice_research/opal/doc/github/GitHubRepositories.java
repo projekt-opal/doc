@@ -4,12 +4,14 @@ import java.io.BufferedInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
+import org.dice_research.opal.doc.Cache;
 import org.dice_research.opal.doc.Cfg;
 import org.eclipse.egit.github.core.Repository;
 import org.eclipse.egit.github.core.service.RepositoryService;
@@ -76,30 +78,49 @@ public class GitHubRepositories {
 	 * @see https://developer.github.com/v3/rate_limit/
 	 */
 	public List<String> getTopics(Repository repository) {
-		String url = GITHUB_API_URL + "/repos/" + repository.getOwner().getLogin() + "/" + repository.getName()
-				+ "/topics";
 
-		// Dirty, I know ...
-		// https://www.codejava.net/java-se/networking/java-urlconnection-and-httpurlconnection-examples
 		String json;
+
+		// Cache
+		String cacheId = "http://example.org/repositoryTopics/" + repository.getName();
+		URL cacheURL = null;
 		try {
-			URL urlObj = new URL(url);
-			URLConnection urlCon = urlObj.openConnection();
-			urlCon.setRequestProperty("Accept", "application/vnd.github.mercy-preview+json");
-			urlCon.setRequestProperty("Authorization", "token " + Cfg.getGithubToken());
-			InputStream inputStream = urlCon.getInputStream();
-			BufferedInputStream reader = new BufferedInputStream(inputStream);
-			ByteArrayOutputStream writer = new ByteArrayOutputStream();
-			byte[] buffer = new byte[4096];
-			int bytesRead = -1;
-			while ((bytesRead = reader.read(buffer)) != -1) {
-				writer.write(buffer, 0, bytesRead);
-			}
-			writer.close();
-			reader.close();
-			json = writer.toString();
-		} catch (IOException e) {
+			cacheURL = new URL(cacheId);
+		} catch (MalformedURLException e) {
 			throw new RuntimeException(e);
+		}
+		if (Cache.has(cacheURL)) {
+			json = Cache.get(cacheURL);
+		} else {
+
+			String url = GITHUB_API_URL + "/repos/" + repository.getOwner().getLogin() + "/" + repository.getName()
+					+ "/topics";
+
+			// Dirty, I know ...
+			// https://www.codejava.net/java-se/networking/java-urlconnection-and-httpurlconnection-examples
+			try {
+				URL urlObj = new URL(url);
+				URLConnection urlCon = urlObj.openConnection();
+				urlCon.setRequestProperty("Accept", "application/vnd.github.mercy-preview+json");
+				urlCon.setRequestProperty("Authorization", "token " + Cfg.getGithubToken());
+				InputStream inputStream = urlCon.getInputStream();
+				BufferedInputStream reader = new BufferedInputStream(inputStream);
+				ByteArrayOutputStream writer = new ByteArrayOutputStream();
+				byte[] buffer = new byte[4096];
+				int bytesRead = -1;
+				while ((bytesRead = reader.read(buffer)) != -1) {
+					writer.write(buffer, 0, bytesRead);
+				}
+				writer.close();
+				reader.close();
+				json = writer.toString();
+
+				// Cache
+				Cache.set(cacheURL, json);
+
+			} catch (IOException e) {
+				throw new RuntimeException(e);
+			}
 		}
 
 		JSONObject jo = new JSONObject(json);
