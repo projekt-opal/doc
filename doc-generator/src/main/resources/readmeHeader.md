@@ -3,7 +3,7 @@
 This documentation contains an overview of OPAL web resources and repositories.
 
 
-## OPAL web resources
+## Web resources
 
 - **Code** repositories can be referred with https://github.com/projekt-opal/doc#repositories.  
   Documentation of the single software components can be found in the respective repositories.
