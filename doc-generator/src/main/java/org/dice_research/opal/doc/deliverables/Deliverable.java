@@ -1,4 +1,4 @@
-package org.dice_research.opal.doc;
+package org.dice_research.opal.doc.deliverables;
 
 import java.util.LinkedList;
 import java.util.List;

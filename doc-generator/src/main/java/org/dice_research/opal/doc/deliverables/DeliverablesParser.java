@@ -1,4 +1,4 @@
-package org.dice_research.opal.doc;
+package org.dice_research.opal.doc.deliverables;
 
 import java.net.URL;
 import java.util.LinkedList;
@@ -16,53 +16,12 @@ import org.htmlcleaner.TagNode;
 public class DeliverablesParser {
 
 	public static final String DELIVERBLES_URL = "http://projekt-opal.de/en/results/deliverables/";
-	public static final String GOOGLE_DRIVE_URL = "https://drive.google.com/";
-	public static final String GITHUB_URL = "https://github.com/";
-
-	/**
-	 * Main entry point.
-	 */
-	public static void main(String[] args) {
-		DeliverablesParser deliverablesParser = new DeliverablesParser();
-		List<Deliverable> deliverables = deliverablesParser.parse();
-		for (Deliverable deliverable : deliverables) {
-			System.out.println(deliverable);
-		}
-		System.out.println();
-		for (Deliverable deliverable : deliverables) {
-			System.out.println(deliverablesParser.getNonGithubDocs(deliverable));
-		}
-		System.out.println();
-		for (Deliverable deliverable : deliverables) {
-			System.out.println(deliverablesParser.getGoogleDriveDocs(deliverable));
-		}
-	}
-
-	List<String> getGoogleDriveDocs(Deliverable deliverable) {
-		List<String> googleDriveUrls = new LinkedList<>();
-		for (String url : deliverable.linkUrls) {
-			if (url.startsWith(GOOGLE_DRIVE_URL)) {
-				googleDriveUrls.add(url);
-			}
-		}
-		return googleDriveUrls;
-	}
-
-	List<String> getNonGithubDocs(Deliverable deliverable) {
-		List<String> urls = new LinkedList<>();
-		for (String url : deliverable.linkUrls) {
-			if (!url.startsWith(GITHUB_URL)) {
-				urls.add(url);
-			}
-		}
-		return urls;
-	}
 
 	/**
 	 * Parses deliverables table at {@link #DELIVERBLES_URL} and returns list of
 	 * {@link Deliverable}s.
 	 */
-	private List<Deliverable> parse() {
+	public List<Deliverable> parse() {
 		List<Deliverable> deliverables = new LinkedList<>();
 		CleanerProperties cleanerProperties = new CleanerProperties();
 		TagNode rootTagNode = null;

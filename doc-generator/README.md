@@ -3,14 +3,15 @@
 
 ## How to use
 
-- Create file ``config.properties`` and copy the contents of ``config.properties.txt``.
+- Create a file ``config.properties`` by copying the contents of ``config.properties.txt``.
 - Edit the variable(s) in ``config.properties``. Tokens can be generated at [GitHub settings](https://github.com/settings/tokens).
-- Use the class ``Main.java`` to generate markdon code.
+- Use the class ``Main.java`` to run the component.
 
 
 ## Notes
 
-- Repositories are splitted in 2 groups. Main repositories contain the topic *opal*.
+- The OPAL repositories are splitted in 2 groups. Main repositories contain the topic *opal*.
+- You can use the JUnit tests to view example code.
 
 
 ## Credits

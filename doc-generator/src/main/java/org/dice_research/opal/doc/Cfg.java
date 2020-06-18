@@ -14,10 +14,13 @@ public class Cfg {
 
 	public static final String FILE = "config.properties";
 
+	public static final String KEY_GITHUB_USER = "github.user";
 	public static final String KEY_GITHUB_TOKEN = "github.token";
+	public static final String KEY_GITHUB_TOPIC = "github.topic";
+	public static final String KEY_MODES = "modes";
 
 	private static String get(String key) {
-		File file = getFile();
+		File file = getConfigurationFile();
 		if (!file.canRead()) {
 			throw new RuntimeException("Could not read configuration file: " + file.getAbsolutePath());
 		}
@@ -31,18 +34,30 @@ public class Cfg {
 
 		Object value = properties.get(key);
 		if (value == null) {
-			throw new RuntimeException("Could not find configuration key: " + key);
+			throw new RuntimeException("Could not find configuration key '" + key + "' in " + file.getAbsolutePath());
 		} else {
 			return value.toString();
 		}
 	}
 
-	public static File getFile() {
+	public static File getConfigurationFile() {
 		return new File(FILE);
 	}
 
 	public static String getGithubToken() {
 		return get(KEY_GITHUB_TOKEN);
+	}
+
+	public static String getGithubUser() {
+		return get(KEY_GITHUB_USER);
+	}
+
+	public static String getGithubTopic() {
+		return get(KEY_GITHUB_TOPIC);
+	}
+
+	public static String getModes() {
+		return get(KEY_MODES);
 	}
 
 }

@@ -4,29 +4,56 @@ import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
 
+import org.dice_research.opal.doc.deliverables.Deliverable;
+import org.dice_research.opal.doc.deliverables.DeliverablesParser;
+import org.dice_research.opal.doc.github.GitHubRepositories;
 import org.eclipse.egit.github.core.Repository;
 
 /**
- * Main entry point.
+ * OPAL documentation generator.
+ * 
+ * Use the config.properties file for configuration.
  *
  * @author Adrian Wilke
  */
 public class Main {
 
-	public static final String USER = "projekt-opal";
-	public static final String OPAL_TOPIC = "opal";
-
 	/**
 	 * Main entry point.
-	 * 
 	 */
 	public static void main(String[] args) {
+		Main main = new Main();
+
+		// Create repository overview in markdown
+
+		if (Cfg.getModes().contains("repositories")) {
+			main.gitHubRepositories = new GitHubRepositories();
+			System.out.println(main.createRepositoriesMarkdown());
+		}
+
+		// Print deliverables
+
+		if (Cfg.getModes().contains("deliverables")) {
+			for (Deliverable deliverable : main.getDeliverables()) {
+				System.out.println(deliverable);
+			}
+		}
+	}
+
+	public GitHubRepositories gitHubRepositories;
+
+	public List<Deliverable> getDeliverables() {
+		return new DeliverablesParser().parse();
+	}
+
+	private StringBuilder createRepositoriesMarkdown() {
+
 		StringBuilder stringBuilder = new StringBuilder();
 
 		// Get all repositories
 
 		GitHubRepositories gitHubRepositories = new GitHubRepositories();
-		List<Repository> allRepositories = gitHubRepositories.getRepositories(USER);
+		List<Repository> allRepositories = gitHubRepositories.getRepositories(Cfg.getGithubUser());
 
 		// Only print fetched repositories
 		if (Boolean.FALSE) {
@@ -35,8 +62,7 @@ public class Main {
 				stringBuilder.append(repository.getName());
 				stringBuilder.append(System.lineSeparator());
 			}
-			System.out.println(stringBuilder.toString());
-			return;
+			return stringBuilder;
 		}
 
 		// Add main repositories
@@ -48,7 +74,8 @@ public class Main {
 		stringBuilder.append("### Main OPAL repositories");
 		stringBuilder.append(System.lineSeparator());
 		stringBuilder.append(System.lineSeparator());
-		List<Repository> mainRepositories = gitHubRepositories.filterMainRepositories(allRepositories, OPAL_TOPIC);
+		List<Repository> mainRepositories = gitHubRepositories.filterMainRepositories(allRepositories,
+				Cfg.getGithubTopic());
 		mainRepositories.sort(new Comparator<Repository>() {
 			@Override
 			public int compare(Repository o1, Repository o2) {
@@ -67,7 +94,7 @@ public class Main {
 		minorRepositories.removeAll(mainRepositories);
 		gitHubRepositories.addMarkdownRepositoryTable(stringBuilder, minorRepositories);
 
-		System.out.println(stringBuilder.toString());
+		return stringBuilder;
 	}
 
 }

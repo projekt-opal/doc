@@ -1,2 +1,13 @@
-# see https://github.com/settings/tokens
+# GitHub access token, see https://github.com/settings/tokens
 github.token=
+
+# GitHub user to get data from 
+github.user=projekt-opal
+
+# GitHub topic to filter repositories
+github.topic=opal
+
+# Set execution modes. Avalailabe modes are:
+# deliverables
+# repositories
+modes=deliverables,repositories

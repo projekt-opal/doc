@@ -1,4 +1,4 @@
-package org.dice_research.opal.doc;
+package org.dice_research.opal.doc.github;
 
 import java.io.BufferedInputStream;
 import java.io.ByteArrayOutputStream;
@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
+import org.dice_research.opal.doc.Cfg;
 import org.eclipse.egit.github.core.Repository;
 import org.eclipse.egit.github.core.service.RepositoryService;
 import org.json.JSONArray;
@@ -82,7 +83,6 @@ public class GitHubRepositories {
 		// https://www.codejava.net/java-se/networking/java-urlconnection-and-httpurlconnection-examples
 		String json;
 		try {
-			System.out.println(url + " " + this.getClass().getName());
 			URL urlObj = new URL(url);
 			URLConnection urlCon = urlObj.openConnection();
 			urlCon.setRequestProperty("Accept", "application/vnd.github.mercy-preview+json");

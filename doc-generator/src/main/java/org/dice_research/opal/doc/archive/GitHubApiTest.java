@@ -1,4 +1,4 @@
-package org.dice_research.opal.doc.archieve;
+package org.dice_research.opal.doc.archive;
 
 import java.io.IOException;
 import java.util.Collections;

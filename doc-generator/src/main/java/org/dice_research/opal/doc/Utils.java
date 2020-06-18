@@ -20,9 +20,11 @@ public class Utils {
 	 * @see https://stackoverflow.com/a/4308662
 	 */
 	public static String readJsonFromUrl(String url) throws IOException {
-		InputStream is = new URL(url).openStream();
+		InputStream is = null;
+		BufferedReader rd = null;
 		try {
-			BufferedReader rd = new BufferedReader(new InputStreamReader(is, Charset.forName("UTF-8")));
+			is = new URL(url).openStream();
+			rd = new BufferedReader(new InputStreamReader(is, Charset.forName("UTF-8")));
 
 			StringBuilder sb = new StringBuilder();
 			int cp;
@@ -31,7 +33,10 @@ public class Utils {
 			}
 			return sb.toString();
 		} finally {
-			is.close();
+			if (is != null)
+				is.close();
+			if (rd != null)
+				rd.close();
 		}
 	}
 }
