@@ -18,6 +18,7 @@ public class Cfg {
 	public static final String KEY_GITHUB_TOKEN = "github.token";
 	public static final String KEY_GITHUB_TOPIC = "github.topic";
 	public static final String KEY_MODES = "modes";
+	public static final String KEY_OUTPUT_DIRECTORY = "outputDirectory";
 
 	private static String get(String key) {
 		File file = getConfigurationFile();
@@ -58,6 +59,10 @@ public class Cfg {
 
 	public static String getModes() {
 		return get(KEY_MODES);
+	}
+
+	public static String getOutputDirectory() {
+		return get(KEY_OUTPUT_DIRECTORY);
 	}
 
 }

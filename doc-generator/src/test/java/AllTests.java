@@ -13,6 +13,8 @@ import org.junit.runner.RunWith;
 
 		DeliverablesParserTest.class,
 
+		GitHubReadmeTest.class,
+
 		GitHubRepositoriesTest.class
 
 })

@@ -54,9 +54,19 @@ public abstract class Cache {
 		return getCacheFile(url).exists();
 	}
 
+	public static void clear() {
+		LOGGER.info("Clearing cache directory" + getCacheDirectory().getAbsolutePath());
+		for (File file : getCacheDirectory().listFiles()) {
+			file.delete();
+		}
+	}
+
+	private static File getCacheDirectory() {
+		return new File(System.getProperty("java.io.tmpdir"), Cache.class.getPackageName());
+	}
+
 	private static File getCacheFile(URL url) {
-		return new File(new File(System.getProperty("java.io.tmpdir"), Cache.class.getPackageName()),
-				md5(url.toString()));
+		return new File(getCacheDirectory(), md5(url.toString()));
 	}
 
 	private static String md5(String string) {

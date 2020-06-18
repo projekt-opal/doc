@@ -29,6 +29,8 @@ public class GitHubRepositories {
 
 	public static final String GITHUB_API_URL = "https://api.github.com";
 
+	private List<Repository> repositories = null;
+
 	/**
 	 * Gets all repositories containing a topic.
 	 */
@@ -136,12 +138,16 @@ public class GitHubRepositories {
 	 * Returns list of repositories.
 	 */
 	public List<Repository> getRepositories(String user) {
-		RepositoryService service = new RepositoryService();
-		try {
-			return service.getRepositories(user);
-		} catch (IOException e) {
-			throw new RuntimeException(e);
+		if (repositories == null) {
+			RepositoryService service = new RepositoryService();
+			try {
+				repositories = service.getRepositories(user);
+			} catch (IOException e) {
+				throw new RuntimeException(e);
+			}
 		}
+
+		return repositories;
 	}
 
 }

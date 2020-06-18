@@ -1,13 +1,18 @@
 # GitHub access token, see https://github.com/settings/tokens
 github.token=
 
+# Output directory for generated files
+outputDirectory=
+
 # GitHub user to get data from 
 github.user=projekt-opal
 
 # GitHub topic to filter repositories
 github.topic=opal
 
-# Set execution modes. Avalailabe modes are:
+# Set execution modes. Available modes are:
+# clearCache
 # deliverables
+# documentation
 # repositories
-modes=deliverables,repositories
+modes=deliverables,documentation,repositories
