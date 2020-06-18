@@ -23,7 +23,7 @@ class DeliverablesParserTest {
 
 	@Test
 	void test() {
-		List<Deliverable> deliverables = deliverablesParser.parse();
+		List<Deliverable> deliverables = deliverablesParser.get();
 		Assertions.assertTrue(deliverables.size() > 30);
 	}
 

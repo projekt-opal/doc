@@ -1,0 +1,242 @@
+D1.1
+Anforderungsanalyse
+M03
+M1
+https://drive.google.com/open?id=1Ui45iCq63sHXNnc6xec14psmvXKLavDH
+Anforderungsanalyse
+
+D1.2
+Datenanalyse
+M06
+M1
+https://drive.google.com/open?id=1KWViWo6d5NOy7OXPvpxdpqVkcTNmnQeA
+Datenanalyse
+
+D1.3
+Architektur
+M06
+M1
+https://drive.google.com/open?id=1khvM3XIhQcPIoCFXHGFHl5rCIamjLBW7
+Architektur
+
+D2.1
+Spezifikation der Crawler-Komponente
+M12
+M2
+https://drive.google.com/open?id=1kIZGfMrnf1Bw2lvjRiBysD0yTv2C-QMG
+Spezifikation der Crawler-Komponente
+
+D2.2
+Erste Version der Crawler-Komponente (Software)
+M12
+M2
+https://github.com/dice-group/Squirrel/tree/ff284e749ff2a4605a4747cf92908df1e1093fb3
+Erste Version der Crawler-Komponente (Software)
+
+D2.3
+Benchmark-Spezifikation und Ergebnisse des ersten Crawlers
+M24
+M3
+https://drive.google.com/file/d/1cImHtMCDjf8spwMHcz_GchY1PJ8AUYqB/
+Benchmark-Spezifikation und Ergebnisse des ersten Crawlers
+
+D2.4
+Metadatenbasierte Crawlingstrategien
+M30
+M4
+https://drive.google.com/file/d/1_XJR96EOEbRqaM1qmWfrzfqA6RR2f-HP/view?usp=sharing
+Metadatenbasierte Crawlingstrategien
+
+D2.5
+Finale Crawler-Komponente (Software)
+M30
+M4
+https://github.com/dice-group/Squirrel/releases/tag/0.3
+Finale Crawler-Komponente (Software)
+
+D2.6
+Finale Crawler-Benchmark-Ergebnisse
+M36
+M4
+https://arxiv.org/pdf/1912.08026.pdf
+Finale Crawler-Benchmark-Ergebnisse
+
+D3.1
+Spezifikation von Qualitätskriterien
+M12
+M2
+https://drive.google.com/open?id=1pxY8V0ldP_I8u78Rn4ZEMgYtCwXuRj4G
+Spezifikation von Qualitätskriterien
+
+D3.2
+Qualitätsanalyse-Komponente
+M18
+M2
+https://drive.google.com/open?id=1CxI7qg4OdVJHMfzMCC4SMAkHFDPL2mDu
+Qualitätsanalyse-Komponente
+
+D3.3
+Erste Metadatenextraktionskomponente
+M22
+M3
+https://drive.google.com/file/d/1pBQQtaHU6yWwPunKW_FWBv2ZtDQpdtpZ/view?usp=sharing
+Erste Metadatenextraktionskomponente
+
+D3.4
+Topic-Extraktionskomponente (Software) (Software 2)
+M28
+M4
+https://github.com/projekt-opal/Topic-Extraction
+https://github.com/projekt-opal/classification
+Topic-Extraktionskomponente (Software)
+(Software 2)
+
+D3.5
+Finale Datenanalysekomponenten
+M36
+M4
+https://github.com/projekt-opal/converter
+Finale Datenanalysekomponenten
+
+D4.1
+Vokabularspezifikation
+M15
+M2
+https://drive.google.com/open?id=11bDhh6a20yFmEBhmUDSGyJUmJTnXXlej
+Vokabularspezifikation
+
+D4.2
+Konvertierungskomponente
+M18
+M2
+https://drive.google.com/open?id=1bl5i43SvEIIqy7rMytLlkysEa6t2Wqm7
+Konvertierungskomponente
+
+D4.3
+Prototyp Indexstrukturen und Entitätserkennung
+M24
+M3
+https://drive.google.com/open?id=1i41E61fCZNELJr3gSPSiDSI0erR5g8Po
+Prototyp Indexstrukturen und Entitätserkennung
+
+D4.4
+Indizierungskomponente (Software)
+M30
+M4
+https://github.com/projekt-opal/AGDISTIS
+Indizierungskomponente (Software)
+
+D5.1
+Erste Version der Verknüpfungskomponente (Software)
+M18
+M2
+https://github.com/dice-group/LIMES
+Erste Version der Verknüpfungskomponente (Software)
+
+D5.2
+Lernalgorithmen für Linkspezifikationen auf Metadaten
+M24
+M3
+https://drive.google.com/file/d/17eTMIILgzxIZqMRhbbO3PqoVVRnh_f1k/view
+Lernalgorithmen für Linkspezifikationen auf Metadaten
+
+D5.3
+Lizenzintegrationskomponente (Software)
+M30
+M4
+https://github.com/projekt-opal/licenses
+Lizenzintegrationskomponente (Software)
+
+D5.4
+Erweiterte Lernalgorithmen für Linkspezifikationen auf Metadaten
+M33
+M4
+
+D5.5
+Finale Verknüpfungskomponente
+M36
+M4
+
+D6.1
+Linked-Data-Slicing-Komponente (Software) (Software 2)
+M30
+M4
+https://github.com/projekt-opal/slicer
+https://github.com/projekt-opal/ElasticTriples
+Linked-Data-Slicing-Komponente (Software)
+(Software 2)
+
+D6.2
+Räumliches Slicing
+M36
+M4
+
+D7.1
+Suchkomponente
+M24
+M3
+https://drive.google.com/file/d/1Vqc5BRJKUVYtYlOomZ6kg2CgOaLcc5wt/
+Suchkomponente
+
+D7.2
+Benchmarking der Suchkomponente
+M30
+M4
+https://drive.google.com/file/d/19GBM2zoR1aX_mKUz5JWdW8PH2auop5DX/
+Benchmarking der Suchkomponente
+
+D7.3
+City-App Demonstrator (Software)
+M30
+M4
+https://github.com/projekt-opal/web-ui/tree/c1c6f9e2a13d33934625e4f4fd68948b708ab896#integrated-city-app-demonstrator
+City-App Demonstrator (Software)
+
+D7.4
+Social Media Bot Demonstrator
+M36
+M4
+
+D8.1
+Portalinfrastruktur
+M18
+M2
+https://drive.google.com/open?id=1TA411u_O5iUcwAz58d6S1JynE_rmF0BG
+Portalinfrastruktur
+
+D8.2
+Erster Portalprototyp
+M18
+M2
+https://drive.google.com/open?id=1nsmPWL5N9KqFtwjfiVSiTm4fxf_3oimK
+Erster Portalprototyp
+
+D8.3
+Erweiterter Portaldemonstrator
+M24
+M3
+https://drive.google.com/file/d/1FuQN_-gi2qmOA8QSbQENd1PcdCPJ4Nq3/view?usp=sharing
+Erweiterter Portaldemonstrator
+
+D8.4
+Finales OPAL-Portal
+M34
+M4
+
+D8.5
+Anwenderdokumenation zum OPAL-Portal
+M36
+M4
+
+D8.6
+Evaluierungsergebnisse
+M36
+M4
+
+D9.1
+Kommunikations- und Disseminationsplan
+M06
+M1
+https://drive.google.com/open?id=1apAkjJeo2Jola6jHJeGSZGRTle0C1JKK
+Kommunikations- und Disseminationsplan
+

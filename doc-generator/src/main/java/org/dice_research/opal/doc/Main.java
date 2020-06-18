@@ -9,7 +9,6 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 import org.apache.commons.io.FileUtils;
-import org.dice_research.opal.doc.deliverables.Deliverable;
 import org.dice_research.opal.doc.deliverables.DeliverablesParser;
 import org.dice_research.opal.doc.github.GitHubRepositories;
 import org.dice_research.opal.doc.github.GithubReadme;
@@ -39,15 +38,19 @@ public class Main {
 		// Create README contents for the OPAL documentation repository
 
 		if (Cfg.getModes().contains("readme")) {
-			System.out.println(new ReadmeGenerator().generate(Cfg.getGithubUser(), Cfg.getGithubTopic()).toString());
+			File readmeFile = new File("../README.md");
+			Utils.write(readmeFile, new ReadmeGenerator().generate(Cfg.getGithubUser(), Cfg.getGithubTopic()).toString());
+			System.out.println("Created README: " + readmeFile.getAbsolutePath());
+			
+//			System.out.println(new ReadmeGenerator().generate(Cfg.getGithubUser(), Cfg.getGithubTopic()).toString());
 		}
 
-		// Print deliverables
+		// Create backup of deliverables data
 
 		if (Cfg.getModes().contains("deliverables")) {
-			for (Deliverable deliverable : main.getDeliverables()) {
-				System.out.println(deliverable);
-			}
+			File backupFile = new File("src/main/resources/deliverables-backup.txt");
+			Utils.write(backupFile, new DeliverablesParser().getDeliverableLines());
+			System.out.println("Created deliverables backup: " + backupFile.getAbsolutePath());
 		}
 
 		// Generate data from README files
@@ -72,10 +75,6 @@ public class Main {
 	}
 
 	public GitHubRepositories gitHubRepositories;
-
-	public List<Deliverable> getDeliverables() {
-		return new DeliverablesParser().parse();
-	}
 
 	public List<Repository> getRepositories() {
 		gitHubRepositories = new GitHubRepositories();

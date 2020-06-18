@@ -11,8 +11,8 @@ github.user=projekt-opal
 github.topic=opal
 
 # Set execution modes. Available modes are:
-# clearCache
-# deliverables
-# documentation
-# readme
+# clearCache     Deletes cache files
+# deliverables   Creates backup of deliverables at OPAL website
+# documentation  Generates documentation
+# readme         Creates README.md file for OPAL doc
 modes=deliverables,documentation,readme

@@ -44,7 +44,7 @@ The following repositories are splitted into 3 groups: Main OPAL repositories, O
 | [opaldata](https://github.com/projekt-opal/opaldata) | Data server configuration (Fuseki and Elasticsearch) |
 | [OpalSpark](https://github.com/projekt-opal/OpalSpark) | Apache Spark data storage |
 | [Search-Component-Benchmark](https://github.com/projekt-opal/Search-Component-Benchmark) | Search component benchmark (D7.2) |
-| [slicer](https://github.com/projekt-opal/slicer) | Data selection component (D6.1) |
+| [slicer](https://github.com/projekt-opal/slicer) | Data selection component based on RDFSlice (D6.1) |
 | [squirrel-portals-config](https://github.com/projekt-opal/squirrel-portals-config) | Squirrel html scraper configuration |
 | [statistics](https://github.com/projekt-opal/statistics) | Generation of RDF data statistics (D3.3) |
 | [test-cases](https://github.com/projekt-opal/test-cases) | JUnit DCAT test cases |
@@ -87,4 +87,3 @@ The following repositories are splitted into 3 groups: Main OPAL repositories, O
 [Data Science Group (DICE)](https://dice-research.org/) at [Paderborn University](https://www.uni-paderborn.de/)
 
 This work has been supported by the German Federal Ministry of Transport and Digital Infrastructure (BMVI) in the project [Open Data Portal Germany (OPAL)](http://projekt-opal.de/) (funding code 19F2028A).
-
