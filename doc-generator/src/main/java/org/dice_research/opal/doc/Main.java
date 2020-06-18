@@ -41,8 +41,6 @@ public class Main {
 			File readmeFile = new File("../README.md");
 			Utils.write(readmeFile, new ReadmeGenerator().generate(Cfg.getGithubUser(), Cfg.getGithubTopic()).toString());
 			System.out.println("Created README: " + readmeFile.getAbsolutePath());
-			
-//			System.out.println(new ReadmeGenerator().generate(Cfg.getGithubUser(), Cfg.getGithubTopic()).toString());
 		}
 
 		// Create backup of deliverables data

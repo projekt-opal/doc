@@ -76,7 +76,7 @@ public class GithubReadme {
 	}
 
 	/**
-	 * Removes credis from the README file data.
+	 * Removes credits from the README file data.
 	 */
 	public String getMarkdown() {
 		String markdown = getData();

@@ -6,6 +6,8 @@ import java.util.LinkedList;
 import java.util.List;
 
 import org.apache.commons.io.IOUtils;
+import org.dice_research.opal.doc.deliverables.Deliverable;
+import org.dice_research.opal.doc.deliverables.DeliverablesParser;
 import org.dice_research.opal.doc.github.GitHubRepositories;
 import org.dice_research.opal.doc.github.RepositoryComparator;
 import org.eclipse.egit.github.core.Repository;
@@ -30,6 +32,7 @@ public class ReadmeGenerator {
 		addRepositories(stringBuilder, "Main OPAL repositories", mainRepositories);
 		addRepositories(stringBuilder, "Related DICE repositories", diceRepositories);
 		addRepositories(stringBuilder, "Additional OPAL repositories", minorRepositories);
+		addDeliverables(stringBuilder);
 		addResource(stringBuilder, "readmeFooter.md");
 
 		return stringBuilder;
@@ -77,9 +80,6 @@ public class ReadmeGenerator {
 		addMarkdownRepositoryTable(stringBuilder, repositories);
 	}
 
-	/**
-	 * Prints table of repositories in markdown.
-	 */
 	private void addMarkdownRepositoryTable(StringBuilder stringBuilder, List<Repository> repositories) {
 		stringBuilder.append("| Repository | Description |");
 		stringBuilder.append(System.lineSeparator());
@@ -92,6 +92,41 @@ public class ReadmeGenerator {
 			stringBuilder.append(repo.getHtmlUrl());
 			stringBuilder.append(") | ");
 			stringBuilder.append(repo.getDescription() == null ? "" : repo.getDescription().trim());
+			stringBuilder.append(" |");
+			stringBuilder.append(System.lineSeparator());
+		}
+	}
+
+	private void addDeliverables(StringBuilder stringBuilder) {
+		stringBuilder.append(System.lineSeparator());
+		stringBuilder.append(System.lineSeparator());
+		stringBuilder.append("### Deliverables");
+		stringBuilder.append(System.lineSeparator());
+		stringBuilder.append(System.lineSeparator());
+		stringBuilder.append("| ID | Titel | Meilenstein |");
+		stringBuilder.append(System.lineSeparator());
+		stringBuilder.append("| -- | ----- | ----------- |");
+		stringBuilder.append(System.lineSeparator());
+
+		for (Deliverable deliverable : new DeliverablesParser().get()) {
+			stringBuilder.append("| ");
+			stringBuilder.append(deliverable.id);
+
+			stringBuilder.append(" | ");
+			if (deliverable.linkUrls.isEmpty()) {
+				stringBuilder.append(deliverable.title);
+			} else {
+				for (int i = 0; i < deliverable.linkUrls.size(); i++) {
+					stringBuilder.append("[");
+					stringBuilder.append(deliverable.linkTitles.get(i));
+					stringBuilder.append("](");
+					stringBuilder.append(deliverable.linkUrls.get(i));
+					stringBuilder.append(") ");
+				}
+			}
+
+			stringBuilder.append("| ");
+			stringBuilder.append(deliverable.milestone);
 			stringBuilder.append(" |");
 			stringBuilder.append(System.lineSeparator());
 		}

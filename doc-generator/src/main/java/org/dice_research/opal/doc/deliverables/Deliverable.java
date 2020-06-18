@@ -15,12 +15,12 @@ public class Deliverable {
 	public static final String PREFIX_GITHUB_DICE = "https://github.com/dice-group/";
 	public static final String PREFIX_GITHUB_OPAL = "https://github.com/projekt-opal/";
 
-	String id;
-	String title;
-	String due;
-	String milestone;
-	List<String> linkTitles = new LinkedList<>();
-	List<String> linkUrls = new LinkedList<>();
+	public String id;
+	public String title;
+	public String due;
+	public String milestone;
+	public List<String> linkTitles = new LinkedList<>();
+	public List<String> linkUrls = new LinkedList<>();
 
 	@Override
 	public String toString() {
