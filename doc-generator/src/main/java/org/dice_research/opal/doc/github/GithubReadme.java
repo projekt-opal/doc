@@ -10,7 +10,7 @@ import org.dice_research.opal.doc.Cache;
 /**
  * README.md files on GitHub.
  * 
- * Use load methods to create instances.
+ * Usage: Use the load methods to create GithubReadme instances.
  *
  * @author Adrian Wilke
  */
@@ -25,14 +25,23 @@ public class GithubReadme {
 
 	private String data;
 
+	/**
+	 * Loads a README file. Uses the master branch and "README.md" as path.
+	 */
 	public static GithubReadme load(String user, String repository) {
 		return load(user, repository, "master");
 	}
 
+	/**
+	 * Loads a README file. Uses "README.md" as path.
+	 */
 	public static GithubReadme load(String user, String repository, String branch) {
 		return load(user, repository, branch, "README.md");
 	}
 
+	/**
+	 * Loads a README file.
+	 */
 	public static GithubReadme load(String user, String repository, String branch, String path) {
 		GithubReadme githubReadme = new GithubReadme();
 		githubReadme.githubUser = user;
@@ -47,6 +56,9 @@ public class GithubReadme {
 		return githubReadme;
 	}
 
+	/**
+	 * Gets the URL of the README file.
+	 */
 	public URL getUrl() {
 		try {
 			return new URL("https://raw.githubusercontent.com/" + githubUser + "/" + githubRepository + "/"
@@ -56,10 +68,16 @@ public class GithubReadme {
 		}
 	}
 
+	/**
+	 * Gets plain data of the README file.
+	 */
 	public String getData() {
 		return data;
 	}
 
+	/**
+	 * Removes credis from the README file data.
+	 */
 	public String getMarkdown() {
 		String markdown = getData();
 

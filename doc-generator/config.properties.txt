@@ -7,12 +7,12 @@ outputDirectory=
 # GitHub user to get data from 
 github.user=projekt-opal
 
-# GitHub topic to filter repositories
+# GitHub topic to filter main repositories
 github.topic=opal
 
 # Set execution modes. Available modes are:
 # clearCache
 # deliverables
 # documentation
-# repositories
-modes=deliverables,documentation,repositories
+# readme
+modes=deliverables,documentation,readme

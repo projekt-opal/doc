@@ -34,10 +34,9 @@ public class GitHubRepositories {
 	/**
 	 * Gets all repositories containing a topic.
 	 */
-	public List<Repository> filterMainRepositories(List<Repository> repositories, String topicToContain) {
+	public List<Repository> filterRepositoriesByTopic(List<Repository> repositories, String topicToContain) {
 		List<Repository> filteredRepositories = new LinkedList<>();
-		for (int i = repositories.size() - 1; i >= 0; i--) {
-			Repository repository = repositories.get(i);
+		for (Repository repository : repositories) {
 			for (String topic : getTopics(repository)) {
 				if (topic.equals(topicToContain)) {
 					filteredRepositories.add(repository);
@@ -49,24 +48,19 @@ public class GitHubRepositories {
 	}
 
 	/**
-	 * Prints table of repositories in markdown.
+	 * Returns list of repositories.
 	 */
-	public GitHubRepositories addMarkdownRepositoryTable(StringBuilder stringBuilder, List<Repository> repositories) {
-		stringBuilder.append("| Repository | Description |");
-		stringBuilder.append(System.lineSeparator());
-		stringBuilder.append("| ---------- | ----------- |");
-		stringBuilder.append(System.lineSeparator());
-		for (Repository repo : repositories) {
-			stringBuilder.append("| [");
-			stringBuilder.append(repo.getName());
-			stringBuilder.append("](");
-			stringBuilder.append(repo.getHtmlUrl());
-			stringBuilder.append(") | ");
-			stringBuilder.append(repo.getDescription() == null ? "" : repo.getDescription().trim());
-			stringBuilder.append(" |");
-			stringBuilder.append(System.lineSeparator());
+	public List<Repository> getRepositories(String user) {
+		if (repositories == null) {
+			RepositoryService service = new RepositoryService();
+			try {
+				repositories = service.getRepositories(user);
+			} catch (IOException e) {
+				throw new RuntimeException(e);
+			}
 		}
-		return this;
+
+		return repositories;
 	}
 
 	/**
@@ -79,7 +73,7 @@ public class GitHubRepositories {
 	 * @see https://developer.github.com/v3/repos/#get-all-repository-topics
 	 * @see https://developer.github.com/v3/rate_limit/
 	 */
-	public List<String> getTopics(Repository repository) {
+	public static List<String> getTopics(Repository repository) {
 
 		String json;
 
@@ -133,21 +127,4 @@ public class GitHubRepositories {
 		}
 		return topics;
 	}
-
-	/**
-	 * Returns list of repositories.
-	 */
-	public List<Repository> getRepositories(String user) {
-		if (repositories == null) {
-			RepositoryService service = new RepositoryService();
-			try {
-				repositories = service.getRepositories(user);
-			} catch (IOException e) {
-				throw new RuntimeException(e);
-			}
-		}
-
-		return repositories;
-	}
-
 }

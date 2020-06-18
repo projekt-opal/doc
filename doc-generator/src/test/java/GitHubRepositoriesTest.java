@@ -36,7 +36,7 @@ class GitHubRepositoriesTest {
 	@Order(2)
 	void testGetTopics() {
 		List<Repository> repositories = getRepositories();
-		List<String> topics = gitHubRepositories.getTopics(repositories.get(0));
+		List<String> topics = GitHubRepositories.getTopics(repositories.get(0));
 		Assertions.assertFalse(topics.isEmpty());
 	}
 
