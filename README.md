@@ -1,6 +1,6 @@
 # Open Data Portal Germany (OPAL) documentation
 
-This documentation contains an overview of OPAL web resources and repositories.
+This documentation contains an overview of OPAL [web resources](#web-resources), [repositories](#repositories) and [deliverables](#deliverables).
 
 
 ## Web resources
@@ -82,7 +82,7 @@ The following repositories are splitted into 3 groups: Main OPAL repositories, O
 | [vocabularyExample](https://github.com/projekt-opal/vocabularyExample) | Archived RDF examples |
 
 
-### Deliverables
+## Deliverables
 
 | ID | Titel | Meilenstein |
 | -- | ----- | ----------- |

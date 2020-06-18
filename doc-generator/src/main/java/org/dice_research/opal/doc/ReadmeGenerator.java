@@ -100,7 +100,7 @@ public class ReadmeGenerator {
 	private void addDeliverables(StringBuilder stringBuilder) {
 		stringBuilder.append(System.lineSeparator());
 		stringBuilder.append(System.lineSeparator());
-		stringBuilder.append("### Deliverables");
+		stringBuilder.append("## Deliverables");
 		stringBuilder.append(System.lineSeparator());
 		stringBuilder.append(System.lineSeparator());
 		stringBuilder.append("| ID | Titel | Meilenstein |");
