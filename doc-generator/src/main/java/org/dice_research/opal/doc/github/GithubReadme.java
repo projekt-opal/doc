@@ -96,4 +96,32 @@ public class GithubReadme {
 
 		return markdown;
 	}
+
+	/**
+	 * Removes credits and image-lines from the README file data.
+	 */
+	public String getMarkdownWithoutImages() {
+		String markdown = getMarkdown();
+
+		// Do not process null
+
+		if (markdown == null) {
+			return markdown;
+		}
+
+		// Go through lines and skip images
+
+		String[] lines = markdown.split("\n");
+		StringBuilder stringBuilder = new StringBuilder();
+		for (String line : lines) {
+			if (line.startsWith("![") || line.startsWith("[![")) {
+				LOGGER.warn("Skipping " + githubBranch + " " + line);
+			} else {
+				stringBuilder.append(line);
+				stringBuilder.append(System.lineSeparator());
+			}
+		}
+
+		return stringBuilder.toString();
+	}
 }

@@ -44,7 +44,7 @@ public class ReadmeGenerator {
 		List<Repository> allRepositories = gitHubRepositories.getRepositories(githubUser);
 		allRepositories.sort(new RepositoryComparator());
 
-		mainRepositories = gitHubRepositories.filterRepositoriesByTopic(allRepositories, mainRepoTopic);
+		mainRepositories = GitHubRepositories.filterRepositoriesByTopic(allRepositories, mainRepoTopic);
 
 		minorRepositories = new LinkedList<Repository>(allRepositories);
 		minorRepositories.removeAll(mainRepositories);

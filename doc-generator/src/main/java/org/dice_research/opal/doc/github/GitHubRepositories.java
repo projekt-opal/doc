@@ -34,7 +34,7 @@ public class GitHubRepositories {
 	/**
 	 * Gets all repositories containing a topic.
 	 */
-	public List<Repository> filterRepositoriesByTopic(List<Repository> repositories, String topicToContain) {
+	public static List<Repository> filterRepositoriesByTopic(List<Repository> repositories, String topicToContain) {
 		List<Repository> filteredRepositories = new LinkedList<>();
 		for (Repository repository : repositories) {
 			for (String topic : getTopics(repository)) {
