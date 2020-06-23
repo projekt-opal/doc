@@ -23,6 +23,12 @@ public class ReadmeGenerator {
 	private List<Repository> minorRepositories;
 	private List<Repository> diceRepositories;
 
+	private boolean addDeliverables = false;
+
+	public ReadmeGenerator(boolean addDeliverables) {
+		this.addDeliverables = addDeliverables;
+	}
+
 	public StringBuilder generate(String githubUser, String mainRepoTopic) {
 
 		createRepositoryLists(githubUser, mainRepoTopic);
@@ -32,7 +38,9 @@ public class ReadmeGenerator {
 		addRepositories(stringBuilder, "Main OPAL repositories", mainRepositories);
 		addRepositories(stringBuilder, "Related DICE repositories", diceRepositories);
 		addRepositories(stringBuilder, "Additional OPAL repositories", minorRepositories);
-		addDeliverables(stringBuilder);
+		if (addDeliverables) {
+			addDeliverables(stringBuilder);
+		}
 		addResource(stringBuilder, "readmeFooter.md");
 
 		return stringBuilder;

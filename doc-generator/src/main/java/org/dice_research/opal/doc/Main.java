@@ -42,16 +42,34 @@ public class Main {
 		if (Cfg.getModes().contains("readme")) {
 			File readmeFile = new File("../README.md");
 			Utils.write(readmeFile,
-					new ReadmeGenerator().generate(Cfg.getGithubUser(), Cfg.getGithubTopic()).toString());
+					new ReadmeGenerator(false).generate(Cfg.getGithubUser(), Cfg.getGithubTopic()).toString());
 			System.out.println("Created README: " + readmeFile.getAbsolutePath());
 		}
 
-		// Create backup of deliverables data
+		// Create backup of deliverables data on projekt-opal.de
 
 		if (Cfg.getModes().contains("deliverables")) {
+			DeliverablesParser deliverablesParser = new DeliverablesParser();
+
+			// Create backup
 			File backupFile = new File("src/main/resources/deliverables-backup.txt");
-			Utils.write(backupFile, new DeliverablesParser().getDeliverableLines());
+			Utils.write(backupFile, deliverablesParser.getDeliverableLines());
 			System.out.println("Created deliverables backup: " + backupFile.getAbsolutePath());
+
+			// Print URLs
+			StringBuilder stringBuilder = new StringBuilder();
+			stringBuilder.append(System.lineSeparator());
+			stringBuilder.append(System.lineSeparator());
+			stringBuilder.append("URLs extracted from http://projekt-opal.de/projektergebnisse/deliverables/");
+			stringBuilder.append(System.lineSeparator());
+			for (Entry<String, String> urlToInfo : deliverablesParser.getUrls().entrySet()) {
+				stringBuilder.append(System.lineSeparator());
+				stringBuilder.append(urlToInfo.getKey());
+				stringBuilder.append(System.lineSeparator());
+				stringBuilder.append(urlToInfo.getValue());
+				stringBuilder.append(System.lineSeparator());
+			}
+			System.out.println(stringBuilder.toString());
 		}
 
 		// Generate documentation from README files

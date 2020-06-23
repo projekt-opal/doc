@@ -1,6 +1,6 @@
 # Open Data Portal Germany (OPAL) documentation
 
-This documentation contains an overview of OPAL [web resources](#web-resources), [repositories](#repositories) and [deliverables](#deliverables).
+This documentation contains an overview of OPAL [web resources](#web-resources) and [code repositories](#repositories).
 
 
 ## Web resources
@@ -32,7 +32,7 @@ The following repositories are splitted into 3 groups: Main OPAL repositories, O
 | [converter-configuration](https://github.com/projekt-opal/converter-configuration) | Configuration for converter |
 | [dcat-qa](https://github.com/projekt-opal/dcat-qa) | QuestionAnswering for DCAT (SocialBot) |
 | [demo](https://github.com/projekt-opal/demo) | OPAL demonstrator |
-| [doc](https://github.com/projekt-opal/doc) | OPAL documentation |
+| [doc](https://github.com/projekt-opal/doc) | OPAL documentation (D8.5) |
 | [ElasticTriples](https://github.com/projekt-opal/ElasticTriples) | Elasticsearch powered triple storage (D6.1) |
 | [hackathon](https://github.com/projekt-opal/hackathon) | OPAL Open Data Hackathon |
 | [LauNuts](https://github.com/projekt-opal/LauNuts) | Knowledge Graph (LAU, NUTS, GeoData) for Germany |
@@ -80,48 +80,6 @@ The following repositories are splitted into 3 groups: Main OPAL repositories, O
 | [TripleStoreDumper](https://github.com/projekt-opal/TripleStoreDumper) | Archived CKAN dumper |
 | [vocabulary-enhancement](https://github.com/projekt-opal/vocabulary-enhancement) | Jena extension with DCAT version 2 |
 | [vocabularyExample](https://github.com/projekt-opal/vocabularyExample) | Archived RDF examples |
-
-
-## Deliverables
-
-| ID | Titel | Meilenstein |
-| -- | ----- | ----------- |
-| D1.1 | [Anforderungsanalyse](https://drive.google.com/open?id=1Ui45iCq63sHXNnc6xec14psmvXKLavDH) | M1 |
-| D1.2 | [Datenanalyse](https://drive.google.com/open?id=1KWViWo6d5NOy7OXPvpxdpqVkcTNmnQeA) | M1 |
-| D1.3 | [Architektur](https://drive.google.com/open?id=1khvM3XIhQcPIoCFXHGFHl5rCIamjLBW7) | M1 |
-| D2.1 | [Spezifikation der Crawler-Komponente](https://drive.google.com/open?id=1kIZGfMrnf1Bw2lvjRiBysD0yTv2C-QMG) | M2 |
-| D2.2 | [Erste Version der Crawler-Komponente (Software)](https://github.com/dice-group/Squirrel/tree/ff284e749ff2a4605a4747cf92908df1e1093fb3) | M2 |
-| D2.3 | [Benchmark-Spezifikation und Ergebnisse des ersten Crawlers](https://drive.google.com/file/d/1cImHtMCDjf8spwMHcz_GchY1PJ8AUYqB/) | M3 |
-| D2.4 | [Metadatenbasierte Crawlingstrategien](https://drive.google.com/file/d/1_XJR96EOEbRqaM1qmWfrzfqA6RR2f-HP/view?usp=sharing) | M4 |
-| D2.5 | [Finale Crawler-Komponente (Software)](https://github.com/dice-group/Squirrel/releases/tag/0.3) | M4 |
-| D2.6 | [Finale Crawler-Benchmark-Ergebnisse](https://arxiv.org/pdf/1912.08026.pdf) | M4 |
-| D3.1 | [Spezifikation von Qualitätskriterien](https://drive.google.com/open?id=1pxY8V0ldP_I8u78Rn4ZEMgYtCwXuRj4G) | M2 |
-| D3.2 | [Qualitätsanalyse-Komponente](https://drive.google.com/open?id=1CxI7qg4OdVJHMfzMCC4SMAkHFDPL2mDu) | M2 |
-| D3.3 | [Erste Metadatenextraktionskomponente](https://drive.google.com/file/d/1pBQQtaHU6yWwPunKW_FWBv2ZtDQpdtpZ/view?usp=sharing) | M3 |
-| D3.4 | [Topic-Extraktionskomponente (Software)](https://github.com/projekt-opal/Topic-Extraction) [(Software 2)](https://github.com/projekt-opal/classification) | M4 |
-| D3.5 | [Finale Datenanalysekomponenten](https://github.com/projekt-opal/converter) | M4 |
-| D4.1 | [Vokabularspezifikation](https://drive.google.com/open?id=11bDhh6a20yFmEBhmUDSGyJUmJTnXXlej) | M2 |
-| D4.2 | [Konvertierungskomponente](https://drive.google.com/open?id=1bl5i43SvEIIqy7rMytLlkysEa6t2Wqm7) | M2 |
-| D4.3 | [Prototyp Indexstrukturen und Entitätserkennung](https://drive.google.com/open?id=1i41E61fCZNELJr3gSPSiDSI0erR5g8Po) | M3 |
-| D4.4 | [Indizierungskomponente (Software)](https://github.com/projekt-opal/AGDISTIS) | M4 |
-| D5.1 | [Erste Version der Verknüpfungskomponente (Software)](https://github.com/dice-group/LIMES) | M2 |
-| D5.2 | [Lernalgorithmen für Linkspezifikationen auf Metadaten](https://drive.google.com/file/d/17eTMIILgzxIZqMRhbbO3PqoVVRnh_f1k/view) | M3 |
-| D5.3 | [Lizenzintegrationskomponente (Software)](https://github.com/projekt-opal/licenses) | M4 |
-| D5.4 | Erweiterte Lernalgorithmen für Linkspezifikationen auf Metadaten| M4 |
-| D5.5 | Finale Verknüpfungskomponente| M4 |
-| D6.1 | [Linked-Data-Slicing-Komponente (Software)](https://github.com/projekt-opal/slicer) [(Software 2)](https://github.com/projekt-opal/ElasticTriples) | M4 |
-| D6.2 | Räumliches Slicing| M4 |
-| D7.1 | [Suchkomponente](https://drive.google.com/file/d/1Vqc5BRJKUVYtYlOomZ6kg2CgOaLcc5wt/) | M3 |
-| D7.2 | [Benchmarking der Suchkomponente](https://drive.google.com/file/d/19GBM2zoR1aX_mKUz5JWdW8PH2auop5DX/) | M4 |
-| D7.3 | [City-App Demonstrator (Software)](https://github.com/projekt-opal/web-ui/tree/c1c6f9e2a13d33934625e4f4fd68948b708ab896#integrated-city-app-demonstrator) | M4 |
-| D7.4 | Social Media Bot Demonstrator| M4 |
-| D8.1 | [Portalinfrastruktur](https://drive.google.com/open?id=1TA411u_O5iUcwAz58d6S1JynE_rmF0BG) | M2 |
-| D8.2 | [Erster Portalprototyp](https://drive.google.com/open?id=1nsmPWL5N9KqFtwjfiVSiTm4fxf_3oimK) | M2 |
-| D8.3 | [Erweiterter Portaldemonstrator](https://drive.google.com/file/d/1FuQN_-gi2qmOA8QSbQENd1PcdCPJ4Nq3/view?usp=sharing) | M3 |
-| D8.4 | Finales OPAL-Portal| M4 |
-| D8.5 | Anwenderdokumenation zum OPAL-Portal| M4 |
-| D8.6 | Evaluierungsergebnisse| M4 |
-| D9.1 | [Kommunikations- und Disseminationsplan](https://drive.google.com/open?id=1apAkjJeo2Jola6jHJeGSZGRTle0C1JKK) | M1 |
 
 
 ## Credits

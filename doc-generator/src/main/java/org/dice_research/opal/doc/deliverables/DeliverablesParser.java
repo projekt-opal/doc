@@ -3,6 +3,8 @@ package org.dice_research.opal.doc.deliverables;
 import java.net.URL;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
 
 import org.htmlcleaner.CleanerProperties;
 import org.htmlcleaner.HtmlCleaner;
@@ -63,5 +65,16 @@ public class DeliverablesParser {
 			}
 		}
 		return deliverables;
+	}
+
+	public Map<String, String> getUrls() {
+		Map<String, String> map = new TreeMap<>();
+		for (Deliverable deliverable : get()) {
+			String info = deliverable.id + " " + deliverable.title;
+			for (String linkUrl : deliverable.linkUrls) {
+				map.put(linkUrl, info);
+			}
+		}
+		return map;
 	}
 }

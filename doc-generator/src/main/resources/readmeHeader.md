@@ -1,6 +1,6 @@
 # Open Data Portal Germany (OPAL) documentation
 
-This documentation contains an overview of OPAL [web resources](#web-resources), [repositories](#repositories) and [deliverables](#deliverables).
+This documentation contains an overview of OPAL [web resources](#web-resources) and [code repositories](#repositories).
 
 
 ## Web resources

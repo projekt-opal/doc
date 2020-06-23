@@ -227,6 +227,8 @@ D8.5
 Anwenderdokumenation zum OPAL-Portal
 M36
 M4
+https://hobbitdata.informatik.uni-leipzig.de/OPAL/Deliverables/OPAL_D8.5_Documentation.pdf
+Anwenderdokumenation zum OPAL-Portal
 
 D8.6
 Evaluierungsergebnisse
