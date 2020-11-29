@@ -1,1 +1,18 @@
+# GitHub access token, see https://github.com/settings/tokens
 github.token=
+
+# Output directory for generated files
+outputDirectory=
+
+# GitHub user to get data from 
+github.user=projekt-opal
+
+# GitHub topic to filter main repositories
+github.topic=opal
+
+# Set execution modes. Available modes are:
+# clearCache     Deletes cache files
+# deliverables   Creates backup of deliverables at OPAL website
+# documentation  Generates documentation
+# readme         Creates README.md file for OPAL doc
+modes=deliverables,documentation,readme
