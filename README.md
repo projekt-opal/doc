@@ -11,6 +11,7 @@ This documentation contains an overview of OPAL [web resources](#web-resources) 
 - **Deliverables** are listed at the OPAL website, see http://projekt-opal.de/en/results/deliverables/.
 - **Demo** is linked at the DICE website, see https://dice-research.org/OPAL-Demo.
 - **Publications** are listed at the DICE website, see https://dice-research.org/OPAL.
+- **Presentation** is available at https://projekt-opal.github.io/doc/final-presentation/Praesentation/
 - Some documentation notes are in the wiki at https://github.com/projekt-opal/documentation/wiki.
 
 
