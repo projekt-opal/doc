@@ -1,0 +1,39 @@
+1	1	Anforderungsanalyse
+1	2	Datenanalyse
+1	3	Architektur
+2	1	Spezifikation der Crawler-Komponente
+2	2	Erste Version der Crawler-Komponente
+2	3	Benchmark-Spezifikation und Ergebnisse des ersten Crawlers
+2	4	Metadatenbasierte Crawlingstrategien
+2	5	Finale Crawler-Komponente
+2	6	Finale Crawler-Benchmark-Ergebnisse
+3	1	Spezifikation von Qualitätskriterien
+3	2	Qualitätsanalyse-Komponente
+3	3	Erste Metadatenextraktionskomponente
+3	4	Topic-Extraktionskomponente
+3	5	Finale Datenanalysekomponenten
+4	1	Vokabularspezifikation
+4	2	Konvertierungskomponente
+4	3	Prototyp Indexstrukturen und Entitätserkennung
+4	4	Indizierungskomponente
+5	1	Erste Version der Verknüpfungskomponente
+5	2	Lernalgorithmen für Linkspezifikationen auf Metadaten
+5	3	Lizenzintegrationskomponente
+5	4	Erweiterte Lernalgorithmen für Linkspezifikationen auf Metadaten
+5	5	Finale Verknüpfungskomponente
+6	1	Linked-Data-Slicing-Komponente
+6	2	Räumliches Slicing
+7	1	Suchkomponente
+7	2	Benchmarking der Suchkomponente
+7	3	City-App Demonstrator
+7	4	Social Media Bot Demonstrator
+8	1	Portalinfrastruktur
+8	2	Erster Portalprototyp
+8	3	Erweiterter Portaldemonstrator
+8	4	Finales OPAL-Portal
+8	5	Anwenderdokumenation zum OPAL-Portal
+8	6	Evaluierungsergebnisse
+9	1	Kommunikations- und Disseminationsplan
+9	2	Projektbericht Jahr 1
+9	3	Projektbericht Jahr 2
+9	4	Projektbericht Jahr 3

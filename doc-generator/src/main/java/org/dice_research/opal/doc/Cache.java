@@ -62,7 +62,7 @@ public abstract class Cache {
 	}
 
 	private static File getCacheDirectory() {
-		return new File(System.getProperty("java.io.tmpdir"), Cache.class.getPackageName());
+		return new File(System.getProperty("java.io.tmpdir"), Cache.class.getPackage().getName());
 	}
 
 	private static File getCacheFile(URL url) {
