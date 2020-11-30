@@ -1,4 +1,4 @@
 ## D5.3 Lizenzintegrationskomponente
 
-TODO
+- Deliverable (Code): [Relicensing Combined Datasets (ReCoDa)](https://github.com/projekt-opal/licenses)
 

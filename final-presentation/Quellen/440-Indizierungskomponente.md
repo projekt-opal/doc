@@ -1,4 +1,4 @@
 ## D4.4 Indizierungskomponente
 
-TODO
+- Deliverable (Code): [AGDISTIS - Agnostic Named Entity Disambiguation](https://github.com/projekt-opal/AGDISTIS)
 

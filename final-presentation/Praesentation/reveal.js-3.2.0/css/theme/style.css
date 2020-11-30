@@ -43,7 +43,7 @@ body {
 .reveal h4,
 .reveal h5,
 .reveal h6 {
-  margin: 0 0 20px 0;
+  margin: 1em 0 0.3em 0;
   color: #333;
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-weight: 700;
@@ -51,8 +51,6 @@ body {
   letter-spacing: normal;
   text-shadow: none;
   word-wrap: break-word;
-  /* text-shadow: 0px 0px 8px #000;*/ /* Fallback */
-  /* text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);*/
 }
 
 .reveal h1 {
@@ -68,14 +66,16 @@ body {
   font-size: 1em; }
 
 .reveal section h1.title {
-  font-size: 1.8em;
-  /* text-shadow: 0px 0px 8px #000, 0px 0px 20px #000; */ }
+  font-size: 1em; 
+  margin: 0; }
 .reveal section h2.author {
-  font-size: 1em;
-  /* text-shadow: 0px 0px 8px #000, 0px 0px 20px #000; */ }
+  font-size: 0.9em; 
+  margin: 0.8em 0 0.3em 0;
+ }
 .reveal h3.date {
-  font-size: 1em;
-  /* text-shadow: 0px 0px 8px #000, 0px 0px 20px #000; */ }
+  font-size: 0.9em; 
+  margin: 0.3em 0 0.3em 0;
+}
 
 .reveal  h1 .iframe {
   font-size: .8em; }
@@ -220,15 +220,11 @@ body {
  * LINKS
  *********************************************/
 .reveal a {
-  color: #009fdf;
-  text-shadow: 0px 0px 8px #000;
-  text-decoration: underline;
-  -webkit-transition: color 0.15s ease;
-  -moz-transition: color 0.15s ease;
-  transition: color 0.15s ease; }
+  color: #249BE2;
+  text-decoration: }
 
 .reveal a:hover {
-  color: #fff; }
+  color: #249BE2; }
 
 .reveal .roll span:after {
   color: #fff;
