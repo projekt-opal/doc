@@ -22,6 +22,6 @@
 
 ## D4.1 Vokabularspezifikation: RDF Beispiel
 
-- Beispiel: [OPAL Civet - metadata quality component.](https://github.com/projekt-opal/civet)
+- Beispiel: [OPAL Civet - metadata quality component.](https://github.com/projekt-opal/civet#example-output)
 - Deliverable als [PDF-Datei](https://hobbitdata.informatik.uni-leipzig.de/OPAL/Deliverables/OPAL_D4.1_Vocabulary-specification.pdf)
 

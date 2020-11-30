@@ -20,8 +20,6 @@ body {
   font-size: 38px;
   font-weight: 300;
   color: #333;
-  /* text-shadow: 0px 0px 8px #000;*/ /* Fallback */
-  /*text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8), 0px 0px 16px rgba(0, 0, 0, 0.8), 0px 0px 24px rgba(0, 0, 0, 0.8);*/
 }
 
 ::selection {
@@ -46,7 +44,7 @@ body {
 .reveal h5,
 .reveal h6 {
   margin: 1em 0 0.3em 0;
-  color: #333;
+  color: #34AA9B;
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-weight: 700;
   line-height: 1.2;
@@ -71,10 +69,12 @@ body {
   font-size: 1em; 
   margin: 0; }
 .reveal section h2.author {
+  color: #333;
   font-size: 0.9em; 
   margin: 0.8em 0 0.3em 0;
  }
 .reveal h3.date {
+  color: #333;
   font-size: 0.9em; 
   margin: 0.3em 0 0.3em 0;
 }
@@ -223,7 +223,7 @@ body {
  *********************************************/
 .reveal a {
   color: #249BE2;
-  text-decoration: }
+  text-decoration: none }
 
 .reveal a:hover {
   color: #249BE2; }
