@@ -1,12 +1,16 @@
 /**
- * MLS Workshop theme by Adrian Wilke
+ * OPAL theme, https://github.com/projekt-opal/doc/tree/master/final-presentation/Quellen/Vorlagen
+ *
+ * Based on:
+ * MLS Workshop theme, https://github.com/adibaba/MLS/tree/gh-pages/Workshop-1/Quellen/Vorlagen
  *
  * Based on:
  * White theme for reveal.js.
  * Copyright (C) 2015 Hakim El Hattab, http://hakim.se
  */
 
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700);
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
 /*********************************************
  * GLOBAL STYLES
@@ -16,9 +20,9 @@ body {
 }
 
 .reveal {
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
-  font-size: 38px;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
+  font-size: 36px;
   color: #333;
 }
 
@@ -67,15 +71,20 @@ body {
 
 .reveal section h1.title {
   font-size: 1em; 
-  margin: 0; }
+  margin: 0;
+}
 .reveal section h2.author {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
   color: #333;
-  font-size: 0.9em; 
+  font-size: 0.8em; 
   margin: 0.8em 0 0.3em 0;
- }
+}
 .reveal h3.date {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
   color: #333;
-  font-size: 0.9em; 
+  font-size: 0.8em; 
   margin: 0.3em 0 0.3em 0;
 }
 
@@ -98,7 +107,7 @@ body {
 
 .reveal strong,
 .reveal b {
-  font-weight: bold; }
+  font-weight: 400; }
 
 .reveal em {
   font-style: italic; }
@@ -222,11 +231,16 @@ body {
  * LINKS
  *********************************************/
 .reveal a {
-  color: #249BE2;
-  text-decoration: none }
+  color: #4EAAE2;
+  text-decoration: none;
+  font-weight: 400;
+}
 
 .reveal a:hover {
-  color: #249BE2; }
+  color: #4EAAE2;
+  text-decoration: none;
+  font-weight: 400;
+}
 
 .reveal .roll span:after {
   color: #fff;
