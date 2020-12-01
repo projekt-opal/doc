@@ -4,22 +4,29 @@ author: Adrian Wilke <br /> Prof. Dr. Axel Ngonga <br /> [dice-research.org](htt
 date: 15.12.2020
 ...
 
-# OPAL <br /> Open Data Portal Germany
+# OPAL <br /> Open Data Portal Germany <br/> <br/> Abschluss­prä­sen­ta­ti­on
 
 ## Agenda
 
-- 9 Arbeitspakete mit 39 Deliverables
-- Arbeitsplan, Arbeitsziele, Soll-IST-Zustand
+- Projekt: **9 Arbeitspakete** mit **39 Deliverables**
+- Arbeitsplan, Arbeitsziele, **Soll-IST-Zustand**
+- **Fragen**: jederzeit, bestenfalls nach AP / Deliverables
+- Zusammenhänge mit anderen **mFUND Projekten**?
 
-### Zeitplan
+### Zeitplan (flexibel)
 
-- 09:00-11:30
+- 09:00 – 11:15 Uhr
 - Pause
-- 12:00-14:00
+- 11:45 – 14:00 Uhr
 
-## Projektziele
+## Gesamtziel des Vorhabens <br/> (auch nachfolgend: SOLL-Zustand)
 
-## Arbeitspakete
+"Das OPAL-Projekt konzipiert und entwickelt  
+ein **Linked-Open-Data-Portal**
+mit Fokus auf  
+**öffentlichen Datenquellen aus Deutschland** [...]."
+
+## Arbeitspakete <br/> (auch nachfolgend: IST-Zustand / Ergebnisse)
 
 1. Anforderungsanalyse und Architektur
 2. Datenakquisition
@@ -29,5 +36,5 @@ date: 15.12.2020
 6. Datenselektion
 7. Anwendungsfälle
 8. Portalentwicklung
-9. Projektmanagement
+9. Projektmanagement ✓
 
