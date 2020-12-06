@@ -410,15 +410,114 @@ Version 2, W3C Recommendation 04 February 2020<br />
 </ul>
 </section><section id="d5.1-erste-version-der-verknüpfungskomponente" class="slide level2">
 <h2>D5.1 Erste Version der Verknüpfungskomponente</h2>
-<p>TODO</p>
+<figure>
+<img src="../Medien/AP5.1-Limes.png" />
+</figure>
+<ul>
+<li>Deliverable (Code): <a href="https://github.com/dice-group/LIMES/releases/tag/1.5.0">LIMES 1.5.0</a></li>
+<li>Im Folgenden verwendet</li>
+</ul>
+</section><section id="d5.1-verknüpfungskomponente-limes-13" class="slide level2">
+<h2>D5.1 Verknüpfungskomponente: LIMES (1/3)</h2>
+<ul>
+<li><strong>LIMES</strong>: Link Discovery Framework for Metric Spaces</li>
+<li><strong>Überschneidungen</strong> in versch. Wissensgraphen <strong>finden</strong>
+<ul>
+<li>z.B. <strong>Erstellung Verknüpfungen</strong> zwischen gleichen Ressourcen in verschiedenen Wissensgraphen</li>
+<li>z.B. <strong>geografische Ähnlichkeiten</strong> finden</li>
+</ul></li>
+<li>Verwendung von <strong>Metriken</strong>, die Inhalte vergleichen</li>
+<li>Verwendet Dreiecksungleichung (aus der Geometrie / Mathematik).</li>
+<li>Verringert Anzahl benötigter Vergleiche.</li>
+<li>LIMES-Framework: Grundlage maschinellen Lernens</li>
+</ul>
+</section><section id="d5.1-verknüpfungskomponente-wombat-23" class="slide level2">
+<h2>D5.1 Verknüpfungskomponente: WOMBAT (2/3)</h2>
+<ul>
+<li><strong>WOMBAT</strong>: A Generalization Approach for Automatic Link Discovery</li>
+<li>Ansatz des Maschinellen Lernens (ML) zur Link Discovery</li>
+<li><strong>Supervised Learning</strong>, benötigt ausschließlich positive Lernbeispielen</li>
+<li><strong>Unsupervised Learning</strong>, ohne Lernbeispiele</li>
+<li>Algorithmus : Zwei aufeinander aufbauende Teile
+<ul>
+<li>Einzelner (atomic) Vergleich von Bestandteilen zweier Graphen</li>
+<li>Kombinierung (generalization)</li>
+</ul></li>
+</ul>
+</section><section id="d5.1-verknüpfungskomponente-dragon-33" class="slide level2">
+<h2>D5.1 Verknüpfungskomponente: DRAGON (3/3)</h2>
+<ul>
+<li><strong>DRAGON</strong>: Decision Tree Learning for Link Discovery</li>
+<li>Verwendet <strong>Entscheidungsbäume</strong> zum Erlernen von Link Spezifikationen</li>
+<li>Beim rekursiven Erstellen von Entscheidungsbäumen kann dabei
+<ul>
+<li>entweder die Trefferquote (recall) unter Verwendung des lokalen Gini Index, oder</li>
+<li>die Genauigkeit (precision) unter Verwendung des globalen F-Maß fokussiert werden</li>
+</ul></li>
+<li>Im Rahmen von <strong>OPAL</strong> entwickelt (<a href="https://link.springer.com/chapter/10.1007%2F978-3-030-19274-7_31">Springer</a>)<br />
+u.a. auch: <a href="http://ceur-ws.org/Vol-2456/paper53.pdf">LimesWebUI</a> ✓</li>
+</ul>
 </section><section id="d5.2-lernalgorithmen-für-linkspezifikationen-auf-metadaten" class="slide level2">
 <h2>D5.2 Lernalgorithmen für Linkspezifikationen auf Metadaten</h2>
 <ul>
-<li>Deliverable (Code): <a href="https://github.com/projekt-opal/linking">OPAL Datenintegration</a>
+<li><strong>5 Experimente</strong> zur <strong>Deduplizierung</strong></li>
+<li>Linkspezifikationen für <strong>OPAL/DCAT Datensätze</strong></li>
+<li>jeweils 30 GB Arbeitsspeicher</li>
+<li>Deliverable (Code): <a href="https://github.com/projekt-opal/linking">OPAL Datenintegration</a></li>
+<li>Deliverable als <a href="https://hobbitdata.informatik.uni-leipzig.de/OPAL/Deliverables/OPAL_D5.2_Lernalgorithmen_fuer_Linkspezifikationen_auf_Metadaten.pdf">PDF-Datei</a></li>
+</ul>
+</section><section id="d5.2-wombat-unsupervised-complete-15" class="slide level2">
+<h2>D5.2: WOMBAT unsupervised complete (1/5)</h2>
 <ul>
-<li>Link Discovery Framework for Metric Spaces (LIMES)</li>
-<li>Decision Tree Learning for Link Discovery (DRAGON) verwendet.</li>
+<li>Linkspezifikation: dcat:Dataset und<br />
+<strong>23 optionale</strong> weitere Eigenschaften</li>
+<li>Anzahl erkannter Duplikate:
+<ul>
+<li>0 (Schwellenwert: 0,95)</li>
+<li>0 (Schwellenwert: 0,9)</li>
 </ul></li>
+<li>Aufgrund Größe der Eingabedaten bei der Ausführung mit 30 GB Arbeitsspeicher vorzeitig beendet.<br />
+java.lang.<strong>OutOfMemoryError</strong>: GC overhead limit exceeded</li>
+</ul>
+</section><section id="d5.2-wombat-unsupervised-simple-ii-25" class="slide level2">
+<h2>D5.2: WOMBAT unsupervised simple II (2/5)</h2>
+<ul>
+<li>Linkspezifikation: dcat:Dataset und<br />
+<strong>23 optionale</strong> weitere Eigenschaften</li>
+<li>Anzahl erkannter Duplikate:
+<ul>
+<li>0 (Schwellenwert: 0,9)</li>
+<li>23.744.536 (Schwellenwert: 0,8)</li>
+</ul></li>
+<li>keine Ergebnisse und<br />
+zu viele Ergebnisse</li>
+</ul>
+</section><section id="d5.2-wombat-unsupervised-simple-i-35" class="slide level2">
+<h2>D5.2: WOMBAT unsupervised simple I (3/5)</h2>
+<ul>
+<li>Linkspezifikation: dcat:Dataset,<br />
+Distributionen dcat:downloadURL und<br />
+<strong>10 optionale</strong> weitere Eigenschaften von</li>
+<li>Anzahl erkannter Duplikate:
+<ul>
+<li>888 (Schwellenwert: 0,9)</li>
+<li>18.373 (Schwellenwert: : 0,5)</li>
+</ul></li>
+<li><strong>888 Duplikate von Datensätzen</strong></li>
+</ul>
+</section><section id="d5.2-limes-dataset-45" class="slide level2">
+<h2>D5.2: LIMES (Dataset) (4/5)</h2>
+<ul>
+<li>Linkspezifikation: dcat:Dataset,<br />
+Distributionen dcat:downloadURL und<br />
+10 weitere optionale Eigenschaften von Distributionen</li>
+<li><strong>Anzahl erkannter Duplikate: 888 Datensätze</strong></li>
+</ul>
+<h3 id="d5.2-limes-distribution-55">D5.2: LIMES (Distribution) (5/5)</h3>
+<ul>
+<li>Linkspezifikation: dcat:Distribution<br />
+und dcat:downloadURL</li>
+<li><strong>Anzahl erkannter Duplikate: 1.833 Distributionen</strong> ✓</li>
 </ul>
 </section><section id="d5.3-lizenzintegrationskomponente" class="slide level2">
 <h2>D5.3 Lizenzintegrationskomponente</h2>
