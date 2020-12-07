@@ -4,5 +4,5 @@
 
 - Responsives Webdesign 
 - [W3C Geolocation API Specification](https://w3c.github.io/geolocation-api/)
-- Deliverable (Code): [OPAL Web User Interface](https://github.com/projekt-opal/web-ui)
+- Deliverable (Code): [OPAL Web User Interface](https://github.com/projekt-opal/web-ui) ✓
 

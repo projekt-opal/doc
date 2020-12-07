@@ -19,5 +19,5 @@
 - Nutzung von Entscheidungsbäumen und TF-IDF
 - Deliverable (Code): [classification](https://github.com/projekt-opal/classification)
 
-![](../Medien/AP3.4-Klassifikation.png)
+![](../Medien/AP3.4-Klassifikation.png) ✓
 

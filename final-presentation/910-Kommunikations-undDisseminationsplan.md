@@ -26,5 +26,5 @@ Twitter: [OPAL Tweets (Auszug)](https://twitter.com/search?q=opal%20(from%3ADice
     - Studierende
 - **Konferenzen und Publikationen**:
     - [OPAL Konferenzbeiträge 2019](http://projekt-opal.de/opal-konferenzbeitraege-2019/)
-    - In 2019 in mind. 11 Beiträgen: "This work has been supported by the German Federal Ministry of Transport and Digital Infrastructure (BMVI) within the project OPAL under the grant no 19F2028A." ✓
+    - In 2019 in mind. 11 Beiträgen: "This work has been supported by the German Federal Ministry of Transport and Digital Infrastructure (BMVI) within the project OPAL under the grant no 19F2028A."
 

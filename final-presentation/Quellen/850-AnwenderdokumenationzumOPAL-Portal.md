@@ -8,20 +8,20 @@ Deliverable als [PDF-Datei](https://hobbitdata.informatik.uni-leipzig.de/OPAL/De
 
 ## D8.5 Dokumentation: Projektwebseite
 
+![](../Medien/AP8.5-Projektseite.png)
+
 * Links zu Ergebnissen unterschiedlicher Typen
 * Querverweise: Jeweils gleiche Liste von Links
 * Mittel- und langfristige Auffindbarkeit
 * [dice-research.org/OPAL](https://dice-research.org/OPAL)
 
-![](../Medien/AP8.5-Projektseite.png)
-
 ## D8.5 Dokumentation: Code
+
+![](../Medien/AP8.5-Github.png)
 
 - Rund 50 Repositorien
 - Aufteilung Haupt- und Nebenprodukte
 - Kurzbeschreibungen
 - README Dateien und im Code
-- [github.com/projekt-opal/doc](https://github.com/projekt-opal/doc)
-
-![](../Medien/AP8.5-Github.png)
+- [github.com/projekt-opal/doc](https://github.com/projekt-opal/doc) ✓
 
