@@ -7,11 +7,6 @@
     - Code (Github, Open Source)
     - Daten (Web, FTP)
     - Wissenschaftliche Publikationen
-- mFUND Projektsteckbrief
-- Anschlussprojekte
-- Daten in mCLOUD
-- Dissemination: außerdem Twitter
-- Pub: Lizenzen, Bot, OPAL
 
 ## D9.1 Dissemination: Social Media
 

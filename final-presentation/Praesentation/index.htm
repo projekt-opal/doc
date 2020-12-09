@@ -171,12 +171,16 @@ Govdata → EDP</li>
 <img src="../Medien/AP1.3-ArchitekturUrspruenglich.png" />
 </figure>
 <p>Deliverable als <a href="https://hobbitdata.informatik.uni-leipzig.de/OPAL/Deliverables/OPAL_D1.3_Architecture.pdf">PDF-Datei</a></p>
-</section><section id="d1.3-architektur-auszug" class="slide level2">
-<h2>D1.3 Architektur (Auszug)</h2>
+</section><section id="d1.3-architektur-auszug-2020" class="slide level2">
+<h2>D1.3 Architektur (Auszug 2020)</h2>
 <figure>
 <img src="../Medien/AP1.3-Batch.png" />
 </figure>
-<p><a href="https://github.com/projekt-opal/batch">github.com/projekt-opal/batch</a> ✓</p>
+<ul>
+<li>Neu: Sequentielle Behandlung von Datensatz-Graphen</li>
+<li>Neu: Elasticsearch</li>
+<li>Code: <a href="https://github.com/projekt-opal/batch">OPAL Batch</a> ✓</li>
+</ul>
 </section></section>
 <section><section id="arbeitspaket-2-datenakquisition" class="titleslide slide level1"><h1>Arbeitspaket 2: <br/> Datenakquisition</h1></section><section id="arbeitspaket-2-datenakquisition-1" class="slide level2">
 <h2>Arbeitspaket 2: <br/> Datenakquisition</h2>
@@ -283,14 +287,25 @@ Govdata → EDP</li>
 </ul>
 </section><section id="d3.2-qualitätsanalyse-komponente" class="slide level2">
 <h2>D3.2 Qualitätsanalyse-Komponente</h2>
+<figure>
+<img src="../Medien/AP3.2-Civet.png" />
+</figure>
 <ul>
-<li>Deliverable als <a href="https://hobbitdata.informatik.uni-leipzig.de/OPAL/Deliverables/OPAL_D3.2_Quality-analysis-component.pdf">PDF-Datei</a> ✓</li>
+<li>Vokabular in D4.1 erläutert</li>
+<li>Deliverable als <a href="https://hobbitdata.informatik.uni-leipzig.de/OPAL/Deliverables/OPAL_D3.2_Quality-analysis-component.pdf">PDF-Datei</a> und Code (<a href="https://github.com/projekt-opal/civet">Civet</a>) ✓</li>
 </ul>
 </section><section id="d3.3-erste-metadatenextraktionskomponente" class="slide level2">
 <h2>D3.3 Erste Metadatenextraktionskomponente</h2>
 <ul>
-<li>Deliverable als <a href="https://hobbitdata.informatik.uni-leipzig.de/OPAL/Deliverables/OPAL_D3.3_Metadaten-Extraktion.pdf">PDF-Datei</a></li>
-<li>Deliverable (Code): <a href="https://github.com/projekt-opal/statistics">Generation of RDF data statistics</a> ✓</li>
+<li><strong>Named Entity Recognition</strong> mit <a href="https://github.com/dice-group/FOX">FOX</a><br />
+nutzt <strong>Disambiguierung</strong>: <a href="https://github.com/projekt-opal/AGDISTIS">AGDISTIS</a></li>
+<li><strong>Spracherkennung</strong> mit Apache OpenNLP</li>
+<li>Deliverables:
+<ul>
+<li>Code: <a href="https://github.com/projekt-opal/statistics">Generation of RDF data statistics</a></li>
+<li>Code: <a href="https://github.com/projekt-opal/metadata-refinement/tree/metadata-alpha">metadata-refinement (alpha)</a></li>
+<li>Deliverable als <a href="https://hobbitdata.informatik.uni-leipzig.de/OPAL/Deliverables/OPAL_D3.3_Metadaten-Extraktion.pdf">PDF-Datei</a> ✓</li>
+</ul></li>
 </ul>
 </section><section id="d3.4-topic-extraktionskomponente" class="slide level2">
 <h2>D3.4 Topic-Extraktionskomponente</h2>
@@ -320,7 +335,12 @@ Govdata → EDP</li>
 </section><section id="d3.5-finale-datenanalysekomponenten" class="slide level2">
 <h2>D3.5 Finale Datenanalysekomponenten</h2>
 <ul>
-<li>Deliverable (Code): <a href="https://github.com/projekt-opal/converter">Spring cloud designed converter</a> ✓</li>
+<li>Qualitätsanalyse-Komponente Civet (D3.1, D3.2)</li>
+<li>Metadatenextraktions-Komponente (D3.3)
+<ul>
+<li>Erweiterung um <strong>Geo-Daten</strong> (folgt)</li>
+</ul></li>
+<li>Topic-Extraction und Klassifizierung (D3.4) ✓</li>
 </ul>
 </section></section>
 <section><section id="arbeitspaket-4-datenkonvertierung" class="titleslide slide level1"><h1>Arbeitspaket 4: <br/> Datenkonvertierung</h1></section><section id="arbeitspaket-4-datenkonvertierung-1" class="slide level2">
@@ -362,14 +382,32 @@ Version 2, W3C Recommendation 04 February 2020<br />
 </figure>
 </section><section id="d4.1-vokabularspezifikation-rdf-beispiel" class="slide level2">
 <h2>D4.1 Vokabularspezifikation: RDF Beispiel</h2>
+<figure>
+<img src="../Medien/AP3.2-Civet.png" />
+</figure>
 <ul>
-<li>Beispiel: <a href="https://github.com/projekt-opal/civet#example-output">OPAL Civet - metadata quality component.</a></li>
+<li>Beispiel aus D3.2 Qualitätsanalyse-Komponente Civet</li>
 <li>Deliverable als <a href="https://hobbitdata.informatik.uni-leipzig.de/OPAL/Deliverables/OPAL_D4.1_Vocabulary-specification.pdf">PDF-Datei</a> ✓</li>
 </ul>
-</section><section id="d4.2-konvertierungskomponente" class="slide level2">
-<h2>D4.2 Konvertierungskomponente</h2>
+</section><section id="d4.2-konvertierungskomponente-converter" class="slide level2">
+<h2>D4.2 Konvertierungskomponente: Converter</h2>
+<figure>
+<img src="../Medien/AP4.2-Converter.png" />
+</figure>
 <ul>
-<li>Deliverable als <a href="https://hobbitdata.informatik.uni-leipzig.de/OPAL/Deliverables/OPAL_D4.2_Conversion_component.pdf">PDF-Datei</a> ✓</li>
+<li>Code: <a href="https://github.com/projekt-opal/converter">Converter</a></li>
+<li>Konfiguration: <a href="https://github.com/projekt-opal/converter-configuration">Converter-configuration</a></li>
+<li>Deliverable als <a href="https://hobbitdata.informatik.uni-leipzig.de/OPAL/Deliverables/OPAL_D4.2_Conversion_component.pdf">PDF-Datei</a></li>
+</ul>
+</section><section id="d4.2-konvertierungskomponente-batch" class="slide level2">
+<h2>D4.2 Konvertierungskomponente: Batch</h2>
+<figure>
+<img src="../Medien/AP1.3-Batch.png" />
+</figure>
+<ul>
+<li>Sequentielle Behandlung von Datensatz-Graphen</li>
+<li>Elasticsearch</li>
+<li>Code: <a href="https://github.com/projekt-opal/batch">OPAL Batch</a> ✓</li>
 </ul>
 </section><section id="d4.3-prototyp-indexstrukturen-und-entitätserkennung" class="slide level2">
 <h2>D4.3 Prototyp Indexstrukturen und Entitätserkennung</h2>
@@ -725,11 +763,6 @@ Deliverable als <a href="https://hobbitdata.informatik.uni-leipzig.de/OPAL/Deliv
 <li>Daten (Web, FTP)</li>
 <li>Wissenschaftliche Publikationen</li>
 </ul></li>
-<li>mFUND Projektsteckbrief</li>
-<li>Anschlussprojekte</li>
-<li>Daten in mCLOUD</li>
-<li>Dissemination: außerdem Twitter</li>
-<li>Pub: Lizenzen, Bot, OPAL</li>
 </ul>
 </section><section id="d9.1-dissemination-social-media" class="slide level2">
 <h2>D9.1 Dissemination: Social Media</h2>
@@ -750,6 +783,15 @@ Deliverable als <a href="https://hobbitdata.informatik.uni-leipzig.de/OPAL/Deliv
 <li><a href="http://projekt-opal.de/opal-konferenzbeitraege-2019/">OPAL Konferenzbeiträge 2019</a></li>
 <li>In 2019 in mind. 11 Beiträgen: &quot;This work has been supported by the German Federal Ministry of Transport and Digital Infrastructure (BMVI) within the project OPAL under the grant no 19F2028A.&quot; ✓</li>
 </ul></li>
+</ul>
+</section><section id="d9.2d9.3d9.4-projektberichte" class="slide level2">
+<h2>D9.2/D9.3/D9.4 Projektberichte</h2>
+<ul>
+<li>D9.2 Projektbericht Jahr 1 ✓</li>
+<li>D9.3 Projektbericht Jahr 2 ✓</li>
+<li>D9.4 Projektbericht Jahr 3 ✓</li>
+<li>Abschlussbericht (bis März 2021)</li>
+<li>mFUND Projektsteckbrief</li>
 </ul>
 </section></section>
 <section><section id="ausblick" class="titleslide slide level1"><h1>Ausblick</h1></section><section id="langzeitverfügbarkeit" class="slide level2">
@@ -788,7 +830,26 @@ Deliverable als <a href="https://hobbitdata.informatik.uni-leipzig.de/OPAL/Deliv
 <h2>TODO</h2>
 <p>(aktuell: <a href="https://its-platform.eu/highlights/progressing-metadata-national-access-points">napDCAT-AP</a>)</p>
 <ul>
-<li><a href="https://github.com/projekt-opal/doc/wiki/Open-Data-Portals">Link-Sammlung Portale</a></li>
+<li><p><a href="https://github.com/projekt-opal/doc/wiki/Open-Data-Portals">Link-Sammlung Portale</a></p></li>
+<li>Anschlussprojekte</li>
+<li>Daten in mCLOUD</li>
+<li>Dissemination: außerdem Twitter</li>
+<li><p>Pub: Lizenzen, Bot, OPAL</p></li>
+<li><p>9.1 csv export mcloud</p></li>
+</ul>
+</section><section id="launuts" class="slide level2">
+<h2>LauNuts</h2>
+<figure>
+<img src="../Medien/AP3.5-Nuts.jpg" />
+</figure>
+<ul>
+<li>Neu: Metadatenextraktions-Komponente mit
+<ul>
+<li>Nomenclature of Territorial Units for Statistics (<a href="https://ec.europa.eu/eurostat/web/nuts/background">NUTS</a>)</li>
+<li>Local Administrative Units (LAU)</li>
+</ul></li>
+<li><strong>11.953 Orte</strong> (DE/AU) mit Namen und Koordinaten</li>
+<li>Code: <a href="https://github.com/projekt-opal/metadata-refinement">metadata-refinement</a></li>
 </ul>
 </section></section>
     </div>
