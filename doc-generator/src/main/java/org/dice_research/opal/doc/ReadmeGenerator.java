@@ -59,14 +59,14 @@ public class ReadmeGenerator {
 
 		diceRepositories = new LinkedList<Repository>();
 		diceRepositories.add(new Repository().setName("FOX").setHtmlUrl("https://github.com/dice-group/FOX")
-				.setDescription("Federated Knowledge Extraction Framework"));
+				.setDescription("Federated Knowledge Extraction Framework (D3.3)"));
 		diceRepositories.add(new Repository().setName("LIMES").setHtmlUrl("https://github.com/dice-group/LIMES")
 				.setDescription("Link Discovery Framework for Metric Spaces (D5.*)"));
 		diceRepositories.add(new Repository().setName("Squirrel").setHtmlUrl("https://github.com/dice-group/Squirrel")
 				.setDescription("Squirrel searches and collects Linked Data (D2.*)"));
 		diceRepositories
 				.add(new Repository().setName("TeBaQA").setHtmlUrl("https://github.com/dice-group/TeBaQA/tree/opal")
-						.setDescription("Template-Based Question Answering"));
+						.setDescription("Template-Based Question Answering (D7.4)"));
 	}
 
 	private void addResource(StringBuilder stringBuilder, String resourceName) {
