@@ -1,7 +1,7 @@
 ## D3.3 Erste Metadatenextraktionskomponente
 
 - **Named Entity Recognition** mit [FOX](https://github.com/dice-group/FOX)  
-  nutzt **Disambiguierung**: [AGDISTIS](https://github.com/projekt-opal/AGDISTIS) / MAG
+  nutzt **Disambiguierung**: [AGDISTIS](https://github.com/projekt-opal/AGDISTIS) / MAG (D4.4)
 - **Spracherkennung** mit Apache OpenNLP
 - Deliverables:
     - Code: [Generation of RDF data statistics](https://github.com/projekt-opal/statistics)

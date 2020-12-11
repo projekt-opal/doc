@@ -173,8 +173,10 @@ der <strong>Entwurf einer Gesamtarchitektur für OPAL</strong>.&quot;</p>
 <li><strong>GovData</strong>: 37.932</li>
 <li><strong>European Data Portal (EDP)</strong>: 795.387<br />
 (191.374 mit deutschen und englischen Titeln)<br />
-<em>Deliverable abgeschlossen</em> ✓</li>
+</li>
 </ul></li>
+<li>OPAL Daten auf <a href="https://mcloud.de/">mCLOUD</a><br />
+<em>Deliverable abgeschlossen</em> ✓</li>
 </ul>
 </section><section id="d1.3-architektur-20172018" class="slide level2">
 <h2>D1.3 Architektur (2017/2018)</h2>
@@ -304,7 +306,7 @@ der <strong>Entwurf einer Gesamtarchitektur für OPAL</strong>.&quot;</p>
 <h2>D3.3 Erste Metadatenextraktionskomponente</h2>
 <ul>
 <li><strong>Named Entity Recognition</strong> mit <a href="https://github.com/dice-group/FOX">FOX</a><br />
-nutzt <strong>Disambiguierung</strong>: <a href="https://github.com/projekt-opal/AGDISTIS">AGDISTIS</a> / MAG</li>
+nutzt <strong>Disambiguierung</strong>: <a href="https://github.com/projekt-opal/AGDISTIS">AGDISTIS</a> / MAG (D4.4)</li>
 <li><strong>Spracherkennung</strong> mit Apache OpenNLP</li>
 <li>Deliverables:
 <ul>
@@ -472,10 +474,10 @@ Version 2, W3C Recommendation 04 February 2020<br />
 <img src="../Medien/AP4.4-Agsistis-Overview.png" />
 </figure>
 <ul>
-<li>Disambiguierung / Linking Entitäten, mehrsprachig</li>
+<li><strong>Disambiguierung</strong> / Linking Entitäten, mehrsprachig</li>
 <li>Graph basiertes Verfahren (HITS algorithmus)</li>
 <li>Erweitert in LIMBO: Elasticsearch</li>
-<li>Integration in OPAL: geografische DB LauNuts</li>
+<li>Integration in <strong>OPAL</strong>: <strong>geografische DB LauNuts</strong></li>
 </ul>
 </section><section id="d4.4-indizierungskomponente-1" class="slide level2">
 <h2>D4.4 Indizierungskomponente</h2>
@@ -634,16 +636,30 @@ Wahl aus erlaubten Lizenzen</li>
 <figure>
 <img src="../Medien/AP5.3-CC-LicenseCompatibilityChart.png" />
 </figure>
-<p>&quot;Choose two works you wish to <strong>combine or remix</strong>. [...] Use at least the <strong>most restrictive licensing</strong> of the two (use the license <strong>most to right or down state</strong>) for the new work.&quot; <a href="https://wiki.creativecommons.org/index.php?title=Wiki/cc_license_compatibility&amp;oldid=70058">CC wiki</a></p>
+<p>&quot;Choose two works you wish to <strong>combine or remix</strong>. [...]<br />
+Use at least the <strong>most restrictive licensing</strong> of the two<br />
+(use the license <strong>most to right or down state</strong>)<br />
+for the new work.&quot; <a href="https://wiki.creativecommons.org/index.php?title=Wiki/cc_license_compatibility&amp;oldid=70058">CC wiki</a></p>
 </section><section id="d5.3-lizenzen-evaluierung-1" class="slide level2">
 <h2>D5.3 Lizenzen: Evaluierung</h2>
 <figure>
 <img src="../Medien/AP5.3-Evaluierung.png" />
 </figure>
-<p>Auflistung aller kompatiblen Lizenzen zur Re-Lizensierung von kombinierten Datensätzen. ✓</p>
+<ul>
+<li>Auflistung aller kompatiblen Lizenzen zur Re-Lizensierung von kombinierten Datensätzen.</li>
+<li>Als <strong>Artikel</strong> in IEEE International Conference on Semantic Computing (<strong>ICSC 2021</strong>) Resource Track ✓</li>
+</ul>
 </section><section id="d5.4-erweiterte-lernalgorithmen-für-linkspezifikationen-auf-metadaten" class="slide level2">
 <h2>D5.4 Erweiterte Lernalgorithmen für Linkspezifikationen auf Metadaten</h2>
-<p>TODO</p>
+<ul>
+<li>Daten:
+<ul>
+<li>OPAL LauNuts: 84.000 Koordinaten-Punkte</li>
+<li><a href="http://linkedgeodata.org/">LinkedGeoData.org</a> (<a href="https://www.openstreetmap.org/">OpenStreetMap</a> als RDF)</li>
+</ul></li>
+<li>ORCHID - Reduction-Ratio-Optimal Computation of Geo-Spatial Distances for Link Discovery <a href="https://link.springer.com/content/pdf/10.1007%2F978-3-642-41335-3_25.pdf">PDF</a> <a href="https://doi.org/10.1007/978-3-642-41335-3_25">Springer</a></li>
+<li>Deliverable (Code): <a href="https://github.com/dice-group/LIMES/tree/feature/hr3-spark">LIMES Spark</a> ✓</li>
+</ul>
 </section><section id="d5.5-finale-verknüpfungskomponente" class="slide level2">
 <h2>D5.5 Finale Verknüpfungskomponente</h2>
 <figure>
@@ -664,17 +680,35 @@ Wahl aus erlaubten Lizenzen</li>
 </ul>
 </section><section id="d6.1-linked-data-slicing-komponente" class="slide level2">
 <h2>D6.1 Linked-Data-Slicing-Komponente</h2>
+<h3 id="ansatz-1-elastictriples">Ansatz 1: ElasticTriples</h3>
 <ul>
+<li>Import: <strong>90 Millionen Triple</strong> in <strong>77 Minuten</strong><br />
+(16.3 GB im N-Triples Format)</li>
+<li>Splitting: Eine Anfrage dauert <strong>2-3 Sekunden</strong>.<br />
+Beispiel: 1 aus 1 Millionen <strong>DCAT Datensätzen</strong><br />
+mit <strong>206 zugehörigen Triplen</strong><br />
+nutzt intern 2.281 Anfragen</li>
 <li>Deliverable (Code): <a href="https://github.com/projekt-opal/ElasticTriples">ElasticTriples - Elasticsearch powered triple storage</a></li>
-<li>Deliverable (Code): <a href="https://github.com/projekt-opal/slicer">Data selection component based on RDFSlice</a></li>
 </ul>
+</section><section id="d6.1-ansatz-2-opal-slicer" class="slide level2">
+<h2>D6.1 Ansatz 2: OPAL Slicer</h2>
+<ul>
+<li>Nutzt <strong>Muster im SPARQL Format</strong><br />
+um Untermengen von <strong>Wissensgraphen zu extrahieren</strong>.</li>
+<li>Basiert auf RDFSlice Projekt</li>
+<li>Beispiel:</li>
+</ul>
+<pre><code>-source input.ttl
+-patterns &quot;Select * where {?d a &lt;http://www.w3.org/ns/dcat#Dataset&gt;}&quot;
+-out datasets.ttl</code></pre>
+<p>Deliverable (Code): <a href="https://github.com/projekt-opal/slicer">OPAL Slicer</a> ✓</p>
 </section><section id="d6.2-räumliches-slicing" class="slide level2">
 <h2>D6.2 Räumliches Slicing</h2>
 <figure>
 <img src="../Medien/AP6.2-Geo-Slicing.png" />
 </figure>
 <ul>
-<li>In OPAL Portal</li>
+<li>Integriert in OPAL Portal Demo</li>
 <li>Deliverable (Code): <a href="https://github.com/projekt-opal/hackathon/tree/gh-pages/geo">Spatial Slicing</a> ✓</li>
 </ul>
 </section></section>
@@ -689,15 +723,34 @@ Wahl aus erlaubten Lizenzen</li>
 <li>D7.3 City-App Demonstrator</li>
 <li>D7.4 Social Media Bot Demonstrator</li>
 </ul>
-</section><section id="d7.1-suchkomponente" class="slide level2">
-<h2>D7.1 Suchkomponente</h2>
+</section><section id="d7.1-suchkomponente-elasticsearch" class="slide level2">
+<h2>D7.1 Suchkomponente: Elasticsearch</h2>
 <ul>
-<li>Deliverable als <a href="https://hobbitdata.informatik.uni-leipzig.de/OPAL/Deliverables/OPAL_D7.1_Suchkomponente.pdf">PDF-Datei</a></li>
+<li>Ansatz hier:<br />
+<strong>Generierung von Synonym-Listen zur Auffindbarkeit</strong></li>
+<li>Ergebnis:
+<ul>
+<li><strong>6.668 deutschsprachige Nomen</strong>,<br />
+für die Synonyme bekannt sind</li>
+<li><strong>21.634 Synonyme</strong> zu den entsprechenden Nomen</li>
+<li>Auswahl von Nomen aus Titeln und Beschreibungestexten aus mCLOUD und GovData<br />
+→ <strong>1.497 Nomen und entsprechende Synonyme</strong></li>
+</ul></li>
 </ul>
+</section><section id="d7.1-suchkomponente-elasticsearch-1" class="slide level2">
+<h2>D7.1 Suchkomponente: Elasticsearch</h2>
+<figure>
+<img src="../Medien/AP7.1-Suchkomponente-DBnary.png" />
+</figure>
+<p>Deliverable als <a href="https://hobbitdata.informatik.uni-leipzig.de/OPAL/Deliverables/OPAL_D7.1_Suchkomponente.pdf">PDF-Datei</a> ✓</p>
 </section><section id="d7.2-benchmarking-der-suchkomponente" class="slide level2">
 <h2>D7.2 Benchmarking der Suchkomponente</h2>
+<figure>
+<img src="../Medien/AP7.2-Benchmark.png" />
+</figure>
 <ul>
 <li>Deliverable (Code): <a href="https://github.com/projekt-opal/Search-Component-Benchmark">Search-Component-Benchmark</a></li>
+<li>Deliverable als <a href="https://drive.google.com/file/d/19GBM2zoR1aX_mKUz5JWdW8PH2auop5DX/">PDF-Datei</a> ✓</li>
 </ul>
 </section><section id="d7.3-city-app-demonstrator" class="slide level2">
 <h2>D7.3 City-App Demonstrator</h2>
@@ -733,37 +786,44 @@ Wahl aus erlaubten Lizenzen</li>
 <li>D8.5 Anwenderdokumenation zum OPAL-Portal</li>
 <li>D8.6 Evaluierungsergebnisse</li>
 </ul>
-</section><section id="d8.1-portalinfrastruktur" class="slide level2">
-<h2>D8.1 Portalinfrastruktur</h2>
+</section><section id="d8.1-portalinfrastruktur-2018" class="slide level2">
+<h2>D8.1 Portalinfrastruktur (2018)</h2>
+<figure>
+<img src="../Medien/AP8.1-Portalinfrastruktur.png" />
+</figure>
 <ul>
-<li>Deliverable als <a href="https://hobbitdata.informatik.uni-leipzig.de/OPAL/Deliverables/OPAL_D8.1_Portal_infrastructure.pdf">PDF-Datei</a></li>
+<li>Deliverable als <a href="https://hobbitdata.informatik.uni-leipzig.de/OPAL/Deliverables/OPAL_D8.1_Portal_infrastructure.pdf">PDF-Datei</a> ✓</li>
 </ul>
-</section><section id="d8.2-erster-portalprototyp" class="slide level2">
-<h2>D8.2 Erster Portalprototyp</h2>
+</section><section id="d8.2-erster-portalprototyp-201819" class="slide level2">
+<h2>D8.2 Erster Portalprototyp (2018/19)</h2>
 <figure>
 <img src="../Medien/AP8.2-CKAN.png" />
 </figure>
 <ul>
-<li>Deliverable als <a href="https://hobbitdata.informatik.uni-leipzig.de/OPAL/Deliverables/OPAL_D8.2_First_portal_prototype.pdf">PDF-Datei</a></li>
 <li>Konfiguration (Code): <a href="https://github.com/projekt-opal/opal-ckan-docker">opal-ckan-docker</a> und<br />
-<a href="https://github.com/projekt-opal/opal-docker-compose">opal-docker-compose</a> ✓</li>
+<a href="https://github.com/projekt-opal/opal-docker-compose">opal-docker-compose</a></li>
+<li>Deliverable als <a href="https://hobbitdata.informatik.uni-leipzig.de/OPAL/Deliverables/OPAL_D8.2_First_portal_prototype.pdf">PDF-Datei</a> ✓</li>
 </ul>
-</section><section id="d8.3-erweiterter-portaldemonstrator" class="slide level2">
-<h2>D8.3 Erweiterter Portaldemonstrator</h2>
-<ul>
-<li>Deliverable als <a href="https://hobbitdata.informatik.uni-leipzig.de/OPAL/Deliverables/OPAL_D8.3_Enhanced_portal_demonstrator.pdf">PDF-Datei</a></li>
-</ul>
-</section><section id="d8.4-finales-opal-portal" class="slide level2">
-<h2>D8.4 Finales OPAL-Portal</h2>
-<p>TODO</p>
+</section><section id="d8.3-erweiterter-portaldemonstrator-juni-2019" class="slide level2">
+<h2>D8.3 Erweiterter Portaldemonstrator (Juni 2019)</h2>
+<figure>
+<img src="../Medien/AP8.3-Mockup.png" />
+</figure>
+<p>Mockup aus Deliverable als <a href="https://hobbitdata.informatik.uni-leipzig.de/OPAL/Deliverables/OPAL_D8.3_Enhanced_portal_demonstrator.pdf">PDF-Datei</a> ✓</p>
+</section><section id="d8.4-finales-opal-portal-2020" class="slide level2">
+<h2>D8.4 Finales OPAL-Portal (2020)</h2>
+<figure>
+<img src="../Medien/AP8.4-Portal.png" />
+</figure>
+<p>Deliverable (Code): <a href="https://github.com/projekt-opal/demo">OPAL Demo</a> ✓</p>
 </section><section id="d8.5-anwenderdokumenation-zum-opal-portal" class="slide level2">
 <h2>D8.5 Anwenderdokumenation zum OPAL-Portal</h2>
 <ul>
 <li>Anwender: Nutzer der Projektergebnisse</li>
-<li>Kurzbeschreibung Hauptkomponenten auf 40 Seiten:<br />
+<li>Übersicht auf <strong>Projektwebseite</strong> (folgt gleich)</li>
+<li><strong>Code</strong> Dokumentation (folgt gleich)</li>
+<li>Beschreibung der <strong>20 Komponenten</strong> (Code) auf 40 Seiten:<br />
 Deliverable als <a href="https://hobbitdata.informatik.uni-leipzig.de/OPAL/Deliverables/OPAL_D8.5_Documentation.pdf">PDF-Datei</a></li>
-<li>Übersicht auf Projektwebseite (folgt gleich)</li>
-<li>Code Dokumentation (folgt gleich)</li>
 </ul>
 </section><section id="d8.5-dokumentation-projektwebseite" class="slide level2">
 <h2>D8.5 Dokumentation: Projektwebseite</h2>
@@ -771,8 +831,7 @@ Deliverable als <a href="https://hobbitdata.informatik.uni-leipzig.de/OPAL/Deliv
 <img src="../Medien/AP8.5-Projektseite.png" />
 </figure>
 <ul>
-<li>Links zu Ergebnissen unterschiedlicher Typen</li>
-<li>Querverweise: Jeweils gleiche Liste von Links</li>
+<li>Links zu allen Ergebnissen</li>
 <li>Mittel- und langfristige Auffindbarkeit</li>
 <li><a href="https://dice-research.org/OPAL">dice-research.org/OPAL</a></li>
 </ul>
@@ -782,7 +841,7 @@ Deliverable als <a href="https://hobbitdata.informatik.uni-leipzig.de/OPAL/Deliv
 <img src="../Medien/AP8.5-Github.png" />
 </figure>
 <ul>
-<li>Rund 50 Repositorien</li>
+<li>Rund <strong>50 Repositorien</strong></li>
 <li>Aufteilung Haupt- und Nebenprodukte</li>
 <li>Kurzbeschreibungen</li>
 <li>README Dateien und im Code</li>
@@ -790,7 +849,12 @@ Deliverable als <a href="https://hobbitdata.informatik.uni-leipzig.de/OPAL/Deliv
 </ul>
 </section><section id="d8.6-evaluierungsergebnisse" class="slide level2">
 <h2>D8.6 Evaluierungsergebnisse</h2>
-<p>TODO</p>
+<ul>
+<li><strong>System Usability Scale</strong> (SUS)</li>
+<li>Bewertung der <strong>Gebrauchstauglichkeit von Systemen</strong></li>
+<li>Einfacher und technologieunabhängiger Fragebogen</li>
+<li>10 Fragen nach der Likert-Skala</li>
+</ul>
 </section></section>
 <section><section id="arbeitspaket-9-projektmanagement" class="titleslide slide level1"><h1>Arbeitspaket 9: <br/> Projektmanagement</h1></section><section id="arbeitspaket-9-projektmanagement-1" class="slide level2">
 <h2>Arbeitspaket 9: <br/> Projektmanagement</h2>
@@ -806,15 +870,15 @@ Deliverable als <a href="https://hobbitdata.informatik.uni-leipzig.de/OPAL/Deliv
 </section><section id="d9.1-kommunikations--und-disseminationsplan" class="slide level2">
 <h2>D9.1 Kommunikations- und Disseminationsplan</h2>
 <ul>
-<li>Deliverable als <a href="https://hobbitdata.informatik.uni-leipzig.de/OPAL/Deliverables/OPAL_D9.1_Communication_and_dissemination.pdf">PDF-Datei</a></li>
-<li>Projekt-Webseite: <a href="https://dice-research.org/OPAL" class="uri">https://dice-research.org/OPAL</a>
+<li>Projekt-Webseite: <a href="https://dice-research.org/OPAL">dice-research.org/OPAL</a>
 <ul>
-<li>Portal Demo</li>
-<li>Abschlussbericht und Deliverables (PDF)</li>
-<li>Code (Github, Open Source)</li>
-<li>Daten (Web, FTP)</li>
-<li>Wissenschaftliche Publikationen</li>
+<li><strong>OPAL Portal Demo</strong></li>
+<li><strong>Deliverables</strong> (PDF)</li>
+<li><strong>Code</strong> (Github, Open Source)</li>
+<li><strong>Daten</strong> (Web, FTP)</li>
+<li><strong>Wissenschaftliche Publikationen</strong></li>
 </ul></li>
+<li>Deliverable als <a href="https://hobbitdata.informatik.uni-leipzig.de/OPAL/Deliverables/OPAL_D9.1_Communication_and_dissemination.pdf">PDF-Datei</a></li>
 </ul>
 </section><section id="d9.1-dissemination-social-media" class="slide level2">
 <h2>D9.1 Dissemination: Social Media</h2>
@@ -833,7 +897,9 @@ Deliverable als <a href="https://hobbitdata.informatik.uni-leipzig.de/OPAL/Deliv
 <li><strong>Konferenzen und Publikationen</strong>:
 <ul>
 <li><a href="http://projekt-opal.de/opal-konferenzbeitraege-2019/">OPAL Konferenzbeiträge 2019</a></li>
-<li>In 2019 in mind. 11 Beiträgen: &quot;This work has been supported by the German Federal Ministry of Transport and Digital Infrastructure (BMVI) within the project OPAL under the grant no 19F2028A.&quot; ✓</li>
+<li>In <strong>2019</strong> in mind. <strong>11 Beiträgen</strong>: &quot;This work has been supported by the German Federal Ministry of Transport and Digital Infrastructure (BMVI) within the project OPAL under the grant no 19F2028A.&quot;</li>
+<li>Liste auf der OPAL Projektwebseite</li>
+<li>Vollständige Liste im Abschlussbericht ✓</li>
 </ul></li>
 </ul>
 </section><section id="d9.2d9.3d9.4-projektberichte" class="slide level2">
@@ -846,30 +912,16 @@ Deliverable als <a href="https://hobbitdata.informatik.uni-leipzig.de/OPAL/Deliv
 <li>mFUND Projektsteckbrief</li>
 </ul>
 </section></section>
-<section><section id="ausblick" class="titleslide slide level1"><h1>Ausblick</h1></section><section id="langzeitverfügbarkeit" class="slide level2">
+<section><section id="abschluss" class="titleslide slide level1"><h1>Abschluss</h1></section><section id="langzeitverfügbarkeit" class="slide level2">
 <h2>Langzeitverfügbarkeit</h2>
 <ul>
-<li>Projektwebseite DICE (<a href="https://dice-research.org/OPAL">dice-research.org/OPAL</a>)
+<li><strong>Projektwebseite DICE</strong> (<a href="https://dice-research.org/OPAL">dice-research.org/OPAL</a>)
 <ul>
-<li>Daten</li>
-<li>Code</li>
-<li>Dokumente</li>
+<li>Dokumente &amp; Code &amp; Daten</li>
 </ul></li>
+<li><strong>Projektwebseite BMVI</strong> (<a href="https://www.bmvi.de/SharedDocs/DE/Artikel/DG/mfund-projekte/ope-data-portal-germany-opal.html">www.bmvi.de...opal.html</a>)</li>
 <li>Demo OPAL Portal (<a href="https://dice-research.org/OPAL-Demo">dice-research.org/OPAL-Demo</a>)</li>
 <li>Demo Social Media Bot</li>
-<li>Projektwebseite BMVI (<a href="https://www.bmvi.de/SharedDocs/DE/Artikel/DG/mfund-projekte/ope-data-portal-germany-opal.html">www.bmvi.de...opal.html</a>)</li>
-</ul>
-</section><section id="planung" class="slide level2">
-<h2>Planung</h2>
-<ul>
-<li>Publikation Lizenzen</li>
-<li>Publikation Social Media Bot</li>
-<li>Publikation OPAL</li>
-</ul>
-<h3 id="entfällt-voraussichtlich">Entfällt voraussichtlich</h3>
-<ul>
-<li>Projektwebseite <a href="http://projekt-opal.de/">projekt-opal.de</a><br />
-(Zukünftig statische Version ohne Domain)</li>
 </ul>
 </section><section id="vielen-dank" class="slide level2">
 <h2>Vielen Dank!</h2>
@@ -877,18 +929,6 @@ Deliverable als <a href="https://hobbitdata.informatik.uni-leipzig.de/OPAL/Deliv
 <a href="https://projekt-opal.github.io/doc/final-presentation/Praesentation/">projekt-opal.github.io/doc/final-presentation/Praesentation/</a></p>
 <p>OPAL Projektwebseite der DICE Fachgruppe:<br />
 <a href="https://dice-research.org/OPAL">dice-research.org/OPAL</a></p>
-</section></section>
-<section><section id="todo" class="titleslide slide level1"><h1>TODO</h1></section><section id="todo-1" class="slide level2">
-<h2>TODO</h2>
-<p>(aktuell: <a href="https://its-platform.eu/highlights/progressing-metadata-national-access-points">napDCAT-AP</a>)</p>
-<ul>
-<li><p><a href="https://github.com/projekt-opal/doc/wiki/Open-Data-Portals">Link-Sammlung Portale</a></p></li>
-<li>Anschlussprojekte</li>
-<li>Daten in mCLOUD</li>
-<li>Dissemination: außerdem Twitter</li>
-<li><p>Pub: Lizenzen, Bot, OPAL</p></li>
-<li><p>9.1 csv export mcloud</p></li>
-</ul>
 </section></section>
     </div>
   </div>

@@ -2,6 +2,6 @@
 
 ![](../Medien/AP6.2-Geo-Slicing.png)
 
-- In OPAL Portal
+- Integriert in OPAL Portal Demo
 - Deliverable (Code): [Spatial Slicing](https://github.com/projekt-opal/hackathon/tree/gh-pages/geo) ✓
 

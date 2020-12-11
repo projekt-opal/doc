@@ -29,5 +29,6 @@
     - **GovData**: 37.932
     - **European Data Portal (EDP)**: 795.387  
       (191.374 mit deutschen und englischen Titeln)  
-      _Deliverable abgeschlossen_ ✓
+- OPAL Daten auf [mCLOUD](https://mcloud.de/)  
+  _Deliverable abgeschlossen_ ✓
 

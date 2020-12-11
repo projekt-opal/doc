@@ -20,12 +20,16 @@
 
 ![](../Medien/AP5.3-CC-LicenseCompatibilityChart.png)
 
-"Choose two works you wish to **combine or remix**. [...] Use at least the **most restrictive licensing** of the two (use the license **most to right or down state**) for the new work."
+"Choose two works you wish to **combine or remix**. [...]  
+Use at least the **most restrictive licensing** of the two  
+(use the license **most to right or down state**)  
+for the new work."
 [CC wiki](https://wiki.creativecommons.org/index.php?title=Wiki/cc_license_compatibility&oldid=70058)
 
 ## D5.3 Lizenzen: Evaluierung
 
 ![](../Medien/AP5.3-Evaluierung.png)
 
-Auflistung aller kompatiblen Lizenzen zur Re-Lizensierung von kombinierten Datensätzen. ✓
+- Auflistung aller kompatiblen Lizenzen zur Re-Lizensierung von kombinierten Datensätzen.
+-  Als **Artikel** in IEEE International Conference on Semantic Computing (**ICSC 2021**) Resource Track ✓
 
