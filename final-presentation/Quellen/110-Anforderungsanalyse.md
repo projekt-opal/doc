@@ -5,8 +5,8 @@
     - Ergebnisse von Fragebögen 
     - Ergebnisse mFUND Workshop
     - Erkenntnisse aus Fachkonzeption und Usability-Untersuchung des mCLOUD-Portals
-- Ergebnis: 21 konsolidierte Anforderungen
 - Deliverable als [PDF-Datei](https://hobbitdata.informatik.uni-leipzig.de/OPAL/Deliverables/OPAL_D1.1_Anforderungsanalyse.pdf)
+- Ergebnis: **21 konsolidierte Anforderungen**
 
 ## D1.1 Konsolidierte Anforderungen 
 
@@ -22,7 +22,7 @@
 10. Lizenzinformationen
 11. Fokussierter Crawler
 
-## D1.1 Konsolidierte Anforderungen 
+## D1.1 Konsolidierte Anforderungen
 
 12. Automatisierte Extraktion von Metadaten
 13. Selektion von Teilmengen eines
@@ -34,5 +34,6 @@ Datensatzes
 18. Anzeige von existierender und neuer Daten
 19. Empfehlungen von relevanten Datensätzen
 20. Kommentierung bzgl. Qualität- und Inhalt
-21. Bewertung der Datensätze ✓
+21. Bewertung der Datensätze  
+_Deliverable abgeschlossen_ ✓
 

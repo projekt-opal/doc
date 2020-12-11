@@ -8,25 +8,33 @@ date: 15.12.2020
 
 ## Agenda
 
-- Projekt: **9 Arbeitspakete** mit **39 Deliverables**
-- Arbeitsplan, Arbeitsziele, **Soll-IST-Zustand**
-- **Fragen**: jederzeit, bestenfalls nach AP / Deliverables
-- Zusammenhänge mit anderen **mFUND Projekten**?
+- Projekt: **9 Arbeitspakete** (AP) mit **39 Deliverables**
+- Arbeitsplan, Arbeitsziele, Soll-IST-Zustand
+    - **SOLL**: Kurze Beschreibung der AP
+    - **IST**: Vorstellung der Projektergebnisse
+- **Fragen**: jederzeit, bestenfalls nach Deliverables  
+  Markierung dazu in dieser Präsentation: ✓
 
-### Zeitplan (flexibel)
+## Zeitplan (flexibel)
 
-- 09:00 – 11:15 Uhr
-- Pause
-- 11:45 – 14:00 Uhr
+- <strike>09:00 – 10:30 Uhr</strike>
+- <strike>10:45 – 12:15 Uhr</strike>
+- <strike>12:45 – 14:00 Uhr</strike>
 
-## Gesamtziel des Vorhabens <br/> (auch nachfolgend: SOLL-Zustand)
+### Aktualisierter Zeitplan
+
+- [OPAL Portal Demo](http://opalpro.cs.upb.de:3002/)
+- 09:15 – 10:30 Uhr
+- 10:45 – 12:00 Uhr
+
+## Gesamtziel des Vorhabens
 
 "Das OPAL-Projekt konzipiert und entwickelt  
 ein **Linked-Open-Data-Portal**
 mit Fokus auf  
 **öffentlichen Datenquellen aus Deutschland** [...]."
 
-## Arbeitspakete <br/> (auch nachfolgend: IST-Zustand / Ergebnisse)
+## Arbeitspakete
 
 1. Anforderungsanalyse und Architektur
 2. Datenakquisition
@@ -36,5 +44,5 @@ mit Fokus auf
 6. Datenselektion
 7. Anwendungsfälle
 8. Portalentwicklung
-9. Projektmanagement ✓
+9. Projektmanagement
 

@@ -2,9 +2,9 @@
 
 ![](../Medien/AP4.2-Converter.png)
 
-- Code: [Converter](https://github.com/projekt-opal/converter)
+- Publish-Subscribe Microservices via Spring Cloud
+- Code: [Converter](https://github.com/projekt-opal/converter)  
 - Konfiguration: [Converter-configuration](https://github.com/projekt-opal/converter-configuration)
-- Deliverable als [PDF-Datei](https://hobbitdata.informatik.uni-leipzig.de/OPAL/Deliverables/OPAL_D4.2_Conversion_component.pdf)
 
 ## D4.2 Konvertierungskomponente: Batch
 
@@ -12,5 +12,6 @@
 
 - Sequentielle Behandlung von Datensatz-Graphen
 - Elasticsearch
-- Code: [OPAL Batch](https://github.com/projekt-opal/batch) ✓
+- Code: [OPAL Batch](https://github.com/projekt-opal/batch)
+- Deliverable als [PDF-Datei](https://hobbitdata.informatik.uni-leipzig.de/OPAL/Deliverables/OPAL_D4.2_Conversion_component.pdf) ✓
 

@@ -6,10 +6,6 @@ Evaluierung: Synthetischer Benchmark
 
 ## D2.6 Finale Crawler-Benchmark-Ergebnisse
 
-![](../Medien/AP2.6-Algos.png)
-
-## D2.6 Finale Crawler-Benchmark-Ergebnisse
-
 ![](../Medien/AP2.6-Serialisierungen.png)
 
 ## D2.6 Finale Crawler-Benchmark-Ergebnisse
