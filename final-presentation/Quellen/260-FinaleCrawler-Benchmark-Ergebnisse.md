@@ -12,5 +12,6 @@ Evaluierung: Synthetischer Benchmark
 
 ![](../Medien/AP2.6-Evaluierung.png)
 
-Deliverable als [PDF-Datei](https://hobbitdata.informatik.uni-leipzig.de/OPAL/Deliverables/OPAL_D2.6_Finale_Crawler-Benchmark-Ergebnisse_ORCA.pdf) ✓
+Deliverable als [PDF-Datei](https://hobbitdata.informatik.uni-leipzig.de/OPAL/Deliverables/OPAL_D2.6_Finale_Crawler-Benchmark-Ergebnisse_ORCA.pdf),
+[Update 2020](https://arxiv.org/pdf/1912.08026.pdf) ✓
 

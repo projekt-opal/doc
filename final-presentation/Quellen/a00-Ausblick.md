@@ -8,6 +8,17 @@
 - Demo OPAL Portal ([dice-research.org/OPAL-Demo](https://dice-research.org/OPAL-Demo))
 - Demo Social Media Bot
 
+## Zusätzliche Entwicklungen (Auswahl)
+
+### OPAL Export
+
+- Exportiert **RDF** ins **CSV** Format ([Code](https://github.com/projekt-opal/misc/tree/master/export))
+- In Zusammenhang mit mCLOUD/mFUND entwickelt
+
+### Apache Jena
+
+Open Source Projekt: Erweiterung um **DCAT Version 2** ([Code](https://github.com/apache/jena/blob/master/jena-core/src/main/java/org/apache/jena/vocabulary/DCAT.java))
+
 ## Vielen Dank!
 
 Diese Präsentation online:  

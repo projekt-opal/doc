@@ -17,12 +17,6 @@ date: 15.12.2020
 
 ## Zeitplan (flexibel)
 
-- <strike>09:00 – 10:30 Uhr</strike>
-- <strike>10:45 – 12:15 Uhr</strike>
-- <strike>12:45 – 14:00 Uhr</strike>
-
-### Aktualisierter Zeitplan
-
 - [OPAL Portal Demo](http://opalpro.cs.upb.de:3002/)
 - 09:15 – 10:30 Uhr
 - 10:45 – 12:00 Uhr
