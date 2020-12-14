@@ -58,6 +58,8 @@ public class ReadmeGenerator {
 		minorRepositories.removeAll(mainRepositories);
 
 		diceRepositories = new LinkedList<Repository>();
+		diceRepositories.add(new Repository().setName("DEER").setHtmlUrl("https://github.com/dice-group/deer")
+				.setDescription("RDF Dataset Enrichment Framework (D5.5)"));
 		diceRepositories.add(new Repository().setName("FOX").setHtmlUrl("https://github.com/dice-group/FOX")
 				.setDescription("Federated Knowledge Extraction Framework (D3.3)"));
 		diceRepositories.add(new Repository().setName("LIMES").setHtmlUrl("https://github.com/dice-group/LIMES")
