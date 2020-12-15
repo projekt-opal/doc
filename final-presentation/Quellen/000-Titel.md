@@ -1,6 +1,6 @@
 ---
 title: <br/> ![](../Medien/OPAL-Logo.png)
-author: Adrian Wilke <br /> Prof. Dr. Axel Ngonga <br /> [dice-research.org](https://dice-research.org/) <br /> Universität Paderborn
+author: Adrian Wilke <br /> Michael Röder, Kevin Dreßler, Daniel Vollmers <br /> Prof. Dr. Axel Ngonga <br /> [dice-research.org](https://dice-research.org/) <br /> Universität Paderborn
 date: 15.12.2020
 ...
 
@@ -17,7 +17,7 @@ date: 15.12.2020
 
 ## Zeitplan (flexibel)
 
-- [OPAL Portal Demo](http://opalpro.cs.upb.de:3002/)
+- OPAL Portal Demo
 - 09:15 – 10:30 Uhr
 - 10:45 – 12:00 Uhr
 
