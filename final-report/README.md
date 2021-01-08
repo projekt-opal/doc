@@ -1,0 +1,29 @@
+# LaTeX final report generator
+
+This component creates a PDF file based on markdown code.
+
+Used components:
+
+- [Pandoc](https://pandoc.org/) (Document converter)
+- [Eisvogel ](https://github.com/Wandmalfarbe/pandoc-latex-template) (Pandoc LaTeX template, version 1.5.0)
+
+
+## How to use
+
+- Install Pandoc: `sudo apt-get install pandoc `
+- Install Texlive (full)`sudo apt-get install texlive-full`
+- Execute: `Quellen/Code/Generator.sh`  
+
+
+## Notes
+
+- [Pandoc User’s Guide](https://pandoc.org/MANUAL.html)
+- [Pandoc › Wiki › ubuntuusers.de](https://wiki.ubuntuusers.de/Pandoc/)
+-  [Eisvogel (Version 1.5.0)](https://github.com/Wandmalfarbe/pandoc-latex-template/releases/tag/v1.5.0)
+
+
+## Credits
+
+[Data Science Group (DICE)](https://dice-research.org/) at [Paderborn University](https://www.uni-paderborn.de/)
+
+This work has been supported by the German Federal Ministry of Transport and Digital Infrastructure (BMVI) in the project [Open Data Portal Germany (OPAL)](http://projekt-opal.de/) (funding code 19F2028A).
