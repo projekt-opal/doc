@@ -1,4 +1,4 @@
 #!/bin/sh
 
-mkdir ../../Tmp
+mkdir -p ../../Tmp
 cat ../*.md > ../../Tmp/content.md

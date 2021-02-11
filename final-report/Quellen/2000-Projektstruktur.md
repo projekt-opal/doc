@@ -1,0 +1,94 @@
+# Projektstruktur:  Meilensteine, Arbeitspakete und Deliverables
+
+Für das Projekt sind die folgenden **4 Meilensteine** definiert:
+
+- **Meilenstein 1** [M1]: **Anforderungserfassung und Architektur** (Monat 6)
+- **Meilenstein 2** [M2]: **Erster Portalprototyp** (Monat 18)
+- **Meilenstein 3** [M3]: **Erweiterter Portaldemonstrator** (Monat 24)
+- **Meilenstein 4** [M4]: **Finales OPAL-Portal** (Monat 36)
+
+Das Gesamtprojekt umfasst **9 Arbeitspakete** und weitere Unterteilungen. Zu diesen gibt es insgesamt **39 Deliverables (Abgaben)**. Diese sind bedingt durch inhaltliche Überschneidungen teilweise mehreren Arbeitspaketen zugeordnet. Die Strukturierung der Abeitspakete, Meilensteine und Deliverables ist im Folgenden aufgelistet:
+
+- **Arbeitspaket 1: Anforderungsanalyse und Architektur** [M2]
+    - **Arbeitspaket 1.1: Erhebung der Nutzeranforderungen** [M1]
+        - Deliverable 1.1: Anforderungsanalyse
+    - **Arbeitspaket 1.2: Datenanalyse** [M1]
+        - Deliverable 1.2: Datenanalyse
+    - **Arbeitspaket 1.3: Architektur** [M2]
+        - Deliverable 1.3: Architektur
+- **Arbeitspaket 2: Datenakquisition** [M4]
+    - **Arbeitspaket 2.1: Crawler-Spezifikation** [M2]
+        - Deliverable 2.1: Spezifikation der Crawler-Komponente
+    - **Arbeitspaket 2.2: Crawling-Komponente** [M4]
+        - Deliverable 2.2: Erste Version der Crawler-Komponente
+        - Deliverable 2.5: Finale Crawler-Komponente
+    - **Arbeitspaket 2.3: Metadatenbasierte Crawlingstrategien** [M4]
+        - Deliverable 2.4: Metadatenbasierte Crawlingstrategien
+    - **Arbeitspaket 2.4: Benchmarking der Crawling-Komponente** [M4]
+        - Deliverable 2.3: Benchmark-Spezifikation und Ergebnisse des ersten Crawlers
+        - Deliverable 2.6: Finale Crawler-Benchmark-Ergebnisse
+- **Arbeitspaket 3: Datenanalyse** [M4]
+    - **Arbeitspaket 3.1: Qualitätsanalyse** [M4]
+        - Deliverable 3.1: Spezifikation von Qualitätskriterien
+        - Deliverable 3.2: Qualitätsanalyse-Komponente
+        - Deliverable 3.5: Finale Datenanalysekomponenten
+    - **Arbeitspaket 3.2: Semistrukturierte Metadatenextraktion** [M4]
+        - Deliverable 3.3: Erste Metadatenextraktionskomponente
+        - Deliverable 3.5: Finale Datenanalysekomponenten
+    - **Arbeitspaket 3.3: Unstrukturierte Metadatenextraktion** [M4]
+        - Deliverable 3.3: Erste Metadatenextraktionskomponente
+        - Deliverable 3.5: Finale Datenanalysekomponenten
+    - **Arbeitspaket 3.4: Topic- und Schema-Extraktion** [M4]
+        - Deliverable 3.4: Topic-Extraktionskomponente
+        - Deliverable 3.5: Finale Datenanalysekomponenten
+- **Arbeitspaket 4: Datenkonvertierung** [M4]
+    - **Arbeitspaket 4.1: Vokabularspezifikation** [M2]
+        - Deliverable 4.1: Vokabularspezifikation
+    - **Arbeitspaket 4.2: Konvertierungskomponente** [M4]
+        - Deliverable 4.2: Konvertierungskomponente
+    - **Arbeitspaket 4.3: Indexstrukturen** [M3]
+        - Deliverable 4.3: Prototyp Indexstrukturen und Entitätserkennung
+    - **Arbeitspaket 4.4: Indizierungskomponente** [M4]
+        - Deliverable 4.4: Indizierungskomponente
+- **Arbeitspaket 5: Datenintegration** [M4]
+    - **Arbeitspaket 5.1: Datenverknüpfung** [M4]
+        - Deliverable 5.1: Erste Version der Verknüpfungskomponente
+        - Deliverable 5.5: Finale Verknüpfungskomponente
+    - **Arbeitspaket 5.2: Lernalgorithmen für Linkspezifikationen** [M4]
+        - Deliverable 5.2: Lernalgorithmen für Linkspezifikationen auf Metadaten
+    - **Arbeitspaket 5.3: Erweiterte Lernalgorithmen über Daten** [M4]
+        - Deliverable 5.4: Erweiterte Lernalgorithmen für Linkspezifikationen auf Metadaten
+    - **Arbeitspaket 5.4: Lizenzintegration** [M4]
+        - Deliverable 5.3: Lizenzintegrationskomponente
+- **Arbeitspaket 6: Datenselektion** [M4]
+    - **Arbeitspaket 6.1: Slicing von Linked Data** [M4]
+        - Deliverable 6.1: Linked-Data-Slicing-Komponente
+    - **Arbeitspaket 6.2: Slicing von Geodaten** [M4]
+        - Deliverable 6.2: Räumliches Slicing
+- **Arbeitspaket 7: Anwendungsfälle** [M4]
+    - **Arbeitspaket 7.1: Suche** [M4]
+        - Deliverable 7.1: Suchkomponente
+        - Deliverable 7.2: Benchmarking der Suchkomponente
+    - **Arbeitspaket 7.2: Mobile App** [M4]
+        - Deliverable 7.3: City-App Demonstrator
+    - **Arbeitspaket 7.3: Social Bot** [M4]
+        - Deliverable 7.4: Social Media Bot Demonstrator
+- **Arbeitspaket 8: Portalentwicklung** [M4]
+    - **Arbeitspaket 8.1: Portalinfrastruktur und Deployment** [M4]
+        - Deliverable 8.1: Portalinfrastruktur
+        - Deliverable 8.4: Finales OPAL-Portal
+    - **Arbeitspaket 8.2: Integration des Portalsystems** [M4]
+        - Deliverable 8.2: Erster Portalprototyp
+        - Deliverable 8.3: Erweiterter Portaldemonstrator
+        - Deliverable 8.4: Finales OPAL-Portal
+    - **Arbeitspaket 8.3: Webportal** [M4]
+        - Deliverable 8.4: Finales OPAL-Portal
+        - Deliverable 8.5: Anwenderdokumenation zum OPAL-Portal
+    - **Arbeitspaket 8.4: Evaluation von Portal und Anwendungen** [M4]
+        - Deliverable 8.6: Evaluierungsergebnisse
+- **Arbeitspaket 9: Projektmanagement** [M4]
+    - Arbeitspaket 9: Projektmanagement
+        - Deliverable 9.1: Kommunikations- und Disseminationsplan
+        - Deliverable 9.2: Projektbericht Jahr 1
+        - Deliverable 9.3: Projektbericht Jahr 2
+        - Deliverable 9.4: Projektbericht Jahr 3
