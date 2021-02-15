@@ -6,7 +6,7 @@
 
 Neben einer systematischen Literaturrecherche wurden Anforderungen aus den Ergebnissen von Fragebögen und eines mFUND Workshops sowie Erkenntnissen aus der Fachkonzeption und einer Usability-Untersuchung des mCLOUD-Portals gewonnen. Das Ergebnis ist die folgende Liste konsolidierter Anforderungen.
 
-**Konsolidierte Anforderungen**
+**Konsolidierte Anforderungen (AK)**
 
 1. Semantische Suche. Mit dieser Anforderung wird ein umfangreiche Suchfunktionalität über den verknüpften und einheitlichen Daten mit hoher Qualität ermöglicht.
 2. Räumliche Suche. Die typischerweise räumlich begrenzten Daten aus mCLOUD/MDM und verwandten Portalen müssen für die Suchfunktionalität (AF1) geeignet gefiltert werden können.
