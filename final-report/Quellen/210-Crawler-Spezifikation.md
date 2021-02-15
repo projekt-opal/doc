@@ -61,5 +61,5 @@ Entsprechend dieser Analyse wurde das Squirrel-Framework für eine nachfolgende 
 
 **Weiterführende Inhalte**
 
-* D2.1 Spezifikation der Crawler-Komponente: [https://github.com/projekt-opal/doc/blob/master/deliverables/OPAL_D2.1_Spezifikation_der_Crawler-Komponente.pdf](https://github.com/projekt-opal/doc/blob/master/deliverables/OPAL_D2.1_Spezifikation_der_Crawler-Komponente.pdf)
+* D2.1 Spezifikation der Crawler-Komponente (Matthias Wauer, Geraldo de Souza, Adrian Wilke, Afshin Amini): [https://github.com/projekt-opal/doc/blob/master/deliverables/OPAL_D2.1_Spezifikation_der_Crawler-Komponente.pdf](https://github.com/projekt-opal/doc/blob/master/deliverables/OPAL_D2.1_Spezifikation_der_Crawler-Komponente.pdf)
 

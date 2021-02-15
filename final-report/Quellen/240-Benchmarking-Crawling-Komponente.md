@@ -19,4 +19,5 @@ Die Benchmarks und das OPAL Projekt wurden als Artikel auf der International Con
 **Weiterführende Inhalte**
 
 * ORCA – a Benchmark for Data Web Crawlers (Artikel von Michael Röder, Geraldo de Souza Jr., Denis Kuchelev, Abdelmoneim Amer Desouki, Axel-Cyrille Ngonga Ngomo): [https://papers.dice-research.org/2021/ICSC2021_ORCA/ORCA_public.pdf](https://papers.dice-research.org/2021/ICSC2021_ORCA/ORCA_public.pdf)
+* Deliverable D2.3: Benchmark-Spezifikation und Ergebnisse des ersten Crawlers (Geraldo de Souza, Adrian Wilke): [https://github.com/projekt-opal/doc/blob/master/deliverables/OPAL_D2.3_Benchmark-specification_and_first_results_Crawler.pdf](https://github.com/projekt-opal/doc/blob/master/deliverables/OPAL_D2.3_Benchmark-specification_and_first_results_Crawler.pdf)
 * ORCA Software: [https://w3id.org/dice-research/orca](https://w3id.org/dice-research/orca)

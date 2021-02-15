@@ -32,5 +32,5 @@ Neben einer systematischen Literaturrecherche wurden Anforderungen aus den Ergeb
 
 **Weiterführende Inhalte**
 
-* D1.1 Anforderungsanalyse: [https://github.com/projekt-opal/doc/blob/master/deliverables/OPAL_D1.1_Anforderungsanalyse.pdf](https://github.com/projekt-opal/doc/blob/master/deliverables/OPAL_D1.1_Anforderungsanalyse.pdf)
+* D1.1 Anforderungsanalyse (Matthias Wauer, Adrian Wilke): [https://github.com/projekt-opal/doc/blob/master/deliverables/OPAL_D1.1_Anforderungsanalyse.pdf](https://github.com/projekt-opal/doc/blob/master/deliverables/OPAL_D1.1_Anforderungsanalyse.pdf)
 

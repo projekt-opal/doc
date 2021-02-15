@@ -17,5 +17,5 @@ Während des Projektverlaufs hat sich die Verwendung der Datenhaltungsschicht al
 
 **Weiterführende Inhalte**
 
-* D1.3 Architektur: [https://github.com/projekt-opal/doc/blob/master/deliverables/OPAL_D1.3_Architecture.pdf](https://github.com/projekt-opal/doc/blob/master/deliverables/OPAL_D1.3_Architecture.pdf)
+* D1.3 Architektur (Matthias Wauer, Ivan Ermilov): [https://github.com/projekt-opal/doc/blob/master/deliverables/OPAL_D1.3_Architecture.pdf](https://github.com/projekt-opal/doc/blob/master/deliverables/OPAL_D1.3_Architecture.pdf)
 

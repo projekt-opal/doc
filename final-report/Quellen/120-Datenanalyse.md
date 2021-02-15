@@ -28,6 +28,8 @@ Während des Projektverlaufs hat sich einerseits die Anzahl der verfügbaren Dat
 
 Der OPAL Graph in der Version von Oktober/November 2020 umfasst nach einer Datenbereinigung die folgende Anzahl Datensätze:
 
+\newpage
+
 | Datenquelle          | Anzahl Datensätze                                     |
 |----------------------|-------------------------------------------------------|
 | MDM                  |                                                   203 |
@@ -38,6 +40,6 @@ Der OPAL Graph in der Version von Oktober/November 2020 umfasst nach einer Daten
 
 **Weiterführende Inhalte**
 
-* D1.2 Datenanalyse: [https://github.com/projekt-opal/doc/blob/master/deliverables/OPAL_D1.2_Datenanalyse.pdf](https://github.com/projekt-opal/doc/blob/master/deliverables/OPAL_D1.2_Datenanalyse.pdf)
+* D1.2 Datenanalyse (Matthias Wauer, Adrian Wilke): [https://github.com/projekt-opal/doc/blob/master/deliverables/OPAL_D1.2_Datenanalyse.pdf](https://github.com/projekt-opal/doc/blob/master/deliverables/OPAL_D1.2_Datenanalyse.pdf)
 * Opal Graph: [https://hobbitdata.informatik.uni-leipzig.de/OPAL/OpalGraph/](https://hobbitdata.informatik.uni-leipzig.de/OPAL/OpalGraph/)
 
