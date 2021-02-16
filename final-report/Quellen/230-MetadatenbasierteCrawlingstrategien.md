@@ -1,6 +1,6 @@
 \newpage
 
-### Arbeitspaket 2.3: Metadatenbasierte Crawlingstrategien: 
+### Arbeitspaket 2.3: Metadatenbasierte Crawlingstrategien
 
 Squirrel setzt sich aus zwei Hauptkomponenten zusammen: Dem Frontier und Workern. Um eine vollständig erweiterbare Architektur zu erreichen, setzen beide Komponenten auf das Dependency Injektionsmuster, d.h. sie bestehen aus mehreren Modulen, die die einzelnen Funktionalitäten der Komponenten implementieren. Diese Module können in die Komponenten injiziert werden, was das Hinzufügen von weiteren Funktionalitäten ermöglicht. Zur Unterstützung der Injektion von Abhängigkeiten wurde Squirrel auf Basis des Spring-Frameworks implementiert. Die folgende Abbildung veranschaulicht die Architektur:
 
