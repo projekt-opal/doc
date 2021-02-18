@@ -14,9 +14,13 @@ Zur Anreicherung der Metadatensätze mit geografischen Angaben wurden die Geodat
 
 **Eigennamenerkennung und Disambiguierung von Entitäten**
 
-Zur Named Entity Recognition wurde FOX verwendet. FOX nutzt AGDISTIS/MAG zur Disambiguierung. Die genannten Komponenten wurden im Rahmen von OPAL weiterentwickelt und wurden u.a. auf den Konferenzen European Semantic Web Conference (ESWC 2018) und Knowledge Capture Conference (K-CAP 2017) vorgestellt.
+Zur Named Entity Recognition wurde FOX (Federated knOwledge eXtraction framework) eingesetzt. Die eingebettete Komponente kam für die Eigennamenerkennung von Orten zum Einsatz. Hierzu wurden folgenden Webservices implementiert:
 
+- metadata/fox: Gibt die extrahierten Ergebnisse aus FOX im Turtle-Format zurück.
+- metadata/fox/location/names: Gibt erkannte Ortsnamen im JSON-Format zurück.
+- metadata/fox/location/uris: Gibt Identifikatoren (URIs) erkannter Ortsnamen im JSON-Format zurück.
 
+Während das FOX-Framework selbst die Eigennamenerkennung übernimmt, nutzt das Framework AGDISTIS/MAG zur Disambiguierung der Entitäten. Siehe hierzu AP 4.4: Indizierungskomponente.
 
 
 **Weiterführende Inhalte**
@@ -26,5 +30,4 @@ Zur Named Entity Recognition wurde FOX verwendet. FOX nutzt AGDISTIS/MAG zur Dis
 * Software Metadatenextraktion (mit Named Entity Recognition): [https://github.com/projekt-opal/metadata-refinement/tree/metadata-alpha](https://github.com/projekt-opal/metadata-refinement/tree/metadata-alpha)
 * Software LauNuts: [https://github.com/projekt-opal/LauNuts](https://github.com/projekt-opal/LauNuts)
 * Software FOX - Federated Knowledge Extraction Framework: [https://github.com/dice-group/FOX](https://github.com/dice-group/FOX)
-* Entity Linking in 40 Languages using MAG (Artikel von Diego Moussallem, Ricardo Usbeck, Michael Röder, Axel-Cyrille Ngonga Ngomo): [https://arxiv.org/abs/1805.11467](https://arxiv.org/abs/1805.11467)
-* MAG: A Multilingual, Knowledge-base Agnostic and Deterministic Entity Linking Approach (Artikel von Diego Moussallem, Ricardo Usbeck, Michael Röder, Axel-Cyrille Ngonga Ngomo): [https://svn.aksw.org/papers/2017/KCAP_MAG/public.pdf](https://svn.aksw.org/papers/2017/KCAP_MAG/public.pdf)
+
