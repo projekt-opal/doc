@@ -1,4 +1,4 @@
-### Arbeitspaket 5.3: Erweiterte Lernalgorithmen über Daten
+### Arbeitspaket 5.4: Lizenzintegration
 
 Die Integration von unterschiedlichen Datenquellen birgt die Gefahr, dass Daten mit inkompatiblen Lizenzen kombiniert werden. In OPAL werden für integrierte Datensätze die daraus resultierenden Lizenzbedingungen automatisch abgeleitet und annotiert. Hierfür ist die Nutzung und der
 Ausbau eines W3C-Vorschlags59 zur automatischen Ableitung von
