@@ -2,56 +2,19 @@
 
 ### Arbeitspaket 5.1: Datenverknüpfung
 
-## D5.1 Erste Version der Verknüpfungskomponente
+Als Komponente zur Datenverknüpfung wurde LIMES (Link Discovery Framework for Metric Spaces) ausgewählt und im Verlauf des Projekts erweitert. LIMES kann dazu verwendet werden, Überschneidungen in verschiedenen Wissensgraphen zu finden und wurde in OPAL primär eingesetzt, um Verknüpfungen zwischen gleichen Ressourcen in verschiedenen Wissengraphen zu erstellen. Der Fokus liegt dabei auf geografischen Ähnlichkeiten, die durch Einsatz unterschiedlicher Metriken gefunden werden. Der ursprüngliche LIMES-Ansatz verwendet die Dreiecksungleichung um die Anzahl benötigter Vergleiche zwischen Wissensgraphen zu verringern.
 
-![](../Medien/AP5.1-Limes.png)
+Die Erweiterung WOMBAT, ein Ansatz des Maschinellen Lernens (ML) zur Link Discovery, wurde ebenso eingesetzt. Der Ansatz besteht aus zwei aufeinander aufbauenden Teilen: Ein einzelner (atomic) Vergleich von Bestandteilen zweier Graphen und eine anschließende Kombinierung (generalization). Hierbei bestehen die Möglichkeiten, das Supervised Learning, das ausschließlich positive Lernbeispiele benötigt, einzusetzen oder das Unsupervised Learning, das ohne Lernbeispiele auskommt.
 
-- Deliverable (Code): [LIMES 1.5.0](https://github.com/dice-group/LIMES/releases/tag/1.5.0)
-- Im Folgenden verwendet
+Im Rahmen von OPAL wurde auch DRAGON (Decision Tree Learning for Link Discovery) entwickelt, dass Entscheidungsbäume zum Erlernen von Linkspezifikationen verwendet und beim rekursiven Erstellen von Entscheidungsbäumen entweder die Trefferquote (recall) unter Verwendung des lokalen Gini Index oder die Genauigkeit (precision) unter Verwendung des globalen F-Maß fokussiert.
 
-LIMES (1/3)
-
-- **LIMES**: Link Discovery Framework for Metric Spaces
-- **Überschneidungen** in versch. Wissensgraphen **finden**
-    - z.B. **Erstellung Verknüpfungen** zwischen gleichen
-Ressourcen in verschiedenen Wissensgraphen
-    - z.B. **geografische Ähnlichkeiten** finden
-- Verwendung von **Metriken**, die Inhalte vergleichen
-- Verwendet Dreiecksungleichung (aus der Geometrie / Mathematik).
-- Verringert Anzahl benötigter
-Vergleiche.
-- LIMES-Framework: Grundlage maschinellen Lernens
-
-WOMBAT (2/3)
-
-- **WOMBAT**: A Generalization Approach for Automatic Link Discovery
-- Ansatz des Maschinellen Lernens (ML) zur Link Discovery
-- **Supervised Learning**, benötigt ausschließlich positive Lernbeispielen
-- **Unsupervised Learning**, ohne Lernbeispiele
-- Algorithmus : Zwei aufeinander aufbauende Teile
-    - Einzelner (atomic) Vergleich von Bestandteilen zweier Graphen
-    - Kombinierung (generalization)
-
-DRAGON (3/3)
-
-- **DRAGON**: Decision Tree Learning for Link Discovery
-- Verwendet **Entscheidungsbäume** zum Erlernen von Link Spezifikationen
-- Beim rekursiven Erstellen von Entscheidungsbäumen kann
-dabei
-    - entweder die Trefferquote (recall) unter Verwendung des lokalen Gini Index, oder
-    - die Genauigkeit (precision) unter Verwendung des globalen F-Maß fokussiert werden
-- Im Rahmen von **OPAL** entwickelt ([Springer](https://link.springer.com/chapter/10.1007%2F978-3-030-19274-7_31))  
- u.a. auch: [LimesWebUI](http://ceur-ws.org/Vol-2456/paper53.pdf)
-
-
-
-![](../Medien/AP5.1-Limes.png)
-
-- RDF Dataset Enrichment Framework: [DEER](https://github.com/dice-group/deer)
-- Deliverable (Code): [LIMES 1.7.4](https://github.com/dice-group/LIMES/releases/tag/1.7.4)
+LIMES wurde im Projektrahmen zu einem Framework erweitert, so auch die LIMES Benutzeroberfläche. Weiterhin kann das RDF Dataset Enrichment Framework DEER verwendet werden. Experimente sind in AP 5.2: Lernalgorithmen für Linkspezifikationen aufgeführt.
 
 
 **Weiterführende Inhalte**
 
-* D1.3 Architektur: [https://github.com/projekt-opal/doc/blob/master/deliverables/OPAL_D1.3_Architecture.pdf](https://github.com/projekt-opal/doc/blob/master/deliverables/OPAL_D1.3_Architecture.pdf)
-
+- Software LIMES - Link Discovery Framework for Metric Spaces: [https://github.com/dice-group/LIMES/](https://github.com/dice-group/LIMES/)
+- Software DEER - RDF Dataset Enrichment Framework: [https://github.com/dice-group/deer](https://github.com/dice-group/deer)
+- LIMES - A Framework for Link Discovery on the Semantic Web (Artikel von Axel-Cyrille Ngonga Ngomo, Mohamed Ahmed Sherif, Kleanthi Georgala, Mofeed Hassan, Kevin Dreßler, Klaus Lyko, Daniel Obraczka, Tommaso Soru): [https://papers.dice-research.org/2021/KI_LIMES/public.pdf](https://papers.dice-research.org/2021/KI_LIMES/public.pdf)
+- Limes Web UI (Artikel von Mohamed Ahmed Sherif, Pestryakova Svetlana, Kevin Dreßler, Axel-Cyrille Ngonga Ngomo): [http://ceur-ws.org/Vol-2456/paper53.pdf](http://ceur-ws.org/Vol-2456/paper53.pdf)
+- Dragon: Decision Tree Learning for Link Discovery (Artikel von Daniel Obraczka, Axel-Cyrille Ngonga Ngomo)[https://doi.org/10.1007/978-3-030-19274-7_51](https://doi.org/10.1007/978-3-030-19274-7_51)

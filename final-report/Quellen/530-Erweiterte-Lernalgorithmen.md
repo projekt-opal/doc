@@ -1,32 +1,18 @@
 \newpage
 
-###  Arbeitspaket 5.3: Erweiterte Lernalgorithmen über Daten
+### Arbeitspaket 5.3: Erweiterte Lernalgorithmen über Daten
 
-D5.4 Erweiterte Lernalgorithmen für Linkspezifikationen auf Metadaten
+Die Umsetzung von erweiterte Lernalgorithmen fand in ORCHID - Reduction-Ratio-Optimal Computation of Geo-Spatial Distances for Link Discovery statt. Hierzu wurden Experimente zum Linking von Geodaten durgeführt. Eingesetzt wurden primär die Datenbank OPAL LauNuts mit 84.000 Koordinaten-Punkten und LinkedGeoData, ein OpenStreetMap Derivat im RDF-Format. Die Distanzen der Geoobjekte konnten in performanter Weise errechnet werden. Im Folgenden sind die Laufzeiten von synthetischen und realen Daten aufgeführt:
 
-- Daten:
-    - OPAL LauNuts: 84.000 Koordinaten-Punkte
-    - [LinkedGeoData.org](http://linkedgeodata.org/) ([OpenStreetMap](https://www.openstreetmap.org/) als RDF)
-- ORCHID - Reduction-Ratio-Optimal Computation of Geo-Spatial Distances for Link Discovery
-[PDF](https://link.springer.com/content/pdf/10.1007%2F978-3-642-41335-3_25.pdf)
-[Springer](https://doi.org/10.1007/978-3-642-41335-3_25)
+![](../Medien/AP5-3-SLIPO.png)
 
-D5.4: SLIPO
+![](../Medien/AP5-3-Geonames.png)
 
-![](../Medien/AP5.4-SLIPO.png)
-
-D5.4: Geonames
-
-![](../Medien/AP5.4-Geonames.png)
-
-D5.4: OSM
-
-![](../Medien/AP5.4-OSM.png)
-
-Deliverable (Code): [LIMES Spark](https://github.com/dice-group/LIMES/tree/feature/hr3-spark)
+![](../Medien/AP5-3-OSM.png)
 
 
 **Weiterführende Inhalte**
 
-* D1.3 Architektur: [https://github.com/projekt-opal/doc/blob/master/deliverables/OPAL_D1.3_Architecture.pdf](https://github.com/projekt-opal/doc/blob/master/deliverables/OPAL_D1.3_Architecture.pdf)
-
+* Software LIMES Spark: [https://github.com/dice-group/LIMES/tree/feature/hr3-spark](https://github.com/dice-group/LIMES/tree/feature/hr3-spark)
+* ORCHID - Reduction-Ratio-Optimal Computation of Geo-Spatial Distances for Link Discovery (Artikel von Axel-Cyrille Ngonga Ngomo): [https://doi.org/10.1007/978-3-642-41335-3_25](https://doi.org/10.1007/978-3-642-41335-3_25)
+* Datensatz LinkedGeoData: [http://linkedgeodata.org/](http://linkedgeodata.org/)

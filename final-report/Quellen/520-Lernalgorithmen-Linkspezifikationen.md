@@ -2,60 +2,18 @@
 
 ### Arbeitspaket 5.2: Lernalgorithmen für Linkspezifikationen
 
-D5.2 Lernalgorithmen für Linkspezifikationen auf Metadaten
+In diesem Teil wurden die Softwarekomponenten aus AP 5.1 in 5 Experimenten zur Deduplizierung angewendet. Aufbauend auf Linkspezifikationen für OPAL/DCAT Datensätzen stand für jedes Experiment jeweils 30 GB Arbeitsspeicher zur Verfügung. Die Experimente sind im Folgenden aufsteigend sortiert nach der Güte ihrer Ergebnisse beschrieben.
 
-- **5 Experimente** zur **Deduplizierung**
-- Linkspezifikationen für **OPAL/DCAT Datensätze**
-- jeweils 30 GB Arbeitsspeicher
-- Deliverable (Code): [OPAL Datenintegration](https://github.com/projekt-opal/linking)
-- Deliverable als [PDF-Datei](https://hobbitdata.informatik.uni-leipzig.de/OPAL/Deliverables/OPAL_D5.2_Lernalgorithmen_fuer_Linkspezifikationen_auf_Metadaten.pdf)
+- In Experiment 1: WOMBAT als unsupervised complete wurden als Linkspezifikation dcat:Dataset und 23 optionale weitere Eigenschaften festgelegt. Sowohl bei Schwellenwerten von 0,95 und 0,9 wurden keine Duplikate erkannt, da die Ausführung aufgrund der Größe der Eingabedaten bei der trotz 30 GB Arbeitsspeicher mit einem OutOfMemoryError (GC overhead limit exceeded) vorzeitig beendet wurde.
+- In Experiment 2: WOMBAT unsupervised simple II wurden ebenfalls dcat:Datasets und 23 optionale weitere Eigenschaften spezifiziert. Hier ergab ein Schwellenwert von 0,9 keine Duplikate und ein Schwellenwert von 0,8 rund 24 Millionen Duplikate. Entsprechend der Ergebniszahlen (keine Ergebnisse und zu viele Duplikate) lieferte dieses Experiment keine verwertbaren Ergebnisse.
+- In Experimant 3: WOMBAT unsupervised simple I wurden sowohl dcat:Dataset als auch entsprechende Distributionen dcat:downloadURL und deren 10 optionale weitere Eigenschaften spezifiziert. Ein Schwellenwert von 0,5 ergab rund 18.000 Duplikate, ein Schwellenwert von 0,9 ergab 888 duplizierte Datensätze. Die erkannten 888 Datensätze konnten später bestätigt werden, so dass über Download-URls der jeweiligen Distributionen eine Deduplizierung möglich ist.
+- In Experiment 4: LIMES (Dataset) wurde dieselbe Linkspezifikation verwendet; hier wurde LIMES core anstelle von WOMBAT verwendet. Erneut wurden 888 duplizierte Datensätze gefunden.
+- In Experiment 5: LIMES (Distribution) wurde die Spezifizierung der Datensätze entfernt und ein Fokus auf Distributionen gesetzt. Es wurden 1.833 Duplikate von Distributionen gefunden.
 
-WOMBAT unsupervised complete (1/5)
-
-- Linkspezifikation: dcat:Dataset und  
-  **23 optionale** weitere Eigenschaften
-- Anzahl erkannter Duplikate:
-    - 0 (Schwellenwert: 0,95)
-    - 0 (Schwellenwert: 0,9)
-- Aufgrund Größe der Eingabedaten bei der
-Ausführung mit 30 GB Arbeitsspeicher vorzeitig beendet.  
-java.lang.**OutOfMemoryError**: GC overhead limit exceeded
-
-WOMBAT unsupervised simple II (2/5)
-
-- Linkspezifikation: dcat:Dataset und  
-  **23 optionale** weitere Eigenschaften
-- Anzahl erkannter Duplikate:
-    - 0 (Schwellenwert: 0,9)
-    - 23.744.536 (Schwellenwert: 0,8)
-- keine Ergebnisse und  
-  zu viele Ergebnisse
-
-WOMBAT unsupervised simple I (3/5)
-
-- Linkspezifikation: dcat:Dataset,  
-  Distributionen dcat:downloadURL und  
-  **10 optionale** weitere Eigenschaften von
-- Anzahl erkannter Duplikate:
-    - 888 (Schwellenwert: 0,9)
-    - 18.373 (Schwellenwert: : 0,5)
-- **888 Duplikate von Datensätzen**
-
-D5.2: LIMES (Dataset) (4/5)
-
-- Linkspezifikation: dcat:Dataset,  
-  Distributionen dcat:downloadURL und  
-  10 weitere optionale Eigenschaften von Distributionen
-- **Anzahl erkannter Duplikate: 888 Datensätze**
-
-D5.2: LIMES (Distribution) (5/5)
-
-- Linkspezifikation: dcat:Distribution  
-  und dcat:downloadURL
-- **Anzahl erkannter Duplikate: 1.833 Distributionen**
+Abschließend empfehlen wir zum Finden von Duplikaten die Verwendung von Download-URLs, um mehrfach auftretende Datensätze zu dedektieren. Dies ist für Anwendungsfälle relevant, in denen Daten aus mehreren Portalen zur Verfügung stehen und gleiche Datensätze erkannt werden müssen.
 
 
 **Weiterführende Inhalte**
 
-* D1.3 Architektur: [https://github.com/projekt-opal/doc/blob/master/deliverables/OPAL_D1.3_Architecture.pdf](https://github.com/projekt-opal/doc/blob/master/deliverables/OPAL_D1.3_Architecture.pdf)
-
+- D5.2 Lernalgorithmen für Linkspezifikationen auf Metadaten (Adrian Wilke, Mohamed Sherif): [OPAL Datenintegration](https://github.com/projekt-opal/linking)
+- Software zur Datenextraktion: [OPAL Datenintegration](https://github.com/projekt-opal/linking)
