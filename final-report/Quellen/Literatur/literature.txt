@@ -1,0 +1,129 @@
+Literature list
+Searched for OPAL funding code "19F2028A" in every PDF containing the string "public"
+Software: https://github.com/adibaba/barrel
+
+Removed presentations
+
+
+. 19F2028A). References 1. Ngonga Ngomo, A.C., Bühmann, L., Unger, C., Lehmann, J., Gerber, D.: Sorry, i
+/2019/ISWC2019_COPAAL_Demo/public.pdf
+/home/adi/DICE/svn/dice-open/papers/2019/ISWC2019_COPAAL_Demo/public.pdf
+https://papers.dice-research.org/2019/ISWC2019_COPAAL_Demo/public.pdf
+1.7560462
+
+the projects LIMBO (no. 19F2029I) and OPAL (no. 19F2028A), the German Federal Ministry of Education
+/2019/ISWC2019_COPAAL/public.pdf
+/home/adi/DICE/svn/dice-open/papers/2019/ISWC2019_COPAAL/public.pdf
+https://papers.dice-research.org/2019/ISWC2019_COPAAL/public.pdf
+1.0772256
+
+Education and Re- search (BMBF) within the projects within the projects OPAL (no. 19F2028A), RAKI (no
+/2021/ICSC2021_SynthG/ICSC_SynthG_public.pdf
+/home/adi/DICE/svn/dice-open/papers/2021/ICSC2021_SynthG/ICSC_SynthG_public.pdf
+https://papers.dice-research.org/2021/ICSC2021_SynthG/ICSC_SynthG_public.pdf
+1.4286696
+
+well as the BMVI projects LIMBO (GA no. 19F2029C) and OPAL (GA no. 19F2028A). 62 00 00 00 _S ta tio ne
+/2020/MWPD2020_ProBERT/public.pdf
+/home/adi/DICE/svn/dice-open/papers/2020/MWPD2020_ProBERT/public.pdf
+https://papers.dice-research.org/2020/MWPD2020_ProBERT/public.pdf
+1.4286696
+
+OPAL (no. 19F2028A), the EuroStars projects DIESEL (no. 01QE1512C) and QAMEL (no. 01QE1549C
+/2018/ESWC_Challenge_OKE/OKE_18_public.pdf
+/home/adi/DICE/svn/dice-open/papers/2018/ESWC_Challenge_OKE/OKE_18_public.pdf
+https://papers.dice-research.org/2018/ESWC_Challenge_OKE/OKE_18_public.pdf
+1.3650488
+
+Digital Infrastructure (BMVI) within the project OPAL under the grant no. 19F2028A and by the EU H2020
+/2021/ICSC2021_ReCoDa/Relicensing-Combined-Datasets-ReCoDa-public.pdf
+/home/adi/DICE/svn/dice-open/papers/2021/ICSC2021_ReCoDa/Relicensing-Combined-Datasets-ReCoDa-public.pdf
+https://papers.dice-research.org/2021/ICSC2021_ReCoDa/Relicensing-Combined-Datasets-ReCoDa-public.pdf
+1.3068526
+
+. 19F2029I) and OPAL (no. 19F2028A), the H2020 Marie Sk lodowska-Curie project KnowGraphs (GA no. 860801
+/2019/ISWC2019_PhdConsortium_Hashim/ISWC_PhDConsortium_hashim-public.pdf
+/home/adi/DICE/svn/dice-open/papers/2019/ISWC2019_PhdConsortium_Hashim/ISWC_PhDConsortium_hashim-public.pdf
+https://papers.dice-research.org/2019/ISWC2019_PhdConsortium_Hashim/ISWC_PhDConsortium_hashim-public.pdf
+1.2534156
+
+research project (grant no. 19F2028A) as well as by the German Federal Ministry of Education and Research
+/2019/Conversations2019_DBpedia_Chatlog/Chatlog_Analysis_public.pdf
+/home/adi/DICE/svn/dice-open/papers/2019/Conversations2019_DBpedia_Chatlog/Chatlog_Analysis_public.pdf
+https://papers.dice-research.org/2019/Conversations2019_DBpedia_Chatlog/Chatlog_Analysis_public.pdf
+1.2534156
+
+OPAL (GA no. 19F2028A). References 1. Archer, P.: Data catalog vocabulary (dcat) (w3c recommendation
+/2020/ISWC_Squirrel/public.pdf
+/home/adi/DICE/svn/dice-open/papers/2020/ISWC_Squirrel/public.pdf
+https://papers.dice-research.org/2020/ISWC_Squirrel/public.pdf
+1.2534156
+
+LIMBO (GA no. 19F2029C) and OPAL(GA no. 19F2028A), Eurostars Project SAGE (GA no. E!10882) as well as
+/2019/NLDB_LSVS/paper/public.pdf
+/home/adi/DICE/svn/dice-open/papers/2019/NLDB_LSVS/paper/public.pdf
+https://papers.dice-research.org/2019/NLDB_LSVS/paper/public.pdf
+1.204177
+
+by the German Federal Ministry of Transport and Digital Infrastruc- ture project OPAL (GA: 19F2028A
+/2019/JIST2019_PYKE/public.pdf
+/home/adi/DICE/svn/dice-open/papers/2019/JIST2019_PYKE/public.pdf
+https://papers.dice-research.org/2019/JIST2019_PYKE/public.pdf
+1.1586609
+
+. 19F2029C) and OPAL (GA no. 19F2028A). References 1. Bizer, C., Volz, J., Kobilarov, G., Gaedke, M
+/2020/OM_hECATE/public.pdf
+/home/adi/DICE/svn/dice-open/papers/2020/OM_hECATE/public.pdf
+https://papers.dice-research.org/2020/OM_hECATE/public.pdf
+1.1586609
+
+(GA no. 860801) as well as the BMVI projects LIMBO (GA no. 19F2029C) and OPAL (GA no. 19F2028A
+/2020/OM_LIGON/public.pdf
+/home/adi/DICE/svn/dice-open/papers/2020/OM_LIGON/public.pdf
+https://papers.dice-research.org/2020/OM_LIGON/public.pdf
+1.1586609
+
+Verkehr und digitale Infrastruktur) projects LIMBO (GA no. 19F2029C) and OPAL (GA no. 19F2028A), the
+/2019/HT_DHARE/dhare_public.pdf
+/home/adi/DICE/svn/dice-open/papers/2019/HT_DHARE/dhare_public.pdf
+https://papers.dice-research.org/2019/HT_DHARE/dhare_public.pdf
+1.1164602
+
+. 19F2028A), LIMBO (no. 19F2029I), RAKI (no. 01MD19012D) and DAIKIRI (no. 01IS19085B). REFERENCES [1] Adida
+/2021/ICSC2021_ORCA/ORCA_public.pdf
+/home/adi/DICE/svn/dice-open/papers/2021/ICSC2021_ORCA/ORCA_public.pdf
+https://papers.dice-research.org/2021/ICSC2021_ORCA/ORCA_public.pdf
+1.0772256
+
+no. 19F2029C) and OPAL( no. 19F2028A), Eurostars Project SAGE (GA no. E!10882) as well as the H2020
+/2019/KCAP_PHONETICSIMILARITY/public.pdf
+/home/adi/DICE/svn/dice-open/papers/2019/KCAP_PHONETICSIMILARITY/public.pdf
+https://papers.dice-research.org/2019/KCAP_PHONETICSIMILARITY/public.pdf
+1.0406549
+
+) and the BMVI projects LIMBO (19F2029C) and OPAL (19F2028A). References 1. Allen, J.F.: Maintaining
+/2021/KI_LIMES/public.pdf
+/home/adi/DICE/svn/dice-open/papers/2021/KI_LIMES/public.pdf
+https://papers.dice-research.org/2021/KI_LIMES/public.pdf
+1.0064857
+
+no. 19F2028A). 26 References [1] A. F. Ahmed, M. A. Sherif, A.-C. N. Ngomo, Lsvs: Link
+/2021/DATAK_LSVS_journal/public.pdf
+/home/adi/DICE/svn/dice-open/papers/2021/DATAK_LSVS_journal/public.pdf
+https://papers.dice-research.org/2021/DATAK_LSVS_journal/public.pdf
+1.0064857
+
+
+
+
+
+------------------------
+not found in dice.bib
+
+
+(Grant no. 19F2029I), OPAL (no. 19F2028A) and SOLIDE (no. 13N14456). REFERENCES [1] Adam Acar and Yuya
+/2019/KCAP2019_Joint_model/K-CAP19_Joint-model-public.pdf
+/home/adi/DICE/svn/dice-open/papers/2019/KCAP2019_Joint_model/K-CAP19_Joint-model-public.pdf
+https://papers.dice-research.org/2019/KCAP2019_Joint_model/K-CAP19_Joint-model-public.pdf
+1.4286696
+
