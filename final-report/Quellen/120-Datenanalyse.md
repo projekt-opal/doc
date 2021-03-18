@@ -30,12 +30,7 @@ Der OPAL Graph in der Version von Oktober/November 2020 umfasst nach einer Daten
 
 \newpage
 
-| Datenquelle          | Anzahl Datensätze                                     |
-|----------------------|-------------------------------------------------------|
-| MDM                  |                                                   203 |
-| mCLOUD               |                                                 2.853 |
-| GovData              |                                                37.932 |
-| European Data Portal | 795.387 (191.374 mit deutschen und englischen Titeln) |
+![](../Medien/Tabelle-120.pdf)
 
 
 **Weiterführende Inhalte**
