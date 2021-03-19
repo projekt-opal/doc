@@ -1,0 +1,504 @@
+Exported from https://www.bibsonomy.org/user/dice-research/opal
+
+@inproceedings{wilke-2021-recoda,
+  abstract = {Metadata portals offer access to Open Data, which is increasingly published on the basis of RDF vocabularies and ontologies. Individual datasets include URIs and descriptions of licenses under which the datasets are published. Licenses can be defined by attributes of the types permission, requirement and prohibition. This paper focuses on the problem of relicensing datasets that include multiple other open datasets published under different licenses. If combined datasets are republished, a chosen license must comply with the original licenses of each dataset. The approach is based on mapping licenses to deontic interpretations and combining them using an OR-composite operator. The result of the operator is used to determine matching licenses from a Knowledge Base containing license information. The approach is evaluated based on the Creative Commons License Compatibility Chart.},
+  added-at = {2021-03-09T14:04:06.000+0100},
+  author = {Wilke, Adrian and Bannoura, Arwa and Ngonga Ngomo, Axel-Cyrille},
+  biburl = {https://www.bibsonomy.org/bibtex/232cf48db1d67d8f7535f9d9811645804/dice-research},
+  booktitle = {2021 IEEE 15th International Conference on Semantic Computing (ICSC)},
+  doi = {10.1109/ICSC50631.2021.00050},
+  interhash = {bea618d14a77db8ea12cee83f16d2db2},
+  intrahash = {32cf48db1d67d8f7535f9d9811645804},
+  keywords = {Creative-Commons DCAT Licenses ODRL Open-Data RDF ReCoDa Relicensing bannoura ccREL dice knowgraphs ngonga opal wilke},
+  pages = {241-247},
+  timestamp = {2021-03-09T14:04:06.000+0100},
+  title = {Relicensing {Combined} {Datasets}},
+  url = {https://papers.dice-research.org/2021/ICSC2021_ReCoDa/Relicensing-Combined-Datasets-ReCoDa-public.pdf},
+  year = 2021
+}
+
+@article{KI_LIMES_2021,
+  abstract = {
+The Linked Data paradigm builds upon the backbone of distributed knowledge bases connected by typed links. The mere volume of current knowledge bases as well as their sheer number pose two major challenges when aiming to support the computation of links across and within them. The first is that tools for link discovery have to be time-efficient when they compute links. Secondly, these tools have to produce links of high quality to serve the applications built upon Linked Data well. Solutions to the second problem build upon efficient computational approaches developed to solve the first and combine these with dedicated machine learning techniques. The current version of the LIMES framework is the product of seven years of research on these two challenges. A series of machine learning techniques and efficient computation approaches were developed and integrated into this framework to address the link discovery problem. The framework combines these diverse algorithms within a generic and extensible architecture. In this article, we give an overview of version 1.7.4 of the open-source release of the framework. In particular, we focus on an overview of the architecture of the framework, an intuition of its inner workings and a brief overview of the approaches it contains. Some descriptions of the applications within which the framework was used complete the paper. Our framework is open-source and available under a GNU license at https: //github.com/dice-group/LIMES together with a user manual and a developer manual.},
+  added-at = {2021-03-09T14:04:06.000+0100},
+  author = {{Ngonga Ngomo}, Axel-Cyrille and Sherif, Mohamed Ahmed and Georgala, Kleanthi and Hassan, Mofeed and Dreßler, Kevin and Lyko, Klaus and Obraczka, Daniel and Soru, Tommaso},
+  biburl = {https://www.bibsonomy.org/bibtex/2542c1a63f1c4f0b782f1e5bd6a942ef0/dice-research},
+  doi = {10.1007/s13218-021-00713-x},
+  interhash = {0fcbfc564dbd6e681bda22fe97967e9b},
+  intrahash = {542c1a63f1c4f0b782f1e5bd6a942ef0},
+  journal = {KI - K{\"u}nstliche Intelligenz, German Journal of Artificial Intelligence - Organ des Fachbereichs "Künstliche Intelligenz" der Gesellschaft für Informatik e.V.},
+  keywords = {2021 dice georgala kevin knowgraphs limbo limboproject limes ngonga opal sage sherif simba slipo},
+  owner = {sherif},
+  publisher = {Springer},
+  timestamp = {2021-03-09T14:04:06.000+0100},
+  title = {{LIMES - A Framework for Link Discovery on the Semantic Web}},
+  url = {https://papers.dice-research.org/2021/KI_LIMES/public.pdf},
+  year = 2021
+}
+
+@article{AHMED2021101874,
+  abstract = {The number and size of datasets abiding by the Linked Data paradigm increase every day. Discovering links between these datasets is thus central to achieving the vision behind the Data Web. Declarative Link Discovery (LD) frameworks rely on complex Link Specification (LS) to express the conditions under which two resources should be linked. Understanding such LS is not a trivial task for non-expert users. Particularly when such users are interested in generating LS to match their needs. Even if the user applies a machine learning algorithm for the automatic generation of the required LS, the challenge of explaining the resultant LS persists. Hence, providing explainable LS is the key challenge to enable users who are unfamiliar with underlying LS technologies to use them effectively and efficiently. In this paper, we extend our previous work (Ahmed et al., 2019) by proposing a generic multilingual approach that allows verbalization of LS in many languages, i.e., converts LS into understandable natural language text. In this work, we ported our LS verbalization framework into German and Spanish, in addition to English language. Our adequacy and fluency evaluations show that our approach can generate complete and easily understandable natural language descriptions even by lay users. Moreover, we devised an experimental neural approach for improving the quality of our generated texts. Our neural approach achieves promising results in terms of BLEU, METEOR and chrF++.},
+  added-at = {2021-03-05T10:29:31.000+0100},
+  author = {Ahmed, Abdullah Fathi and Sherif, Mohamed Ahmed and Moussallem, Diego and Ngomo, Axel-Cyrille Ngonga},
+  biburl = {https://www.bibsonomy.org/bibtex/2a5e07d26e2e8b8fa6b9e380f3a3494dc/dice-research},
+  doi = {https://doi.org/10.1016/j.datak.2021.101874},
+  interhash = {c7ace64f4a92138b62cd82cd792aa282},
+  intrahash = {a5e07d26e2e8b8fa6b9e380f3a3494dc},
+  issn = {0169-023X},
+  journal = {Data & Knowledge Engineering},
+  keywords = {2021 ahmed dice knowgraphs libo limes moussallem ngonga opal raki sherif simba},
+  pages = 101874,
+  timestamp = {2021-03-09T14:04:03.000+0100},
+  title = {Multilingual Verbalization and Summarization for Explainable Link Discovery},
+  url = {https://www.sciencedirect.com/science/article/pii/S0169023X2100001X},
+  year = 2021
+}
+
+@inproceedings{desouki2021synthg,
+  added-at = {2021-02-02T15:23:43.000+0100},
+  author = {Desouki, Abdelmoneim Amer and Conrads, Felix and Röder, Michael and Ngomo, Axel-Cyrille Ngonga},
+  biburl = {https://www.bibsonomy.org/bibtex/2c55d4d80b2d3c505f1f49dc252f0e5c2/dice-research},
+  booktitle = {Proceedings of the 15th IEEE International Conference on Semantic Computing (ICSC)},
+  interhash = {4a8967f376c3d76dffd97dde0fedf07d},
+  intrahash = {c55d4d80b2d3c505f1f49dc252f0e5c2},
+  keywords = {daikiri desouki dice fconrads group_aksw ngonga opal raki roeder},
+  pages = {76-79},
+  publisher = {IEEE Computer Society},
+  timestamp = {2021-02-02T15:23:43.000+0100},
+  title = {SynthG: Mimicking RDF Graphs Using Tensor Factorization},
+  url = {https://papers.dice-research.org/2021/ICSC2021_SynthG/ICSC_SynthG_public.pdf},
+  year = 2021
+}
+
+@inproceedings{roeder2021orca,
+  added-at = {2021-02-02T15:23:43.000+0100},
+  author = {Röder, Michael and de Souza Jr., Geraldo and Kuchelev, Denis and Desouki, Abdelmoneim Amer and Ngomo, Axel-Cyrille Ngonga},
+  biburl = {https://www.bibsonomy.org/bibtex/2b4ccbc4c35d77d08f06310144b1571c0/dice-research},
+  booktitle = {Proceedings of the 15th IEEE International Conference on Semantic Computing (ICSC)},
+  interhash = {255d3b25577a2a64a748aa25766c9bbe},
+  intrahash = {b4ccbc4c35d77d08f06310144b1571c0},
+  keywords = {daikiri dice group_aksw gsjunior kuchelev limbo ngonga opal raki roeder},
+  pages = {62-69},
+  publisher = {IEEE Computer Society},
+  timestamp = {2021-02-02T15:23:43.000+0100},
+  title = {ORCA – a Benchmark for Data Web Crawlers},
+  url = {https://papers.dice-research.org/2021/ICSC2021_ORCA/ORCA_public.pdf},
+  year = 2021
+}
+
+@inproceedings{wilke-2021-recoda,
+  abstract = {Metadata portals offer access to Open Data, which is increasingly published on the basis of RDF vocabularies and ontologies. Individual datasets include URIs and descriptions of licenses under which the datasets are published. Licenses can be defined by attributes of the types permission, requirement and prohibition. This paper focuses on the problem of relicensing datasets that include multiple other open datasets published under different licenses. If combined datasets are republished, a chosen license must comply with the original licenses of each dataset. The approach is based on mapping licenses to deontic interpretations and combining them using an OR-composite operator. The result of the operator is used to determine matching licenses from a Knowledge Base containing license information. The approach is evaluated based on the Creative Commons License Compatibility Chart.},
+  added-at = {2020-12-17T14:20:42.000+0100},
+  author = {Wilke, Adrian and Bannoura, Arwa and Ngonga Ngomo, Axel-Cyrille},
+  biburl = {https://www.bibsonomy.org/bibtex/2f81b43f8a3111a5ab03c708d041ad783/dice-research},
+  booktitle = {Proceedings of the 15th {IEEE} {International} {Conference} on {Semantic} {Computing} ({ICSC} 2021)},
+  interhash = {bea618d14a77db8ea12cee83f16d2db2},
+  intrahash = {f81b43f8a3111a5ab03c708d041ad783},
+  keywords = {Creative-Commons DCAT Licenses ODRL Open-Data RDF ReCoDa Relicensing bannoura ccREL dice knowgraphs ngonga opal wilke},
+  timestamp = {2021-03-09T14:04:06.000+0100},
+  title = {Relicensing {Combined} {Datasets}},
+  url = {https://papers.dice-research.org/2021/ICSC2021_ReCoDa/Relicensing-Combined-Datasets-ReCoDa-public.pdf},
+  year = 2021
+}
+
+@inproceedings{MWPD2020_ProBERT,
+  added-at = {2020-09-25T15:37:53.000+0200},
+  author = {Zahera, Hamada M. and Sherif, Mohamed Ahmed},
+  biburl = {https://www.bibsonomy.org/bibtex/2e1121a6dc4817a2a4f583bdd69398fd8/dice-research},
+  booktitle = {Proceedings of Mining the Web of HTML-embedded Product Data Workshop (MWPD2020)},
+  interhash = {849abda62b2a7f221aeb0d14436754c5},
+  intrahash = {e1121a6dc4817a2a4f583bdd69398fd8},
+  keywords = {2020 dice knowgraphs limbo limboproject limes opal sherif zahera},
+  owner = {zahera},
+  timestamp = {2021-03-09T14:04:06.000+0100},
+  title = {{ProBERT: Product Data Classification with Fine-tuning BERT Model}},
+  url = {https://papers.dice-research.org/2020/MWPD2020_ProBERT/public.pdf},
+  year = 2020
+}
+
+@inproceedings{hecate_om_2020,
+  abstract = {With the growth in number and variety of RDF datasets comes an in- creasing need for both scalable and accurate solutions to support link discovery at instance level within and across these datasets. In contrast to ontology matching, most linking frameworks rely solely on string similarities to this end. The limited use of semantic similarities when linking instances is partly due to the current literature stating that they (1) do not improve the F-measure of instance linking approaches and (2) are impractical to use because they lack time efficiency. We revisit the combination of string and semantic similarities for linking instances. Contrary to the literature, our results suggest that this combination can improve the F-measure achieved by instance linking systems when the combination of the measures is performed by a machine learning approach. To achieve this in- sight, we had to address the scalability of semantic similarities. We hence present a framework for the rapid computation of semantic similarities based on edge counting. This runtime improvement allowed us to run an evaluation of 5 bench- mark datasets. Our results suggest that combining string and semantic similarities can improve the F-measure by up to 6% absolute.},
+  added-at = {2020-09-23T13:04:30.000+0200},
+  author = {Georgala, Kleanthi and Röder, Michael and Sherif, Mohamed Ahmed and {Ngonga Ngomo}, Axel-Cyrille},
+  biburl = {https://www.bibsonomy.org/bibtex/2f501a97f376a1caaf57f7041c413d3f0/dice-research},
+  booktitle = {Proceedings of Ontology Matching Workshop 2020},
+  interhash = {0b860967844cef24d833dd5558dbacd8},
+  intrahash = {f501a97f376a1caaf57f7041c413d3f0},
+  keywords = {2020 dice georgala hecate knowgraphs limbo limboproject limes ngonga opal roeder sherif simba},
+  owner = {sherif},
+  timestamp = {2021-03-09T14:04:03.000+0100},
+  title = {{Applying edge-counting semantic similarities to Link Discovery: Scalability and Accuracy}},
+  url = {https://papers.dice-research.org/2020/OM_hECATE/public.pdf},
+  year = 2020
+}
+
+@inproceedings{liger_om_2020,
+  abstract = {Modern data-driven frameworks often have to process large amounts of data periodically. Hence, they often operate under time or space constraints. This also holds for Linked Data-driven frameworks when processing RDF data, in particular, when they perform link discovery tasks. In this work, we present a novel approach for link discovery under constraints pertaining to the expected recall of a link discovery task. Given a link specification, the approach aims to find a subsumed link specification that achieves a lower run time than the input specification while abiding by a predefined constraint on the expected recall it has to achieve. Our approach, dubbed LIGER, combines downward refinement oper- ators with monotonicity assumptions to detect such specifications. We evaluate our approach on seven datasets. Our results suggest that the different implemen- tations of LIGER can detect subsumed specifications that abide by expected recall constraints efficiently, thus leading to significantly shorter overall run times than our baseline.},
+  added-at = {2020-09-23T13:04:30.000+0200},
+  author = {Georgala, Kleanthi and Sherif, Mohamed Ahmed and {Ngonga Ngomo}, Axel-Cyrille},
+  biburl = {https://www.bibsonomy.org/bibtex/25169da099f733641699194d39e76af74/dice-research},
+  booktitle = {Proceedings of Ontology Matching Workshop 2020},
+  interhash = {5f5fe11860b806ba3cb98c8775c1e51b},
+  intrahash = {5169da099f733641699194d39e76af74},
+  keywords = {2020 dice georgala hecate knowgraphs limbo limboproject limes ngonga opal sherif simba},
+  owner = {sherif},
+  timestamp = {2021-03-09T14:04:03.000+0100},
+  title = {{LIGER – Link Discovery with Partial Recall}},
+  url = {https://papers.dice-research.org/2020/OM_LIGER/public.pdf},
+  year = 2020
+}
+
+@inproceedings{ligon_om_2020,
+  abstract = {Link discovery plays a key role in the integration and use of data across RDF knowledge graphs. Active learning approaches are a common family of solutions to address the problem of learning how to compute links from users. So far, only active learning from perfect oracles has been considered in the literature. However, real oracles are often far from perfect (e.g., in crowdsourcing). We hence study the problem of learning how to compute links across knowledge graphs from noisy oracles, i.e., oracles that are not guaranteed to return correct classification results. We present a novel approach for link discovery based on a probabilistic model, with which we estimate the joint odds of the oracles’ guesses. We combine this approach with an iterative learning approach based on refinements. The resulting method, Ligon, is evaluated on 10 benchmark datasets. Our results suggest that Ligon configured with 10 iterations and 10 training examples per iteration achieves more than 95% of the F-measure achieved by state-of-the-art algorithms trained with a perfect oracle. Moreover, Ligon outperforms batch learning approaches devised to be trained with small amounts of training data by more than 40% F-measure on average.},
+  added-at = {2020-09-17T16:15:31.000+0200},
+  author = {Sherif, Mohamed Ahmed and {Kevin Dreßler} and {Ngonga Ngomo}, Axel-Cyrille},
+  biburl = {https://www.bibsonomy.org/bibtex/2140973fc6088a77c4dac384fc3b692d1/dice-research},
+  booktitle = {Proceedings of Ontology Matching Workshop 2020},
+  interhash = {3ba3350f60d01aa8baac9bc46faafb04},
+  intrahash = {140973fc6088a77c4dac384fc3b692d1},
+  keywords = {2020 dice kevin knowgraphs ligon limbo limboproject limes ngonga opal sherif simba},
+  owner = {sherif},
+  timestamp = {2021-03-09T14:04:03.000+0100},
+  title = {{LIGON – Link Discovery with Noisy Oracles}},
+  url = {https://papers.dice-research.org/2020/OM_LIGON/public.pdf},
+  year = 2020
+}
+
+@inproceedings{Ngonga2019,
+  added-at = {2020-06-18T18:41:56.000+0200},
+  author = {{Ngonga Ngomo}, Axel-Cyrille and Moussallem, Diego and Bühman, Lorenz},
+  biburl = {https://www.bibsonomy.org/bibtex/2a920c64111a6933af050e4a72cb4e3c7/dice-research},
+  booktitle = {Proceedings of the International Conference Recent Advances in Natural Language Processing},
+  interhash = {00e3817fc53a72652f02a1dbbff4b609},
+  intrahash = {a920c64111a6933af050e4a72cb4e3c7},
+  keywords = {dice group_aksw moussallem ngonga opal simba solide},
+  organization = {ACL (Association for Computational Linguistics)},
+  pages = 8,
+  timestamp = {2020-06-18T18:41:56.000+0200},
+  title = {{A Holistic Natural Language Generation Framework for the Semantic Web}},
+  year = 2019
+}
+
+@inproceedings{desouki2019ranking,
+  added-at = {2020-06-18T18:41:55.000+0200},
+  author = {Desouki, Abdelmoneim Amer and Röder, Michael and Ngonga Ngomo, Axel-Cyrille},
+  biburl = {https://www.bibsonomy.org/bibtex/2f35bc0e3c080b2c9a17bbfa0f84e14c8/dice-research},
+  booktitle = {Proceedings of the 30th ACM Conference on Hypertext and Social Media},
+  interhash = {be30195eb8fff8dc9eb07ee5d21f9b26},
+  intrahash = {f35bc0e3c080b2c9a17bbfa0f84e14c8},
+  keywords = {desouki dhare dice group_aksw limboproject ngonga opal rankingrdf roeder solide},
+  organization = {ACM},
+  pages = {163--171},
+  timestamp = {2020-06-18T18:41:55.000+0200},
+  title = {Ranking on Very Large Knowledge Graphs},
+  url = {https://papers.dice-research.org/2019/HT_DHARE/dhare_public.pdf},
+  year = 2019
+}
+
+@article{DBLP:journals/corr/abs-1710-08634,
+  added-at = {2020-06-18T18:41:51.000+0200},
+  archiveprefix = {arXiv},
+  author = {Usbeck, Ricardo and Hoffmann, Michael and Röder, Michael and Lehmann, Jens and Ngomo, Axel{-}Cyrille Ngonga},
+  biburl = {https://www.bibsonomy.org/bibtex/2961a5e7349306f4620755b588684dc07/dice-research},
+  eprint = {1710.08634},
+  interhash = {53008dc5512011e0f0d95b3d35d95e43},
+  intrahash = {961a5e7349306f4620755b588684dc07},
+  journal = {CoRR},
+  keywords = {dice group\_aksw hoffmann lehmann limboproject ngonga opal qamel roeder simba solide usbeck},
+  timestamp = {2020-06-18T18:41:51.000+0200},
+  title = {Using Multi-Label Classification for Improved Question Answering},
+  url = {http://arxiv.org/abs/1710.08634},
+  volume = {abs/1710.08634},
+  year = 2017
+}
+
+@inproceedings{Moussallem2017,
+  added-at = {2020-06-18T18:41:43.000+0200},
+  author = {Moussallem, Diego and Usbeck, Ricardo and Röder, Michael and {Ngonga Ngomo}, Axel-Cyrille},
+  biburl = {https://www.bibsonomy.org/bibtex/2530b7f35caee89b695131f3e45f9a673/dice-research},
+  booktitle = {K-CAP 2017: Knowledge Capture Conference},
+  interhash = {9a80b21f84b3b10e430d9e21a8ca2ded},
+  intrahash = {530b7f35caee89b695131f3e45f9a673},
+  keywords = {agdistis dice diesel group\_aksw limboproject moussallem ngonga opal project-hobbit projecthobbit qamel roeder simba solide usbeck},
+  organization = {ACM},
+  pages = 8,
+  timestamp = {2020-06-18T18:41:43.000+0200},
+  title = {MAG: A Multilingual, Knowledge-base Agnostic and Deterministic Entity Linking Approach},
+  url = {https://svn.aksw.org/papers/2017/KCAP_MAG/public.pdf},
+  year = 2017
+}
+
+@inproceedings{moussallem2018entity,
+  added-at = {2020-06-18T18:41:43.000+0200},
+  author = {Moussallem, Diego and Usbeck, Ricardo and Röder, Michael and Ngomo, Axel-Cyrille Ngonga},
+  biburl = {https://www.bibsonomy.org/bibtex/21c3ef7f799678b79f82687674eaab81c/dice-research},
+  booktitle = {The Semantic Web, ESWC 2018, Lecture Notes in Computer Science},
+  interhash = {5a55d0d619e086cffca8578c8fa7f91a},
+  intrahash = {1c3ef7f799678b79f82687674eaab81c},
+  keywords = {agdistis dice diesel group\_aksw limboproject moussallem ngonga opal qamel roeder simba solide usbeck},
+  timestamp = {2020-06-18T18:41:43.000+0200},
+  title = {Entity Linking in 40 Languages using MAG},
+  url = {https://arxiv.org/abs/1805.11467},
+  year = 2018
+}
+
+@inproceedings{limesWebUI,
+  abstract = {In this paper we present LimesWebUI, our web interface of Limes. Limes, the Link Discovery Framework for Metric Spaces, is a framework for dis- covering links between entities contained in Linked Data sources. LimesWebUI assists the end user during the link discovery process. By representing the link specifications (LS) as interlocking blocks, our interface eases the manual creation of links for users who already know which LS they would like to execute. How- ever, most users do not know which LS suits their linking task best and therefore need help throughout this process. Hence, our interface provides wizards which allow the easy configuration of many link discovery machine learning algorithms, that does not require the user to enter a manual LS. We evaluate the usability of the interface by using the standard system usability scale questionnaire. Our over- all usability score of 76.5 suggests that the online interface is consistent, easy to use, and the various functions of the system are well integrated.},
+  added-at = {2020-06-18T18:41:24.000+0200},
+  author = {Sherif, Mohamed Ahmed and Pestryakova, Svetlana and Dreßler, Kevin and Ngomo, Axel-Cyrille Ngonga},
+  bdsk-url-1 = {http://svn.aksw.org/papers/2019/ISWC\_limesWebUI/public.pdf},
+  biburl = {https://www.bibsonomy.org/bibtex/2a2f07335440c89f1490ab40c8617369a/dice-research},
+  booktitle = {18th International Semantic Web Conference (ISWC 2019)},
+  interhash = {9ac361cfc47697e7581e04d8c708101d},
+  intrahash = {a2f07335440c89f1490ab40c8617369a},
+  keywords = {2019 Svetlana dice group\_aksw kevin limbo limes ngonga opal sage sherif simba slipo},
+  publisher = {CEUR-WS.org},
+  timestamp = {2020-06-18T18:41:24.000+0200},
+  title = {LimesWebUI – Link Discovery Made Simple},
+  url = {http://svn.aksw.org/papers/2019/ISWC_limesWebUI/public.pdf},
+  year = 2019
+}
+
+@inproceedings{PhoneticSimilarity2019,
+  abstract = {An increasing number of heterogeneous datasets abiding by the
+Linked Data paradigm is published everyday. Discovering links
+between these datasets is thus central to achieving the vision behind the Data Web. Declarative Link Discovery (LD) frameworks
+rely on complex Link Specification (LS) to express the conditions
+under which two resources should be linked. Complex LS combine similarity measures with thresholds to determine whether
+a given predicate holds between two resources. State of the art
+LD frameworks rely mostly on string-based similarity measures
+such as Levenshtein and Jaccard. However, string-based similarity measures often fail to catch the similarity of resources with
+phonetically similar property values when these property values
+are represented using different string representation (e.g., names
+and street labels). In this paper, we evaluate the impact of using
+phonetics-based similarities in the process of LD.
+Moreover, we evaluate the impact of phonetic-based similarity
+measures on a state-of-the-art machine learning approach used
+to generate LS. Our experiments suggest that the combination
+of string-based and phonetic-based measures can improve the Fmeasures achieved by LD frameworks on most datasets.},
+  added-at = {2020-06-18T14:14:56.000+0200},
+  author = {Ahmed, Abdullah Fathi and Sherif, Mohamed Ahmed and {Ngonga Ngomo}, Axel-Cyrille},
+  biburl = {https://www.bibsonomy.org/bibtex/2eb55e85c0cefeeda9fa70c578e97604c/dice-research},
+  booktitle = {K-CAP 2019: Knowledge Capture Conference},
+  interhash = {5b6dbe00f6b07e6e859b0e70fda6be1d},
+  intrahash = {eb55e85c0cefeeda9fa70c578e97604c},
+  keywords = {ahmed dice group_aksw limboproject opal sherif solide},
+  timestamp = {2020-09-17T07:59:57.000+0200},
+  title = {Do your Resources Sound Similar? On the Impact of Using Phonetic Similarity in Link Discovery},
+  url = {https://papers.dice-research.org/papers/2019/K-cap-2019_Phonetic_similarity/public.pdf},
+  year = 2019
+}
+
+@inproceedings{JointModel2019,
+  abstract = {Existing technologies employ different machine learning approaches to predict disasters from historical environmental data. However, for short-term disasters (e.g., earthquakes), historical data alone has a limited prediction capability. 
+In this work, we consider social media as a supplementary source of knowledge in addition to historical environmental data. Further, we build a joint model that learns from disaster-related tweets and environmental data to improve prediction. 
+We propose the combination of semantically-enriched word embedding to represent entities in tweets with their semantics representations computed with the traditional word2vec. Our experiments show that our proposed approach outperforms the accuracy of state-of-the-art models in disaster prediction.},
+  added-at = {2020-06-18T14:14:56.000+0200},
+  author = {Zahera, Hamada M. and Sherif, Mohamed Ahmed and {Ngonga Ngomo}, Axel-Cyrille},
+  biburl = {https://www.bibsonomy.org/bibtex/275f99a868d0a21313f8cbae23c5ec1a0/dice-research},
+  booktitle = {K-CAP 2019: Knowledge Capture Conference},
+  interhash = {03fa7b1612f9a3a7b850bdd4033d4823},
+  intrahash = {75f99a868d0a21313f8cbae23c5ec1a0},
+  keywords = {dice group\_aksw limboproject ngonga opal sherif simba solide zahera},
+  organization = {ACM},
+  pages = 4,
+  timestamp = {2020-09-17T07:59:57.000+0200},
+  title = {Jointly Learning from Social Media and Environmental Data for Typhoon Intensity Prediction},
+  url = {https://papers.dice-research.org/2019/K-CAP19_Joint-model/K-CAP19_Joint-model-public.pdf},
+  year = 2019
+}
+
+@inproceedings{Saleem2017SQC,
+  added-at = {2020-06-18T14:14:51.000+0200},
+  author = {Saleem, Muhammad and Stadler, Claus and Mehmood, Qaiser and Lehmann, Jens and Ngomo, Axel-Cyrille Ngonga},
+  biburl = {https://www.bibsonomy.org/bibtex/2a4d1b8ca008f62987170266e6eae5f52/dice-research},
+  booktitle = {K-CAP 2017: Knowledge Capture Conference},
+  interhash = {52e674a10e916763bca3147fd8d4717e},
+  intrahash = {a4d1b8ca008f62987170266e6eae5f52},
+  keywords = {dice group_aksw lehmann ngonga opal project-hobbit saleem stadler},
+  organization = {ACM},
+  timestamp = {2020-06-18T14:14:51.000+0200},
+  title = {{SQCFramework}: {SPARQL} Query Containment Benchmark Generation Framework},
+  url = {http://jens-lehmann.org/files/2017/kcap_sqc.pdf},
+  year = 2017
+}
+
+@inproceedings{Saleem2018SQCDmo,
+  added-at = {2020-06-18T14:14:51.000+0200},
+  author = {Saleem, Muhammad and Stadler, Claus and Mehmood, Qaiser and Lehmann, Jens and Ngomo, Axel-Cyrille Ngonga},
+  biburl = {https://www.bibsonomy.org/bibtex/2d6182da1c9d2d80b25133fc245d72017/dice-research},
+  booktitle = {Demo at ISWC},
+  interhash = {d429b6c45ffc603798b88824ab883469},
+  intrahash = {d6182da1c9d2d80b25133fc245d72017},
+  keywords = {dice group_aksw lehmann ngonga opal project-hobbit saleem stadler},
+  timestamp = {2020-06-18T14:14:51.000+0200},
+  title = {{SQCFramework}: Generating SPARQL Query Containment Benchmarks using the SQCFramework},
+  url = {https://svn.aksw.org/papers/2018/ISWC-Demo-SQCFramework/public.pdf},
+  year = 2018
+}
+
+@inproceedings{saleemnlidwod-iswc,
+  added-at = {2020-06-18T14:14:50.000+0200},
+  author = {Saleem, Muhammad and Dastjerdi, Samaneh Nazari and Usbeck, Ricardo and Ngomo, Axel-Cyrille Ngonga},
+  bdsk-url-1 = {https://svn.aksw.org/papers/2017/NLIWOD_ISWC/public.pdf},
+  biburl = {https://www.bibsonomy.org/bibtex/25ef6de278c676a18088404a3e45ace8e/dice-research},
+  booktitle = {Natural Language Interfaces workshop at ISWC},
+  interhash = {a27fda38bce8b73b27943dc49b41cf23},
+  intrahash = {5ef6de278c676a18088404a3e45ace8e},
+  keywords = {dice diesel group_aksw limboproject ngonga opal projecthobbit qamel saleem saman simba solide usbeck},
+  timestamp = {2020-06-18T14:14:50.000+0200},
+  title = {Question Answering Over Linked Data: What is Difficult to Answer? What affects the F scores?},
+  url = {https://svn.aksw.org/papers/2017/NLIWOD_ISWC/public.pdf},
+  year = 2017
+}
+
+@inproceedings{DBLP:conf/bigdataconf/Ngonga17,
+  added-at = {2020-06-18T14:14:48.000+0200},
+  author = {{Ngonga Ngomo}, Axel-Cyrille and Hoffmann, Michael and Usbeck, Ricardo and Jha, Kunal},
+  biburl = {https://www.bibsonomy.org/bibtex/27895943c3bb7d9521374961ccb865d20/dice-research},
+  booktitle = {2017 {IEEE} International Conference on Big Data},
+  interhash = {90a53863e32a226338f8eb5035c97c13},
+  intrahash = {7895943c3bb7d9521374961ccb865d20},
+  keywords = {dice diesel group\_aksw hare hoffmann kunaljha limboproject ngonga opal project-hobbit projecthobbit qamel simba usbeck},
+  pages = 10,
+  timestamp = {2020-06-18T14:14:48.000+0200},
+  title = {Holistic and Scalable Ranking of RDF Data},
+  url = {https://svn.aksw.org/papers/2017/ESWC_HARE/public.pdf},
+  year = 2017
+}
+
+@inproceedings{DBLP:conf/www/AthreyaNU18,
+  added-at = {2020-05-05T14:37:33.000+0200},
+  author = {Athreya, Ram G. and Ngomo, Axel{-}Cyrille Ngonga and Usbeck, Ricardo},
+  biburl = {https://www.bibsonomy.org/bibtex/2c237c503743ed61965b4564bf5398966/dice-research},
+  booktitle = {Companion of the The Web Conference 2018 on The Web Conference 2018, {WWW} 2018, Lyon , France, April 23-27, 2018},
+  doi = {10.1145/3184558.3186964},
+  interhash = {2cd5ff6a5cb88aae80dddf9c4b7fccf5},
+  intrahash = {c237c503743ed61965b4564bf5398966},
+  keywords = {2018 group\_aksw limbo limboproject ngonga opal simba solide usbeck},
+  pages = {143–146},
+  timestamp = {2020-05-05T14:37:33.000+0200},
+  title = {Enhancing Community Interactions with Data-Driven Chatbots-The DBpedia Chatbot},
+  url = {https://svn.aksw.org/papers/2018/WWW_dbpedia_chatbot/public.pdf},
+  year = 2018
+}
+
+@inproceedings{LSVS_2019,
+  abstract = {An increasing number and size of datasets abiding by the Linked Data paradigm are published everyday. Discovering links between these datasets is thus central to achieve the vision behind the Data Web. Declarative Link Discovery (LD) frameworks rely on complex Link Specification (LS) to express the conditions under which two resources should
+ be linked. Understanding such LS is not a trivial task for non-expert users, particularly when such users are interested in generating LS to match their needs. Even if the user applies a machine learning algorithm  for the automatic generation of the required LS, the challenge of explaining the resultant LS persists. Hence, providing explainable LS is the key
+ challenge to enable users who are unfamiliar with underlying LS technologies to use them effectively and efficiently. In this paper, we address this problem by proposing a generic approach that allows a LS to be verbalized, i.e., converted into understandable natural language. We propose a summarization approach to the verbalized LS based on the selectivity
+ of the underlying LS. Our adequacy and fluency evaluations show that our approach can generate complete and easily understandable natural language descriptions even by lay users.},
+  added-at = {2020-05-05T14:37:31.000+0200},
+  author = {Ahmed, {Abdullah Fathi} and Sherif, {Mohamed Ahmed} and {Ngonga Ngomo}, Axel-Cyrille},
+  bdsk-url-1 = {http://svn.aksw.org/papers/2019/NLDB\_LSVS/public.pdf},
+  biburl = {https://www.bibsonomy.org/bibtex/2a28d46aacfa164e596b353970b9cfbc1/dice-research},
+  booktitle = {24th International Conference on Applications of Natural Language to Information Systems (NLDB 2019)},
+  interhash = {5b6172301568170f64fda907d09ce1f1},
+  intrahash = {a28d46aacfa164e596b353970b9cfbc1},
+  keywords = {2019 ahmed dice group\_aksw limbo limes ngonga opal sage sherif simba slipo},
+  publisher = {Springer},
+  timestamp = {2020-09-17T07:59:53.000+0200},
+  title = {{LSVS}: Link Specification Verbalization and Summarization},
+  url = {http://svn.aksw.org/papers/2019/NLDB_LSVS/public.pdf},
+  year = 2019
+}
+
+@inproceedings{icwe_dragon,
+  added-at = {2020-05-05T14:37:31.000+0200},
+  author = {Obraczka, Daniel and {Ngonga Ngomo}, Axel-Cyrille},
+  biburl = {https://www.bibsonomy.org/bibtex/2f459215f0747b9281f6a22094e744dba/dice-research},
+  booktitle = {ICWE},
+  crossref = {conf/icwe/2019},
+  editor = {Bakaev, Maxim and Frasincar, Flavius and Ko, In-Young},
+  ee = {https://doi.org/10.1007/978-3-030-19274-7_31},
+  interhash = {ad9ec8623df5c85baab9c9cb6975f112},
+  intrahash = {f459215f0747b9281f6a22094e744dba},
+  isbn = {978-3-030-19274-7},
+  keywords = {dice group\_aksw limboproject limes ngonga obraczka opal},
+  pages = {441–456},
+  publisher = {Springer},
+  series = {Lecture Notes in Computer Science},
+  timestamp = {2020-05-05T14:37:31.000+0200},
+  title = {Dragon: Decision Tree Learning for Link Discovery.},
+  url = {http://svn.aksw.org/papers/2019/ICWE_DRAGON/public.pdf},
+  volume = 11496,
+  year = 2019
+}
+
+@inproceedings{khanISWC2019,
+  abstract = {Over years, the Web of Data has grown significantly. Various interfaces such as SPARQL endpoints, data dumps, and Triple Pattern Fragments (TPF) have been proposed to provide access to this data. Studies show that many of the SPARQL endpoints have availability issues. The data dumps do not provide live querying capabilities. The TPF solution aims to provide a trade-off between the availability and performance by dividing the workload among TPF servers and clients. In this solution, the TPF server only performs the triple patterns execution of the given SPARQL query. While the TPF client performs the joins between the triple patterns to compute the final resultset  of the SPARQL query. High availability is achieved in TPF but increase in network bandwidth and query execution time lower the performance. We want to propose a more intelligent SPARQL querying server to keep the high availability along with high query execution performance, while minimizing the network bandwidth. The proposed server will offer query execution services (can be single triple patterns or even join execution) according to the current status of the workload. If a server is free, it should be able to execute the complete SPARQL query. Thus, the server will offer execution services while avoiding going beyond the maximum query processing limit, i.e. the point after which the performance start decreasing or even service shutdown. Furthermore, we want to develop a more intelligent client, which keeps track of a server's processing capabilities and therefore avoid DOS attacks and crashes.},
+  added-at = {2019-11-05T13:19:10.000+0100},
+  author = {Khan, Hashim},
+  biburl = {https://www.bibsonomy.org/bibtex/2dcc768bb2b7a1d1a54a0ca8c7811c220/dice-research},
+  booktitle = {International Semantic Web Conference},
+  interhash = {8943a7837cd5d573a85b56e8353c65e6},
+  intrahash = {dcc768bb2b7a1d1a54a0ca8c7811c220},
+  keywords = {dice group_aksw khan ngonga opal saleem simba},
+  timestamp = {2020-09-17T07:59:43.000+0200},
+  title = {Towards More Intelligent SPARQL Querying Interfaces},
+  url = {http://ceur-ws.org/Vol-2548/paper-12.pdf},
+  year = 2019
+}
+
+@inproceedings{moussallem2019swmt,
+  added-at = {2019-11-04T15:29:20.000+0100},
+  author = {Moussallem, Diego and Wauer, Matthias and Ngomo, Axel-Cyrille Ngonga},
+  biburl = {https://www.bibsonomy.org/bibtex/2debb2175d2efe6b58d1aa12cf52dd560/dice-research},
+  booktitle = {International Semantic Web Conference},
+  interhash = {33a551537672f5b74d270a7057f49de3},
+  intrahash = {debb2175d2efe6b58d1aa12cf52dd560},
+  keywords = {dice group_aksw moussallem ngonga opal wauer},
+  organization = {Springer},
+  pages = 8,
+  timestamp = {2019-11-04T15:29:20.000+0100},
+  title = {{Semantic Web for Machine Translation: Challenges and Directions}},
+  url = {https://arxiv.org/pdf/1907.10676.pdf},
+  year = 2019
+}
+
+@inproceedings{kaur2019offline,
+  added-at = {2019-11-04T14:34:58.000+0100},
+  author = {Kaur, Paramjot and Bl{\"u}cher, Vincent and Jalota, Rricha and Moussallem, Diego},
+  biburl = {https://www.bibsonomy.org/bibtex/2956a9421777e7846094eaa23a39623ef/dice-research},
+  booktitle = {SEMANTiCS},
+  interhash = {f69e9fde985cecc001e189748bc58125},
+  intrahash = {956a9421777e7846094eaa23a39623ef},
+  keywords = {dice group_aksw moussallem ngonga opal param usbeck},
+  timestamp = {2019-11-04T14:34:58.000+0100},
+  title = {{Offline Question Answering over Linked Data using Limited Resources}},
+  year = 2019
+}
+
+@inproceedings{moussallemkgnmt2019,
+  added-at = {2019-11-04T14:11:11.000+0100},
+  author = {Moussallem, Diego and {Ngonga Ngomo}, Axel-Cyrille and Buitelaar, Paul and Arcan, Mihael},
+  biburl = {https://www.bibsonomy.org/bibtex/2b95660f52731a95d9dd70a80b5eaeb18/dice-research},
+  booktitle = {K-CAP 2019: Knowledge Capture Conference},
+  interhash = {af837aa424a2f052b474a67408d83f98},
+  intrahash = {b95660f52731a95d9dd70a80b5eaeb18},
+  keywords = {dice group_aksw moussallem ngonga opal simba solide},
+  organization = {ACM},
+  pages = 8,
+  timestamp = {2019-11-04T14:11:11.000+0100},
+  title = {{Utilizing Knowledge Graphs for Neural Machine TranslationAugmentation}},
+  url = {https://arxiv.org/pdf/1902.08816.pdf},
+  year = 2019
+}
+
+@inproceedings{moussallem2019thoth,
+  added-at = {2019-11-04T14:11:11.000+0100},
+  author = {Moussallem, Diego and Soru, Tommaso and Ngomo, Axel-Cyrille Ngonga},
+  biburl = {https://www.bibsonomy.org/bibtex/2efe7283615db9b4b8a115bf545d45b2c/dice-research},
+  booktitle = {International Semantic Web Conference},
+  doi = {https://doi.org/10.1007/978-3-030-30793-6_29},
+  interhash = {75ce9cc27cff007755f0488d3fa1e1da},
+  intrahash = {efe7283615db9b4b8a115bf545d45b2c},
+  keywords = {dice group_aksw moussallem ngonga opal soru},
+  organization = {Springer},
+  pages = {505--522},
+  timestamp = {2019-11-04T14:11:11.000+0100},
+  title = {{THOTH: Neural Translation and Enrichment of Knowledge Graphs}},
+  url = {https://link.springer.com/chapter/10.1007/978-3-030-30793-6_29},
+  year = 2019
+}
+
