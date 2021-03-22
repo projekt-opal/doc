@@ -14,7 +14,7 @@ Ein Import von 90 Millionen Triple (16.3 GB im N-Triples Format) benötigt 77 Mi
 
 **Ansatz 2: OPAL Slicer**
 
-Dieser Ansatz nutzt Muster im SPARQL Format um Untermengen von Wissensgraphen zu extrahieren. Für diese Lösung wurde das RDFSlice Projekt verwendet. Dabei kommt das Extract-Transform-Load (ETL) Paradigma zum Einsatz. Es werden Graphmuster verwendet, die maximal eine Variable oder einen Identifizierer in den Join-Bedingungen des Musters verwendet. Durch diese Einschränkung entsteht ein Geschwindigkeitsvorteil gegenüber konventionellen Triplestores.
+Dieser Ansatz nutzt Muster im SPARQL Format um Untermengen von Wissensgraphen zu extrahieren. Für diese Lösung wurde das RDFSlice Projekt verwendet. Dabei kommt das Extract-Transform-Load (ETL) Paradigma zum Einsatz. Es werden Graphmuster verwendet, die maximal eine Variable oder einen Identifikatoren in den Join-Bedingungen des Musters verwendet. Durch diese Einschränkung entsteht ein Geschwindigkeitsvorteil gegenüber konventionellen Triplestores.
 
 
 **Weiterführende Inhalte**

@@ -4,7 +4,7 @@
 
 Das primäre Ziel von OPAL ist es, Benutzern das einfache Auffinden offener Daten zu ermöglichen, indem verfügbare Metadaten aus verschiedenen Webquellen gesammelt, analysiert und integriert werden. Dieses Arbeitspaket konzentriert sich auf den ersten Schritt in Richtung dieses Ziels: Die Identifizierung und Extraktion von Metadaten von Webseiten, die Datensätze beschreiben.
 
-Dieses Arbeitpaket spezifiziert funktionale und nicht-funktionale Anforderungen für die OPAL Crawler-Komponente. Dabei werden die allgemeinen Anforderungen, die in Deliverable D1.1 gesammelt wurden, referenziert. Außerdem werden 10 existierende Crawling-Komponenten hinsichtlich der Anforderungen verglichen.
+Dieses Arbeitspaket spezifiziert funktionale und nicht-funktionale Anforderungen für die OPAL Crawler-Komponente. Dabei werden die allgemeinen Anforderungen, die in Deliverable D1.1 gesammelt wurden, referenziert. Außerdem werden 10 existierende Crawling-Komponenten hinsichtlich der Anforderungen verglichen.
 
 
 **Funktionale Anforderungen**

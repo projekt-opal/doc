@@ -10,7 +10,7 @@ In diesem Teil wurden die Softwarekomponenten aus AP 5.1 in 5 Experimenten zur D
 - In Experiment 4: LIMES (Dataset) wurde dieselbe Linkspezifikation verwendet; hier wurde LIMES core anstelle von WOMBAT verwendet. Erneut wurden 888 duplizierte Datensätze gefunden.
 - In Experiment 5: LIMES (Distribution) wurde die Spezifizierung der Datensätze entfernt und ein Fokus auf Distributionen gesetzt. Es wurden 1.833 Duplikate von Distributionen gefunden.
 
-Abschließend empfehlen wir zum Finden von Duplikaten die Verwendung von Download-URLs, um mehrfach auftretende Datensätze zu dedektieren. Dies ist für Anwendungsfälle relevant, in denen Daten aus mehreren Portalen zur Verfügung stehen und gleiche Datensätze erkannt werden müssen.
+Abschließend empfehlen wir zum Finden von Duplikaten die Verwendung von Download-URLs, um mehrfach auftretende Datensätze zu detektieren. Dies ist für Anwendungsfälle relevant, in denen Daten aus mehreren Portalen zur Verfügung stehen und gleiche Datensätze erkannt werden müssen.
 
 
 **Weiterführende Inhalte**

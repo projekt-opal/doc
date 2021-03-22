@@ -4,12 +4,12 @@
 
 **Spracherkennung**
 
-In RDF besteht die technische Möglichkeit, Literale mit einer Sprachauszeichnung zu versehen. Für Literale, zu denen keine Sprache spezifiziert ist, wird eine Spracherkennung auf Basis von Apache OpenNLP durchgeführt. Als Eingabe werden hier Titel- und Beschreibungstext von Metadatensätzen verwendet. Im Fall dass Apache OpenNLP für eine Sprache eine Wahrscheinlichkeit überhalb eines Schwellenwertes zurück gibt, werden die entsprechendent Sprach-Tags von Titel- und Beschreibungsliteralen aktualisiert.
+In RDF besteht die technische Möglichkeit, Literale mit einer Sprachauszeichnung zu versehen. Für Literale, zu denen keine Sprache spezifiziert ist, wird eine Spracherkennung auf Basis von Apache OpenNLP durchgeführt. Als Eingabe werden hier Titel- und Beschreibungstext von Metadatensätzen verwendet. Im Fall dass Apache OpenNLP für eine Sprache eine Wahrscheinlichkeit oberhalb eines Schwellenwertes zurück gibt, werden die entsprechenden Sprach-Tags von Titel- und Beschreibungsliteralen aktualisiert.
 
 
 **Geografische Daten**
 
-Zur Anreicherung der Metadatensätze mit geografischen Angaben wurden die Geodatenbanken Nomenclature of Territorial Units for Statistics (NUTS) und Local Administrative Units (LAU) verwendet. Mit diesen steht eine hierarchische Datenbank mit Geopolygonen und entsprechenden Eigennamen von Orten zur Verfügung. Für die Datenextraktion wurde zunächst die Komponente LauNuts verwendet. Auf dieser Basis können 8.495 Orte in Deutschland in Volltexten dedektiert werden. Die angereicherten Daten werden im Projektverlauf für eine Geo-Suche verwendet.
+Zur Anreicherung der Metadatensätze mit geografischen Angaben wurden die Geodatenbanken Nomenclature of Territorial Units for Statistics (NUTS) und Local Administrative Units (LAU) verwendet. Mit diesen steht eine hierarchische Datenbank mit Geopolygonen und entsprechenden Eigennamen von Orten zur Verfügung. Für die Datenextraktion wurde zunächst die Komponente LauNuts verwendet. Auf dieser Basis können 8.495 Orte in Deutschland in Volltexten detektiert werden. Die angereicherten Daten werden im Projektverlauf für eine Geo-Suche verwendet.
 
 
 **Eigennamenerkennung und Disambiguierung von Entitäten**

@@ -2,7 +2,7 @@
 
 ### Arbeitspaket 1.2: Datenanalyse
 
-In der initialen Datenanalyse wurde eine Liste von relevanten Datenquellen identifiziert. Diese setzt sich aus den Meta-Datenportalen mCloud, MDM, GovData, OffeneDaten.de und dem European Data Portal zusammen. Die Datenquellen wurden nach multi-methodischem Ansatz analysiert.
+In der initialen Datenanalyse wurde eine Liste von relevanten Datenquellen identifiziert. Diese setzt sich aus den Metadatenportalen mCloud, MDM, GovData, OffeneDaten.de und dem European Data Portal zusammen. Die Datenquellen wurden nach multi-methodischem Ansatz analysiert.
 
 Die Portale wurden mit unterschiedlichen Methoden betrachtet. Neben einer manuellen Prüfung bzw. einem Studium der Dokumentation der Datenquellen wurden umfangreichere Analysen auf dem Datenbestand der jeweiligen Quelle durchgeführt. Dies setze eine Erfassung der Meta-Datensätze voraus, durch vollständiges Crawling oder durch repräsentatives Random Sampling.
 
@@ -22,7 +22,7 @@ Im Deliverable D1.2 zur Datenanalyse vom Mai 2018 wurden die folgenden Datensät
 
 **Änderungen im weiteren Projektverlauf**
 
-Während des Projektverlaufs hat sich einerseits die Anzahl der verfügbaren Datensätze erhöht. Andererseits ergaben sich technische Veränderungen. In 2,5 Jahren (Mai 2018 – Dezember 2020) wuchs der Datenbestand in der mCloud von 652 auf 3.276 an; beim European Data Portal von 817.000 auf 1.184.000. Technisch wird nach einem MDM Relaunch kein jQuery mehr genutzt und mCLOUD bietet seit Version 1.5.0 einen Download im DCAT-AP.de XML/RDF Format an, so dass sich das Scraping vereinfacht hat.
+Während des Projektverlaufs hat sich einerseits die Anzahl der verfügbaren Datensätze erhöht. Andererseits ergaben sich technische Veränderungen. In 2,5 Jahren (Mai 2018 – Dezember 2020) wuchs der Datenbestand in der mCloud von 652 auf 3.276 an; beim European Data Portal von 817.000 auf 1.184.000. Technisch wird nach einem MDM Relaunch kein jQuery mehr genutzt und mCLOUD bietet seit Version 1.5.0 einen Download im DCAT-AP.de XML/RDF Format an, sodass sich das Scraping vereinfacht hat.
 
 **OPAL Graph**
 

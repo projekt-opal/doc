@@ -2,7 +2,7 @@
 
 ### Arbeitspaket 4.4: Indizierungskomponente
 
-Als Indizierungskomponente wurde die Software AGDISTIS in Kooperation mit dem LIMBO-Projekt erweitert. AGDISTIS wurde um Mehrssprachigkeit (MAG) sowie eine Elasticsearch-Anbindung erweitert und zur Disambiguierung/Linking von Entitäten eingesetzt. Es handelt sich um ein Graph-basiertes Verfahren, in dem der HITS Algorithmus eingesetzt wird. Die Integration in OPAL fand über die Einbindung der geografischen Datenbank LauNuts (siehe AP 3.3: Unstrukturierte Metadatenextraktion), der Eigennamenerkennung (siehe ebenfalls AP 3.3) und der Question-Answering Lösung (siehe AP 7.3: Social Bot) statt.
+Als Indizierungskomponente wurde die Software AGDISTIS in Kooperation mit dem LIMBO-Projekt erweitert. AGDISTIS wurde um Mehrsprachigkeit (MAG) sowie eine Elasticsearch-Anbindung erweitert und zur Disambiguierung/Linking von Entitäten eingesetzt. Es handelt sich um ein Graph-basiertes Verfahren, in dem der HITS Algorithmus eingesetzt wird. Die Integration in OPAL fand über die Einbindung der geografischen Datenbank LauNuts (siehe AP 3.3: Unstrukturierte Metadatenextraktion), der Eigennamenerkennung (siehe ebenfalls AP 3.3) und der Question-Answering Lösung (siehe AP 7.3: Social Bot) statt.
 
 ![](../Medien/AP4-4-Agsistis.png)
 

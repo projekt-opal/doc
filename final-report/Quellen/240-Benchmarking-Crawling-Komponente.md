@@ -6,11 +6,11 @@ Mit diesem Arbeitspaket und dem damit entstandenen ORCA-Benchmark wurde der erst
 
 Die Hauptidee hinter ORCA ist die Sicherstellung der vergleichbaren Bewertung von Crawlern zu gewährleisten, indem ein lokales, synthetisches Data Web erstellt wird. Der Benchmark-Crawler wird dabei mit einem Satz von Seed-Knoten der synthetischen Wolke initialisiert und gestartet, um die komplette Wolke zu crawlen. Da die Wolke generiert wird, ist der Benchmark-Komponente bekannt, welche Triples gecrawlt werden sollen und kann die Vollständigkeit und die Geschwindigkeit des Crawlers messen. Da die Generierung der Wolke deterministisch ist, kann eine zuvor verwendete Wolke für das Benchmarking eines anderen Crawlers neu erzeugt werden, so dass dass die Auswertungsergebnisse vergleichbar sind, wenn die Experimente auf der gleichen Hardware ausgeführt werden.
 
-Die folgende Abbildung zwigt eine Übersicht der Benchmark-Komponenten und des Datenflusses. (Orange: Benchmark-Komponenten; Grau: Synthetisches Datennetz; Dunkelblau: Benchmark-Crawler; Durchgehende Linien: Fluss der Daten; Gepunktete Linien: Verknüpfungen zwischen RDF-Datensätzen; die Zahlen geben die Ausführungsreihenfolge an.)
+Die folgende Abbildung zeigt eine Übersicht der Benchmark-Komponenten und des Datenflusses. (Orange: Benchmark-Komponenten; Grau: Synthetisches Datennetz; Dunkelblau: Benchmark-Crawler; Durchgehende Linien: Fluss der Daten; Gepunktete Linien: Verknüpfungen zwischen RDF-Datensätzen; die Zahlen geben die Ausführungsreihenfolge an.)
 
 ![](../Medien/AP2-4-Squirrel-Benchmark.pdf)
 
-Die Ergebnisse des Benchmarks sind in nachfolgener Abbildung dargestellt. Es wurden der OPAL Crawler Squirrel und der LDSpider Crawler miteinander verglichen. Dabei wurden die Crawler mit unterschiedlichen Konfigurationen gestartet, so etwa Squirrel mit 1, 3, 9 bzw. 18 Worker-Komponenten. Insbesondere für das Data Web lieferte der Squirrel Crawler die besten Ergebnisse. Zudem kann Squirrel im Gegensatz zu LDSpider die RDF/JSON Serialisierung und Kompressionsformate behandeln.
+Die Ergebnisse des Benchmarks sind in nachfolgender Abbildung dargestellt. Es wurden der OPAL Crawler Squirrel und der LDSpider Crawler miteinander verglichen. Dabei wurden die Crawler mit unterschiedlichen Konfigurationen gestartet, so etwa Squirrel mit 1, 3, 9 bzw. 18 Worker-Komponenten. Insbesondere für das Data Web lieferte der Squirrel Crawler die besten Ergebnisse. Zudem kann Squirrel im Gegensatz zu LDSpider die RDF/JSON Serialisierung und Kompressionsformate behandeln.
 
 ![](../Medien/AP2-4-Squirrel-Benchmark-Ergebnisse.pdf)
 

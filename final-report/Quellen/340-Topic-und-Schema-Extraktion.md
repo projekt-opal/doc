@@ -4,7 +4,7 @@
 
 **Topic-Extraction**
 
-Zur Extraktion von Entitäten aus englischsprachigen Texten wurde in Zusammenarbeit mit dem LIMBO Projekt eine Komponente basierend auf dem Maschinellen Lernen mittels der Biblothek Rasa NLU (Natural Language Understanding) entwickelt. Basierend auf vorhandenen Beschreibungstexten wurde ein Modell trainiert um Orte, Stichwörter, Daten und Personen zu erkennen. Dadurch dass die Ursprungsdaten von unterschiedlichen Herausgebern und Autoren stammen und die Texte daher einen heterogenen Aufbau mit sich bringen, wurde im weiteren Projektverlauf die Extraktion von Orten mittels LauNuts fokussiert (siehe Arbeitspaket 3.3: Unstrukturierte Metadatenextraktion). Die folgende Tabelle zeigt die Ergebnisse der Topic-Komponente:
+Zur Extraktion von Entitäten aus englischsprachigen Texten wurde in Zusammenarbeit mit dem LIMBO Projekt eine Komponente basierend auf dem Maschinellen Lernen mittels der Bibliothek Rasa NLU (Natural Language Understanding) entwickelt. Basierend auf vorhandenen Beschreibungstexten wurde ein Modell trainiert um Orte, Stichwörter, Daten und Personen zu erkennen. Dadurch dass die Ursprungsdaten von unterschiedlichen Herausgebern und Autoren stammen und die Texte daher einen heterogenen Aufbau mit sich bringen, wurde im weiteren Projektverlauf die Extraktion von Orten mittels LauNuts fokussiert (siehe Arbeitspaket 3.3: Unstrukturierte Metadatenextraktion). Die folgende Tabelle zeigt die Ergebnisse der Topic-Komponente:
 
 |                  | Genauigkeit (Precision) | Sensitivität (Recall) | F-Maß  |
 |------------------|-------------------------|-----------------------|--------|
@@ -28,9 +28,11 @@ Für Metadatensätze, die Beschreibungstexte beinhalten, jedoch nicht kategorisi
 | NaiveBayes | 47,5%   | 31,875% | 36,875% | 35%     |
 
 
+\newpage
+
 **Weiterführende Inhalte**
 
 * Software Topic-Extraction: [https://github.com/projekt-opal/Topic-Extraction](https://github.com/projekt-opal/Topic-Extraction)
 * Software Classification: [https://github.com/projekt-opal/classification](https://github.com/projekt-opal/classification)
-* Rasa NLU [https://pypi.org/project/rasa-nlu/](https://pypi.org/project/rasa-nlu/)
-* WEKA [https://www.cs.waikato.ac.nz/ml/weka/](https://www.cs.waikato.ac.nz/ml/weka/)
+* Rasa NLU: [https://pypi.org/project/rasa-nlu/](https://pypi.org/project/rasa-nlu/)
+* WEKA: [https://www.cs.waikato.ac.nz/ml/weka/](https://www.cs.waikato.ac.nz/ml/weka/)

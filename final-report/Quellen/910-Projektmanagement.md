@@ -6,7 +6,7 @@ Die Projektberichte für die entsprechenden Zeitpunkte wurden eingereicht.
 
 **Kommunikation und Dissemination**
 
-Ein Austausch und eine Vernetzung mit Unternehmen und Wissenschaftlern aus dem Bereich Mobilitätsdaten fand in erster Linie über Teilnahmen and mFUND Workshops statt. Zudem wurde das OPAL Projekt bereits auf der mFUND-Konferenz 2018 vorgestellt.
+Ein Austausch und eine Vernetzung mit Unternehmen und Wissenschaftlern aus dem Bereich Mobilitätsdaten fand in erster Linie über Teilnahmen an mFUND Workshops statt. Zudem wurde das OPAL Projekt bereits auf der mFUND-Konferenz 2018 vorgestellt.
 
 Die Dissemination in der Wissenschaft fand über rund 30 Publikationen statt. Auf den jeweiligen Konferenzen wurde das OPAL Projekt in Bezug auf die jeweiligen Konferenzbeiträge vorgestellt. In den zugehörigen Publikationen ist das Projekt mit Förderkennzeichen jeweils aufgeführt.
 

@@ -2,7 +2,7 @@
 
 ### Arbeitspaket 5.3: Erweiterte Lernalgorithmen über Daten
 
-Die Umsetzung von erweiterte Lernalgorithmen fand in ORCHID - Reduction-Ratio-Optimal Computation of Geo-Spatial Distances for Link Discovery statt. Hierzu wurden Experimente zum Linking von Geodaten durgeführt. Eingesetzt wurden primär die Datenbank OPAL LauNuts mit 84.000 Koordinaten-Punkten und LinkedGeoData, ein OpenStreetMap Derivat im RDF-Format. Die Distanzen der Geoobjekte konnten in performanter Weise errechnet werden. Im Folgenden sind die Laufzeiten von synthetischen und realen Daten aufgeführt:
+Die Umsetzung von erweiterte Lernalgorithmen fand in ORCHID - Reduction-Ratio-Optimal Computation of Geo-Spatial Distances for Link Discovery statt. Hierzu wurden Experimente zum Linking von Geodaten durchgeführt. Eingesetzt wurden primär die Datenbank OPAL LauNuts mit 84.000 Koordinaten-Punkten und LinkedGeoData, ein OpenStreetMap Derivat im RDF-Format. Die Distanzen der Geoobjekte konnten in performanter Weise errechnet werden. Im Folgenden sind die Laufzeiten von synthetischen und realen Daten aufgeführt:
 
 ![](../Medien/AP5-3-SLIPO.png)
 

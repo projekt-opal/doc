@@ -4,7 +4,7 @@
 
 **OPAL Portal**
 
-Das finale OPAL-Portal wurde mit den Technologien aus Arbeitspaket 8.1 und dem Enwurf aus Arbeitspaket 8.2 umgesetzt. Das zentrale Element ist die Suchfunktion, mit der Titel, Beschreibungstexte und Stichwörter durchsucht werden können. Metadatensätze können nach Kategorien, Herausgebern, Katalogen und Lizenzen gefiltert werden. Zusätzlich zur Anzeige der größten Datenquellen und -herausgebern sind die mobile App sowie das räumliche Slicing implementiert.
+Das finale OPAL-Portal wurde mit den Technologien aus Arbeitspaket 8.1 und dem Entwurf aus Arbeitspaket 8.2 umgesetzt. Das zentrale Element ist die Suchfunktion, mit der Titel, Beschreibungstexte und Stichwörter durchsucht werden können. Metadatensätze können nach Kategorien, Herausgebern, Katalogen und Lizenzen gefiltert werden. Zusätzlich zur Anzeige der größten Datenquellen und -herausgebern sind die mobile App sowie das räumliche Slicing implementiert.
 
 ![](../Medien/AP8-4-Portal.png)
 

@@ -2,7 +2,7 @@
 
 ### Arbeitspaket 7.1: Suche
 
-Auch mit der Indexierung von Volltexten bleibt das Problem der Verwendung von Suchbegriffen bestehen, die nicht in den ursprünglichen Metadaten enthalten sind. Obwohl ein Anwender semantisch korrekte Begriffe verwendet, werden potentiell verfügbaren Datensätze nicht gefunden.
+Auch mit der Indexierung von Volltexten bleibt das Problem der Verwendung von Suchbegriffen bestehen, die nicht in den ursprünglichen Metadaten enthalten sind. Obwohl ein Anwender semantisch korrekte Begriffe verwendet, werden potenziell verfügbaren Datensätze nicht gefunden.
 Beispielsweise könnte ein Volltext das Wort “Stadtbahn” enthalten. Die Verwendung von
 Suchbegriffen wie “S-Bahn” oder “Straßenbahn” würde den entsprechenden Datensatz ggf. nicht
 finden. Um die Auffindbarkeit zu verbessern können Synonyme (unterschiedliche Begriffe
@@ -18,12 +18,14 @@ Zur Verbesserung der Auffindbarkeit von Datensätzen werden Begriffe einbezogen,
 
 ![](../Medien/AP7-1-Suchkomponente-DBnary.png)
 
-Als Ergebnis wurden 6.668 deutschsprachige Nomen extrahiert, für die Synonyme bekannt sind. Zu den entsprechenden Nomen wurden insgesamt 21.634 Synonyme zu den entsprechenden Nomen gefunden. Abschließend wurden die extrahierten Nomen mit den Titeln und Beschreibungestexten der
+\newpage
+
+Als Ergebnis wurden 6.668 deutschsprachige Nomen extrahiert, für die Synonyme bekannt sind. Zu den entsprechenden Nomen wurden insgesamt 21.634 Synonyme zu den entsprechenden Nomen gefunden. Abschließend wurden die extrahierten Nomen mit den Titeln und Beschreibungstexten der
 Metadaten aus mCLOUD und GovData abgeglichen und damit die Anzahl relevanter Suchdaten eingeschränkt. Final stehen 1.497 Nomen aus mCLOUD und GovData sowie die entsprechenden Synonyme bereit.
 
 **Benchmarking der Suchkomponente**
 
-Der Benchmarking der Suchkomponente erfolgte über einen empirischen Vergleich der Laufzeiten der Datenhaltungslösungen Elasticsearch und dem RDF Triplestore Apache Fuseki. Hierzu wurden annähernd 60.000 Datensätze in den Varianten gespeichert. Anschließend fand eine Laufzeitanalyse über fünf Abfragen statt, die jeweils 100 mal ausgeführt wurden. Anschließend wurden das arithmethische Mittel sowie die Standardabweichungen erreichnet. Als Ergebnis lässt sich festhalten, dass einfache Abfragen rund 4 mal performanter mit Elasticsearch durchgeführt wurden. Erweiterte Abfragen (mit SPARQL Filtern) erfolgten 5 bis 20 mal performanter mit Elasticsearch.
+Der Benchmarking der Suchkomponente erfolgte über einen empirischen Vergleich der Laufzeiten der Datenhaltungslösungen Elasticsearch und dem RDF Triplestore Apache Fuseki. Hierzu wurden annähernd 60.000 Datensätze in den Varianten gespeichert. Anschließend fand eine Laufzeitanalyse über fünf Abfragen statt, die jeweils 100 mal ausgeführt wurden. Danach wurden das arithmetische Mittel sowie die Standardabweichungen errechnet. Als Ergebnis lässt sich festhalten, dass einfache Abfragen rund 4 mal performanter mit Elasticsearch durchgeführt wurden. Erweiterte Abfragen (mit SPARQL Filtern) erfolgten 5 bis 20 mal performanter mit Elasticsearch.
 
 
 **Weiterführende Inhalte**

@@ -13,7 +13,7 @@ Eine High-Level Ansicht der OPAL-Architektur ist in der folgenden Abbildung darg
 
 ![](../Medien/AP1-3-ArchitekturUrspruenglich.png)
 
-Während des Projektverlaufs hat sich die Verwendung der Datenhaltungsschicht als Flaschenhals herausgestellt. Daher wurde die ursprüngliche Architektur so umgestellt, dass für das Web-Frontend Elasticsearch zum Einsatz kommt und zur Aufbereitung von eine sequenzielle Behandlung erfolgt (siehe Arbeitspaket 4.2: Konvertierungskomponente).
+Während des Projektverlaufs hat sich die Verwendung der Datenhaltungsschicht als Flaschenhals herausgestellt. Daher wurde die ursprüngliche Architektur so umgestellt, dass für das Web-Frontend Elasticsearch zum Einsatz kommt und zur Aufbereitung von Daten eine sequenzielle Behandlung erfolgt (siehe Arbeitspaket 4.2: Konvertierungskomponente).
 
 **Weiterführende Inhalte**
 
